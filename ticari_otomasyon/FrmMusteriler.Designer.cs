@@ -157,7 +157,7 @@ namespace ticari_otomasyon
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(-1, 291);
+            this.labelControl10.Location = new System.Drawing.Point(0, 288);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(84, 18);
             this.labelControl10.TabIndex = 23;
