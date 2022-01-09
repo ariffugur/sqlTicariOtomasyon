@@ -191,7 +191,7 @@
             this.btnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnGuncelle.Appearance.Options.UseFont = true;
             this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
-            this.btnGuncelle.Location = new System.Drawing.Point(77, 312);
+            this.btnGuncelle.Location = new System.Drawing.Point(77, 317);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(153, 38);
             this.btnGuncelle.TabIndex = 21;
@@ -202,7 +202,7 @@
             this.btnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnSil.Appearance.Options.UseFont = true;
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(77, 268);
+            this.btnSil.Location = new System.Drawing.Point(77, 273);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(153, 38);
             this.btnSil.TabIndex = 20;
@@ -213,7 +213,7 @@
             this.btnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnKaydet.Appearance.Options.UseFont = true;
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
-            this.btnKaydet.Location = new System.Drawing.Point(77, 224);
+            this.btnKaydet.Location = new System.Drawing.Point(77, 229);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(153, 38);
             this.btnKaydet.TabIndex = 19;
