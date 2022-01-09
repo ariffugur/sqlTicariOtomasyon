@@ -63,6 +63,18 @@ namespace ticari_otomasyon
 
         }
 
+        void sehirListesi()
+        {
+            SqlCommand komut = new SqlCommand("Select SEHIR From TBL_ILLER", bgl.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                Cmbil.Properties.Items.Add(dr[0]);
+            }
+            bgl.baglanti().Close();
+        }
+
+
         void temizle()
         {
             TxtAd.Text = "";
@@ -87,10 +99,23 @@ namespace ticari_otomasyon
             TxtAd.Focus();
         }
 
+        void carikodaciklamalar()
+        {
+            SqlCommand komut = new SqlCommand("Select FIRMAKOD1 from Tbl_kodlar", bgl.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                RchKod1.Text = dr[0].ToString();
+            }
+            bgl.baglanti().Close();
+        }
+
         private void Firmalar_Load(object sender, EventArgs e)
         {
             firmalistesi();
             temizle();
+            sehirListesi();
+            carikodaciklamalar();
         }
 
 
@@ -146,6 +171,18 @@ namespace ticari_otomasyon
             MessageBox.Show("Firma Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             firmalistesi();
             temizle();
+        }
+        private void Cmbil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Cmbilce.Properties.Items.Clear();
+            SqlCommand komut = new SqlCommand("Select ILCE From TBL_ILCELER Where SEHIR=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", Cmbil.SelectedIndex + 1);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                Cmbilce.Properties.Items.Add(dr[0]);
+            }
+            bgl.baglanti().Close();
         }
     }
 }
