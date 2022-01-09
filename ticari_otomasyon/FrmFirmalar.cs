@@ -93,9 +93,6 @@ namespace ticari_otomasyon
             MskTelefon3.Text = "";
             MskYetkiliTC.Text = "";
             RchAdres.Text = "";
-            RchKod1.Text = "";
-            RchKod2.Text = "";
-            RchKod3.Text = "";
             TxtAd.Focus();
         }
 
@@ -137,7 +134,7 @@ namespace ticari_otomasyon
                 MskFax.Text = dr["FAX"].ToString();
                 Cmbil.Text = dr["IL"].ToString();
                 Cmbilce.Text = dr["ILCE"].ToString();
-                TxtVergi.Text = dr["VERGIDAIRESI"].ToString();
+                TxtVergi.Text = dr["VERGIDAIRE"].ToString();
                 RchAdres.Text = dr["ADRES"].ToString();
                 TxtKod1.Text = dr["OZELKOD1"].ToString();
                 TxtKod2.Text = dr["OZELKOD2"].ToString();
@@ -193,6 +190,39 @@ namespace ticari_otomasyon
             bgl.baglanti().Close();
             firmalistesi();
             MessageBox.Show("Firma listeden silindi.", "Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Hand);
+            temizle();
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update TBL_FIRMALAR set AD=@P1,YETKILISTATU=@P2,YETKILIADSOYAD=@P3,YETKILITC=@P4,SEKTOR=@P5,TELEFON1=@P6,TELEFON2=@P7,TELEFON3=@P8,MAIL=@P9,FAX=@P10,IL=@P11,ILCE=@P12,VERGIDAIRE=@P13,ADRES=@P14,OZELKOD1=@P15,OZELKOD2=@P16,OZELKOD3=@P17 WHERE ID=@P18", bgl.baglanti());
+            komut.Parameters.AddWithValue("@P1", TxtAd.Text);
+            komut.Parameters.AddWithValue("@P2", TxtYetkiliGorev.Text);
+            komut.Parameters.AddWithValue("@P3", TxtYetkili.Text);
+            komut.Parameters.AddWithValue("@P4", MskYetkiliTC.Text);
+            komut.Parameters.AddWithValue("@P5", TxtSektor.Text);
+            komut.Parameters.AddWithValue("@P6", MskTelefon1.Text);
+            komut.Parameters.AddWithValue("@P7", MskTelefon2.Text);
+            komut.Parameters.AddWithValue("@P8", MskTelefon3.Text);
+            komut.Parameters.AddWithValue("@P9", TxtMail.Text);
+            komut.Parameters.AddWithValue("@P10", MskFax.Text);
+            komut.Parameters.AddWithValue("@P11", Cmbil.Text);
+            komut.Parameters.AddWithValue("@P12", Cmbilce.Text);
+            komut.Parameters.AddWithValue("@P13", TxtVergi.Text);
+            komut.Parameters.AddWithValue("@P14", RchAdres.Text);
+            komut.Parameters.AddWithValue("@P15", TxtKod1.Text);
+            komut.Parameters.AddWithValue("@P16", TxtKod2.Text);
+            komut.Parameters.AddWithValue("@P17", TxtKod3.Text);
+            komut.Parameters.AddWithValue("@P18", Txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Firma Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            firmalistesi();
+            temizle();
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
             temizle();
         }
     }

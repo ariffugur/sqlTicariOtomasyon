@@ -87,6 +87,7 @@
             this.TxtKod2 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
             this.TxtKod1 = new DevExpress.XtraEditors.TextEdit();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cmbilce.Properties)).BeginInit();
@@ -200,6 +201,7 @@
             this.btnGuncelle.Size = new System.Drawing.Size(153, 38);
             this.btnGuncelle.TabIndex = 21;
             this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -529,6 +531,7 @@
             // 
             // groupControl5
             // 
+            this.groupControl5.Controls.Add(this.BtnTemizle);
             this.groupControl5.Controls.Add(this.Cmbilce);
             this.groupControl5.Controls.Add(this.btnGuncelle);
             this.groupControl5.Controls.Add(this.labelControl11);
@@ -688,6 +691,18 @@
             this.TxtKod1.Size = new System.Drawing.Size(154, 20);
             this.TxtKod1.TabIndex = 24;
             // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(76, 361);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(153, 38);
+            this.BtnTemizle.TabIndex = 29;
+            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
+            // 
             // Firmalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -803,5 +818,6 @@
         private System.Windows.Forms.RichTextBox RchKod2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage6;
         private System.Windows.Forms.RichTextBox RchKod3;
+        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
     }
 }
