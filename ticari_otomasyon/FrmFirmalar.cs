@@ -184,5 +184,16 @@ namespace ticari_otomasyon
             }
             bgl.baglanti().Close();
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Delete From TBL_FIRMALAR where ID=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", Txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            firmalistesi();
+            MessageBox.Show("Firma listeden silindi.", "Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Hand);
+            temizle();
+        }
     }
 }
