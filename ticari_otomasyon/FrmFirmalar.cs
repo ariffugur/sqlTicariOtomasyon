@@ -63,10 +63,36 @@ namespace ticari_otomasyon
 
         }
 
+        void temizle()
+        {
+            TxtAd.Text = "";
+            Txtid.Text = "";
+            TxtKod1.Text = "";
+            TxtKod2.Text = "";
+            TxtKod3.Text = "";
+            TxtMail.Text = "";
+            TxtSektor.Text = "";
+            TxtVergi.Text = "";
+            TxtYetkili.Text = "";
+            TxtYetkiliGorev.Text = "";
+            MskFax.Text = "";
+            MskTelefon1.Text = "";
+            MskTelefon2.Text = "";
+            MskTelefon3.Text = "";
+            MskYetkiliTC.Text = "";
+            RchAdres.Text = "";
+            RchKod1.Text = "";
+            RchKod2.Text = "";
+            RchKod3.Text = "";
+            TxtAd.Focus();
+        }
+
         private void Firmalar_Load(object sender, EventArgs e)
         {
             firmalistesi();
+            temizle();
         }
+
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
@@ -119,6 +145,7 @@ namespace ticari_otomasyon
             bgl.baglanti().Close();
             MessageBox.Show("Firma Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             firmalistesi();
+            temizle();
         }
     }
 }
