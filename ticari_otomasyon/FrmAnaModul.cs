@@ -44,12 +44,12 @@ namespace ticari_otomasyon
         }
         
        
-        FrmFirmalar fr3;
+        Firmalar fr3;
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (fr3 == null)
             {
-                fr3 = new FrmFirmalar();
+                fr3 = new Firmalar();
                 fr3.MdiParent = this;
                 fr3.Show();
             }
