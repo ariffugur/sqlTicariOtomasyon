@@ -54,5 +54,15 @@ namespace ticari_otomasyon
                 fr3.Show();
             }
         }
+        FrmPersonel fr4;
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr4==null)
+            {
+                fr4 = new FrmPersonel();
+                fr4.MdiParent = this;
+                fr4.Show();
+            }
+        }
     }
 }

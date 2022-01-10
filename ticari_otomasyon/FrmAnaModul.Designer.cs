@@ -141,6 +141,7 @@ namespace ticari_otomasyon
             this.barButtonItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11F);
             this.barButtonItem5.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
             // 
             // barButtonItem6
             // 
