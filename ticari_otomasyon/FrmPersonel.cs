@@ -114,7 +114,14 @@ namespace ticari_otomasyon
 
         private void btnSil_Click(object sender, EventArgs e)
         {
-            
+            SqlCommand komutsil = new SqlCommand("delete from TBL_PERSONELLER where ID = @p1", bgl.baglanti());
+            komutsil.Parameters.AddWithValue("@p1", txtId.Text);
+            komutsil.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Personel Listeden Silindi", "Bilgi", MessageBoxButtons.OK,
+                MessageBoxIcon.None);
+            personelliste();
+            temizle();
         }
 
         private void BtnTemizle_Click(object sender, EventArgs e)
