@@ -111,6 +111,7 @@ namespace ticari_otomasyon
             this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
             this.BtnTemizle.TabIndex = 29;
             this.BtnTemizle.Text = "Güncelle";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // comboBoxIlce
             // 

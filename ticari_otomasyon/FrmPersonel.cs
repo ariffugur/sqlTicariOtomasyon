@@ -114,6 +114,11 @@ namespace ticari_otomasyon
 
         private void btnSil_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
             temizle();
         }
     }
