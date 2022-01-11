@@ -52,6 +52,7 @@ namespace ticari_otomasyon
             {
                 comboBoxIlce.Properties.Items.Add(dr[0]);
             }
+            bgl.baglanti().Close();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -120,6 +121,16 @@ namespace ticari_otomasyon
             bgl.baglanti().Close();
             MessageBox.Show("Müşteri bilgileri güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             listele();
+
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxIlce_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -31,9 +31,51 @@ namespace ticari_otomasyon
 
         }
 
+        void sehirListesi()
+        {
+            SqlCommand komut = new SqlCommand("Select SEHIR From TBL_ILLER", bgl.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                comboBoxIl.Properties.Items.Add(dr[0]);
+            }
+            bgl.baglanti().Close();
+        }
         private void FrmPersonel_Load(object sender, EventArgs e)
         {
             personelliste();
+            sehirListesi();
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("insert into TBL_PERSONELLER (AD,SOYAD,TELEFON,TC,MAIL,IL,ILCE,ADRES,GOREV) VALUES (@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8,@P9)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@P1", txtAd.Text);
+            komut.Parameters.AddWithValue("@P2", txtSoyad.Text);
+            komut.Parameters.AddWithValue("@P3", maskedTelefon1.Text);
+            komut.Parameters.AddWithValue("@P4", maskedTc.Text);
+            komut.Parameters.AddWithValue("@P5", txtMail.Text);
+            komut.Parameters.AddWithValue("@P6", comboBoxIl.Text);
+            komut.Parameters.AddWithValue("@P7", comboBoxIlce.Text);
+            komut.Parameters.AddWithValue("@P8", RchAdres.Text);
+            komut.Parameters.AddWithValue("@P9", txtGorev.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Personel Bilgileri Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            personelliste();
+        }
+
+        private void comboBoxIl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxIlce.Properties.Items.Clear();
+            SqlCommand komut = new SqlCommand("Select ILCE From TBL_ILCELER Where SEHIR=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", comboBoxIl.SelectedIndex + 1);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                comboBoxIlce.Properties.Items.Add(dr[0]);
+            }
+            bgl.baglanti().Close();
         }
     }
 }

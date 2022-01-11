@@ -122,6 +122,7 @@ namespace ticari_otomasyon
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxIl.Size = new System.Drawing.Size(112, 24);
             this.comboBoxIl.TabIndex = 27;
+            this.comboBoxIl.SelectedIndexChanged += new System.EventHandler(this.comboBoxIl_SelectedIndexChanged);
             // 
             // maskedTc
             // 
@@ -185,6 +186,7 @@ namespace ticari_otomasyon
             this.btnKaydet.Size = new System.Drawing.Size(112, 38);
             this.btnKaydet.TabIndex = 19;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // labelControl9
             // 

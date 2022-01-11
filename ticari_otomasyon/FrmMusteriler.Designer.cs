@@ -113,6 +113,7 @@ namespace ticari_otomasyon
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxIlce.Size = new System.Drawing.Size(112, 24);
             this.comboBoxIlce.TabIndex = 28;
+            this.comboBoxIlce.SelectedIndexChanged += new System.EventHandler(this.comboBoxIlce_SelectedIndexChanged);
             // 
             // comboBoxIl
             // 
@@ -349,6 +350,7 @@ namespace ticari_otomasyon
             this.gridControl1.TabIndex = 2;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
