@@ -128,5 +128,25 @@ namespace ticari_otomasyon
         {
             temizle();
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update tbl_personeller set AD=@P1,SOYAD=@P2,TELEFON=@P3,TC=@P4,MAIL=@P5,IL=@P6,ILCE=@P7,ADRES=@P8,GOREV=@P9 WHERE ID = @P10",
+                bgl.baglanti());
+            komut.Parameters.AddWithValue("@P1", txtAd.Text);
+            komut.Parameters.AddWithValue("@P2", txtSoyad.Text);
+            komut.Parameters.AddWithValue("@P3", maskedTelefon1.Text);
+            komut.Parameters.AddWithValue("@P4", maskedTc.Text);
+            komut.Parameters.AddWithValue("@P5", txtMail.Text);
+            komut.Parameters.AddWithValue("@P6", comboBoxIl.Text);
+            komut.Parameters.AddWithValue("@P7", comboBoxIlce.Text);
+            komut.Parameters.AddWithValue("@P8", RchAdres.Text);
+            komut.Parameters.AddWithValue("@P9", txtGorev.Text);
+            komut.Parameters.AddWithValue("@P10", txtId.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Personel Bilgileri Güncellendi","Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            personelliste();
+        }
     }
 }
