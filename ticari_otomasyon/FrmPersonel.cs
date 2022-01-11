@@ -41,10 +41,25 @@ namespace ticari_otomasyon
             }
             bgl.baglanti().Close();
         }
+
+        void temizle()
+        {
+            txtId.Text = "";
+            txtAd.Text = "";
+            txtSoyad.Text = "";
+            maskedTelefon1.Text = "";
+            maskedTc.Text = "";
+            txtMail.Text = "";
+            comboBoxIl.Text = "";
+            comboBoxIlce.Text = "";
+            RchAdres.Text = "";
+            txtGorev.Text = "";
+        } 
         private void FrmPersonel_Load(object sender, EventArgs e)
         {
             personelliste();
             sehirListesi();
+            temizle();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -76,6 +91,30 @@ namespace ticari_otomasyon
                 comboBoxIlce.Properties.Items.Add(dr[0]);
             }
             bgl.baglanti().Close();
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if (dr!=null)
+            {
+                txtId.Text = dr["ID"].ToString();
+                txtAd.Text = dr["AD"].ToString();
+                txtSoyad.Text = dr["SOYAD"].ToString();
+                maskedTelefon1.Text = dr["TELEFON"].ToString();
+                maskedTc.Text = dr["TC"].ToString();
+                txtMail.Text = dr["MAIL"].ToString();
+                comboBoxIl.Text = dr["IL"].ToString();
+                comboBoxIlce.Text = dr["ILCE"].ToString();
+                RchAdres.Text = dr["ADRES"].ToString();
+                txtGorev.Text = dr["GOREV"].ToString();
+            }
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }

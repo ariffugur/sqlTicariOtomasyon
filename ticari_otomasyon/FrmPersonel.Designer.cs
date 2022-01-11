@@ -31,6 +31,7 @@ namespace ticari_otomasyon
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPersonel));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.comboBoxIlce = new DevExpress.XtraEditors.ComboBoxEdit();
             this.comboBoxIl = new DevExpress.XtraEditors.ComboBoxEdit();
             this.maskedTc = new System.Windows.Forms.MaskedTextBox();
@@ -56,7 +57,6 @@ namespace ticari_otomasyon
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIlce.Properties)).BeginInit();
@@ -100,6 +100,17 @@ namespace ticari_otomasyon
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(244, 765);
             this.groupControl1.TabIndex = 5;
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(89, 538);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
+            this.BtnTemizle.TabIndex = 29;
+            this.BtnTemizle.Text = "Güncelle";
             // 
             // comboBoxIlce
             // 
@@ -175,6 +186,7 @@ namespace ticari_otomasyon
             this.btnSil.Size = new System.Drawing.Size(112, 38);
             this.btnSil.TabIndex = 20;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnKaydet
             // 
@@ -334,17 +346,7 @@ namespace ticari_otomasyon
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
-            // 
-            // BtnTemizle
-            // 
-            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.BtnTemizle.Appearance.Options.UseFont = true;
-            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.BtnTemizle.Location = new System.Drawing.Point(89, 538);
-            this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
-            this.BtnTemizle.TabIndex = 29;
-            this.BtnTemizle.Text = "Güncelle";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // FrmPersonel
             // 
