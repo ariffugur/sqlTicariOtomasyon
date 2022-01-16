@@ -154,6 +154,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbilce.Size = new System.Drawing.Size(153, 20);
             this.Cmbilce.TabIndex = 28;
+            this.Cmbilce.SelectedIndexChanged += new System.EventHandler(this.Cmbilce_SelectedIndexChanged);
             // 
             // Cmbil
             // 
@@ -531,7 +532,7 @@
             this.xtraTabPage2.Controls.Add(this.groupControl5);
             this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(268, 1009);
+            this.xtraTabPage2.Size = new System.Drawing.Size(305, 1006);
             this.xtraTabPage2.Text = "Adres Bilgileri";
             // 
             // groupControl5
@@ -573,7 +574,7 @@
             this.xtraTabPage3.Controls.Add(this.groupControl6);
             this.xtraTabPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.ImageOptions.Image")));
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(268, 1009);
+            this.xtraTabPage3.Size = new System.Drawing.Size(305, 1006);
             this.xtraTabPage3.Text = "Özel Kodlar";
             // 
             // groupControl7

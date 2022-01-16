@@ -35,45 +35,47 @@ namespace ticari_otomasyon
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.comboBoxIlce = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.comboBoxIl = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.maskedTelefon2 = new System.Windows.Forms.MaskedTextBox();
-            this.TxtFirma = new DevExpress.XtraEditors.LabelControl();
+            this.maskedTelefon = new System.Windows.Forms.MaskedTextBox();
+            this.CmbFirma = new DevExpress.XtraEditors.LabelControl();
             this.MskTarih = new DevExpress.XtraEditors.LabelControl();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.CmbIlce = new DevExpress.XtraEditors.LabelControl();
             this.CmbIl = new DevExpress.XtraEditors.LabelControl();
-            this.txtMail = new DevExpress.XtraEditors.TextEdit();
+            this.textSube = new DevExpress.XtraEditors.TextEdit();
             this.TxtSube = new DevExpress.XtraEditors.LabelControl();
             this.TxtIBAN = new DevExpress.XtraEditors.LabelControl();
             this.MskTelefon = new DevExpress.XtraEditors.LabelControl();
             this.txtBankaAdi = new DevExpress.XtraEditors.TextEdit();
             this.TxtBankaAd = new DevExpress.XtraEditors.LabelControl();
-            this.maskedTelefon1 = new System.Windows.Forms.MaskedTextBox();
+            this.textIBAN = new System.Windows.Forms.MaskedTextBox();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.ComboBoxIl = new DevExpress.XtraEditors.ComboBoxEdit();
             this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.maskedTarih = new System.Windows.Forms.MaskedTextBox();
+            this.textHesapTürü = new DevExpress.XtraEditors.TextEdit();
             this.TxtHesapTürü = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.TxtYetkili = new DevExpress.XtraEditors.LabelControl();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.textYetkili = new System.Windows.Forms.MaskedTextBox();
             this.TxtHesapNo = new DevExpress.XtraEditors.LabelControl();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.textHesapNo = new System.Windows.Forms.MaskedTextBox();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIlce.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxIl.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textSube.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBankaAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxIl.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textHesapTürü.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridView1
@@ -106,35 +108,24 @@ namespace ticari_otomasyon
             this.comboBoxIlce.Size = new System.Drawing.Size(112, 24);
             this.comboBoxIlce.TabIndex = 28;
             // 
-            // comboBoxIl
+            // maskedTelefon
             // 
-            this.comboBoxIl.Location = new System.Drawing.Point(89, 93);
-            this.comboBoxIl.Name = "comboBoxIl";
-            this.comboBoxIl.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.comboBoxIl.Properties.Appearance.Options.UseFont = true;
-            this.comboBoxIl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxIl.Size = new System.Drawing.Size(112, 24);
-            this.comboBoxIl.TabIndex = 27;
+            this.maskedTelefon.Location = new System.Drawing.Point(87, 265);
+            this.maskedTelefon.Mask = "(999) 000-0000";
+            this.maskedTelefon.Name = "maskedTelefon";
+            this.maskedTelefon.Size = new System.Drawing.Size(112, 21);
+            this.maskedTelefon.TabIndex = 25;
+            this.maskedTelefon.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTelefon2_MaskInputRejected);
             // 
-            // maskedTelefon2
+            // CmbFirma
             // 
-            this.maskedTelefon2.Location = new System.Drawing.Point(87, 265);
-            this.maskedTelefon2.Mask = "(999) 000-0000";
-            this.maskedTelefon2.Name = "maskedTelefon2";
-            this.maskedTelefon2.Size = new System.Drawing.Size(112, 21);
-            this.maskedTelefon2.TabIndex = 25;
-            this.maskedTelefon2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTelefon2_MaskInputRejected);
-            // 
-            // TxtFirma
-            // 
-            this.TxtFirma.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.TxtFirma.Appearance.Options.UseFont = true;
-            this.TxtFirma.Location = new System.Drawing.Point(39, 346);
-            this.TxtFirma.Name = "TxtFirma";
-            this.TxtFirma.Size = new System.Drawing.Size(41, 18);
-            this.TxtFirma.TabIndex = 24;
-            this.TxtFirma.Text = "Firma:";
+            this.CmbFirma.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.CmbFirma.Appearance.Options.UseFont = true;
+            this.CmbFirma.Location = new System.Drawing.Point(39, 346);
+            this.CmbFirma.Name = "CmbFirma";
+            this.CmbFirma.Size = new System.Drawing.Size(41, 18);
+            this.CmbFirma.TabIndex = 24;
+            this.CmbFirma.Text = "Firma:";
             // 
             // MskTarih
             // 
@@ -201,13 +192,13 @@ namespace ticari_otomasyon
             this.CmbIl.TabIndex = 15;
             this.CmbIl.Text = "İl:";
             // 
-            // txtMail
+            // textSube
             // 
-            this.txtMail.Location = new System.Drawing.Point(89, 153);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(112, 20);
-            this.txtMail.TabIndex = 14;
-            this.txtMail.EditValueChanged += new System.EventHandler(this.txtMail_EditValueChanged);
+            this.textSube.Location = new System.Drawing.Point(89, 153);
+            this.textSube.Name = "textSube";
+            this.textSube.Size = new System.Drawing.Size(112, 20);
+            this.textSube.TabIndex = 14;
+            this.textSube.EditValueChanged += new System.EventHandler(this.textSube_EditValueChanged);
             // 
             // TxtSube
             // 
@@ -256,13 +247,13 @@ namespace ticari_otomasyon
             this.TxtBankaAd.TabIndex = 3;
             this.TxtBankaAd.Text = "BankaAdı:";
             // 
-            // maskedTelefon1
+            // textIBAN
             // 
-            this.maskedTelefon1.Location = new System.Drawing.Point(87, 183);
-            this.maskedTelefon1.Name = "maskedTelefon1";
-            this.maskedTelefon1.Size = new System.Drawing.Size(112, 21);
-            this.maskedTelefon1.TabIndex = 2;
-            this.maskedTelefon1.ValidatingType = typeof(int);
+            this.textIBAN.Location = new System.Drawing.Point(87, 183);
+            this.textIBAN.Name = "textIBAN";
+            this.textIBAN.Size = new System.Drawing.Size(112, 21);
+            this.textIBAN.TabIndex = 2;
+            this.textIBAN.ValidatingType = typeof(int);
             // 
             // txtId
             // 
@@ -283,38 +274,51 @@ namespace ticari_otomasyon
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.lookUpEdit2);
+            this.groupControl1.Controls.Add(this.lookUpEdit1);
+            this.groupControl1.Controls.Add(this.ComboBoxIl);
             this.groupControl1.Controls.Add(this.BtnTemizle);
-            this.groupControl1.Controls.Add(this.maskedTextBox3);
-            this.groupControl1.Controls.Add(this.textEdit3);
+            this.groupControl1.Controls.Add(this.maskedTarih);
+            this.groupControl1.Controls.Add(this.textHesapTürü);
             this.groupControl1.Controls.Add(this.TxtHesapTürü);
-            this.groupControl1.Controls.Add(this.textEdit2);
             this.groupControl1.Controls.Add(this.TxtYetkili);
-            this.groupControl1.Controls.Add(this.maskedTextBox2);
+            this.groupControl1.Controls.Add(this.textYetkili);
             this.groupControl1.Controls.Add(this.TxtHesapNo);
-            this.groupControl1.Controls.Add(this.maskedTextBox1);
+            this.groupControl1.Controls.Add(this.textHesapNo);
             this.groupControl1.Controls.Add(this.comboBoxIlce);
-            this.groupControl1.Controls.Add(this.comboBoxIl);
-            this.groupControl1.Controls.Add(this.maskedTelefon2);
-            this.groupControl1.Controls.Add(this.TxtFirma);
+            this.groupControl1.Controls.Add(this.maskedTelefon);
+            this.groupControl1.Controls.Add(this.CmbFirma);
             this.groupControl1.Controls.Add(this.MskTarih);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnSil);
             this.groupControl1.Controls.Add(this.btnKaydet);
             this.groupControl1.Controls.Add(this.CmbIlce);
             this.groupControl1.Controls.Add(this.CmbIl);
-            this.groupControl1.Controls.Add(this.txtMail);
+            this.groupControl1.Controls.Add(this.textSube);
             this.groupControl1.Controls.Add(this.TxtSube);
             this.groupControl1.Controls.Add(this.TxtIBAN);
             this.groupControl1.Controls.Add(this.MskTelefon);
             this.groupControl1.Controls.Add(this.txtBankaAdi);
             this.groupControl1.Controls.Add(this.TxtBankaAd);
-            this.groupControl1.Controls.Add(this.maskedTelefon1);
+            this.groupControl1.Controls.Add(this.textIBAN);
             this.groupControl1.Controls.Add(this.txtId);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(1659, -2);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(247, 747);
             this.groupControl1.TabIndex = 5;
+            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            // 
+            // ComboBoxIl
+            // 
+            this.ComboBoxIl.Location = new System.Drawing.Point(89, 93);
+            this.ComboBoxIl.Name = "ComboBoxIl";
+            this.ComboBoxIl.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.ComboBoxIl.Properties.Appearance.Options.UseFont = true;
+            this.ComboBoxIl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ComboBoxIl.Size = new System.Drawing.Size(112, 24);
+            this.ComboBoxIl.TabIndex = 39;
             // 
             // BtnTemizle
             // 
@@ -327,21 +331,21 @@ namespace ticari_otomasyon
             this.BtnTemizle.TabIndex = 38;
             this.BtnTemizle.Text = "Temizle";
             // 
-            // maskedTextBox3
+            // maskedTarih
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(87, 293);
-            this.maskedTextBox3.Mask = "00/00/0000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(112, 21);
-            this.maskedTextBox3.TabIndex = 37;
-            this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
+            this.maskedTarih.Location = new System.Drawing.Point(87, 293);
+            this.maskedTarih.Mask = "00/00/0000";
+            this.maskedTarih.Name = "maskedTarih";
+            this.maskedTarih.Size = new System.Drawing.Size(112, 21);
+            this.maskedTarih.TabIndex = 37;
+            this.maskedTarih.ValidatingType = typeof(System.DateTime);
             // 
-            // textEdit3
+            // textHesapTürü
             // 
-            this.textEdit3.Location = new System.Drawing.Point(89, 318);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(112, 20);
-            this.textEdit3.TabIndex = 36;
+            this.textHesapTürü.Location = new System.Drawing.Point(89, 318);
+            this.textHesapTürü.Name = "textHesapTürü";
+            this.textHesapTürü.Size = new System.Drawing.Size(112, 20);
+            this.textHesapTürü.TabIndex = 36;
             // 
             // TxtHesapTürü
             // 
@@ -353,14 +357,6 @@ namespace ticari_otomasyon
             this.TxtHesapTürü.TabIndex = 35;
             this.TxtHesapTürü.Text = "Hesap Türü:";
             // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(87, 347);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(112, 20);
-            this.textEdit2.TabIndex = 34;
-            this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
-            // 
             // TxtYetkili
             // 
             this.TxtYetkili.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
@@ -371,13 +367,13 @@ namespace ticari_otomasyon
             this.TxtYetkili.TabIndex = 32;
             this.TxtYetkili.Text = "Yetkili:";
             // 
-            // maskedTextBox2
+            // textYetkili
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(89, 237);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(112, 21);
-            this.maskedTextBox2.TabIndex = 31;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.textYetkili.Location = new System.Drawing.Point(89, 237);
+            this.textYetkili.Name = "textYetkili";
+            this.textYetkili.Size = new System.Drawing.Size(112, 21);
+            this.textYetkili.TabIndex = 31;
+            this.textYetkili.ValidatingType = typeof(int);
             // 
             // TxtHesapNo
             // 
@@ -389,13 +385,31 @@ namespace ticari_otomasyon
             this.TxtHesapNo.TabIndex = 30;
             this.TxtHesapNo.Text = "Hesap No:";
             // 
-            // maskedTextBox1
+            // textHesapNo
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(87, 210);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(112, 21);
-            this.maskedTextBox1.TabIndex = 29;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.textHesapNo.Location = new System.Drawing.Point(87, 210);
+            this.textHesapNo.Name = "textHesapNo";
+            this.textHesapNo.Size = new System.Drawing.Size(112, 21);
+            this.textHesapNo.TabIndex = 29;
+            this.textHesapNo.ValidatingType = typeof(int);
+            // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(0, 0);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Size = new System.Drawing.Size(100, 20);
+            this.lookUpEdit1.TabIndex = 40;
+            // 
+            // lookUpEdit2
+            // 
+            this.lookUpEdit2.Location = new System.Drawing.Point(89, 347);
+            this.lookUpEdit2.Name = "lookUpEdit2";
+            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit2.Size = new System.Drawing.Size(112, 20);
+            this.lookUpEdit2.TabIndex = 41;
             // 
             // FrmBankalar
             // 
@@ -410,56 +424,58 @@ namespace ticari_otomasyon
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIlce.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxIl.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textSube.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBankaAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxIl.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textHesapTürü.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
-        private void txtMail_EditValueChanged(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
+        private void textSube_EditValueChanged(object sender, EventArgs e)
+        {
+            
+        }
         #endregion
 
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxIlce;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxIl;
-        private System.Windows.Forms.MaskedTextBox maskedTelefon2;
-        private DevExpress.XtraEditors.LabelControl TxtFirma;
+        private System.Windows.Forms.MaskedTextBox maskedTelefon;
+        private DevExpress.XtraEditors.LabelControl CmbFirma;
         private DevExpress.XtraEditors.LabelControl MskTarih;
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.SimpleButton btnSil;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.LabelControl CmbIlce;
         private DevExpress.XtraEditors.LabelControl CmbIl;
-        private DevExpress.XtraEditors.TextEdit txtMail;
+        private DevExpress.XtraEditors.TextEdit textSube;
         private DevExpress.XtraEditors.LabelControl TxtSube;
         private DevExpress.XtraEditors.LabelControl TxtIBAN;
         private DevExpress.XtraEditors.LabelControl MskTelefon;
         private DevExpress.XtraEditors.TextEdit txtBankaAdi;
         private DevExpress.XtraEditors.LabelControl TxtBankaAd;
-        private System.Windows.Forms.MaskedTextBox maskedTelefon1;
+        private System.Windows.Forms.MaskedTextBox textIBAN;
         private DevExpress.XtraEditors.TextEdit txtId;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl TxtHesapNo;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private System.Windows.Forms.MaskedTextBox textHesapNo;
+        private DevExpress.XtraEditors.TextEdit textHesapTürü;
         private DevExpress.XtraEditors.LabelControl TxtHesapTürü;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.LabelControl TxtYetkili;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox textYetkili;
+        private System.Windows.Forms.MaskedTextBox maskedTarih;
         private DevExpress.XtraEditors.SimpleButton BtnTemizle;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxIl;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
     }
 }

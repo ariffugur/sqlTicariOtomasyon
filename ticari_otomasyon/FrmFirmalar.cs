@@ -225,5 +225,10 @@ namespace ticari_otomasyon
         {
             temizle();
         }
+
+        private void Cmbilce_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
