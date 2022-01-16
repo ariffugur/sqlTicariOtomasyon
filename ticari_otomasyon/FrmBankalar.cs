@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ticari_otomasyon
 {
@@ -17,24 +18,19 @@ namespace ticari_otomasyon
             InitializeComponent();
         }
 
-        private void labelControl3_Click(object sender, EventArgs e)
+
+        sqlBaglantisi bgl = new sqlBaglantisi();
+
+        void listele()
         {
-
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From TBL_BANKALAR", bgl.baglanti());
+            da.Fill(dt);
+            gridControl1.DataSource = dt;
         }
-
-        private void txtMail_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTc_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
         private void FrmBankalar_Load(object sender, EventArgs e)
         {
-
+            listele();
         }
     }
 }

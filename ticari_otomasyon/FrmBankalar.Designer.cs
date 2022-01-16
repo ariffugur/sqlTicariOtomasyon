@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace ticari_otomasyon
 {
     partial class FrmBankalar
@@ -35,37 +37,38 @@ namespace ticari_otomasyon
             this.comboBoxIlce = new DevExpress.XtraEditors.ComboBoxEdit();
             this.comboBoxIl = new DevExpress.XtraEditors.ComboBoxEdit();
             this.maskedTelefon2 = new System.Windows.Forms.MaskedTextBox();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtFirma = new DevExpress.XtraEditors.LabelControl();
+            this.MskTarih = new DevExpress.XtraEditors.LabelControl();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.CmbIlce = new DevExpress.XtraEditors.LabelControl();
+            this.CmbIl = new DevExpress.XtraEditors.LabelControl();
             this.txtMail = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtAd = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtSube = new DevExpress.XtraEditors.LabelControl();
+            this.TxtIBAN = new DevExpress.XtraEditors.LabelControl();
+            this.MskTelefon = new DevExpress.XtraEditors.LabelControl();
+            this.txtBankaAdi = new DevExpress.XtraEditors.TextEdit();
+            this.TxtBankaAd = new DevExpress.XtraEditors.LabelControl();
             this.maskedTelefon1 = new System.Windows.Forms.MaskedTextBox();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtHesapTürü = new DevExpress.XtraEditors.LabelControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtYetkili = new DevExpress.XtraEditors.LabelControl();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtHesapNo = new DevExpress.XtraEditors.LabelControl();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIlce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankaAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -122,32 +125,32 @@ namespace ticari_otomasyon
             this.maskedTelefon2.Size = new System.Drawing.Size(112, 21);
             this.maskedTelefon2.TabIndex = 25;
             // 
-            // labelControl11
+            // TxtFirma
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(39, 346);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(41, 18);
-            this.labelControl11.TabIndex = 24;
-            this.labelControl11.Text = "Firma:";
+            this.TxtFirma.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.TxtFirma.Appearance.Options.UseFont = true;
+            this.TxtFirma.Location = new System.Drawing.Point(39, 346);
+            this.TxtFirma.Name = "TxtFirma";
+            this.TxtFirma.Size = new System.Drawing.Size(41, 18);
+            this.TxtFirma.TabIndex = 24;
+            this.TxtFirma.Text = "Firma:";
             // 
-            // labelControl10
+            // MskTarih
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(49, 292);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(38, 18);
-            this.labelControl10.TabIndex = 23;
-            this.labelControl10.Text = "Tarih:";
+            this.MskTarih.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.MskTarih.Appearance.Options.UseFont = true;
+            this.MskTarih.Location = new System.Drawing.Point(49, 292);
+            this.MskTarih.Name = "MskTarih";
+            this.MskTarih.Size = new System.Drawing.Size(38, 18);
+            this.MskTarih.TabIndex = 23;
+            this.MskTarih.Text = "Tarih:";
             // 
             // btnGuncelle
             // 
             this.btnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnGuncelle.Appearance.Options.UseFont = true;
             this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
-            this.btnGuncelle.Location = new System.Drawing.Point(89, 521);
+            this.btnGuncelle.Location = new System.Drawing.Point(87, 475);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(112, 38);
             this.btnGuncelle.TabIndex = 21;
@@ -158,7 +161,7 @@ namespace ticari_otomasyon
             this.btnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnSil.Appearance.Options.UseFont = true;
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(89, 477);
+            this.btnSil.Location = new System.Drawing.Point(87, 431);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(112, 38);
             this.btnSil.TabIndex = 20;
@@ -169,31 +172,31 @@ namespace ticari_otomasyon
             this.btnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnKaydet.Appearance.Options.UseFont = true;
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
-            this.btnKaydet.Location = new System.Drawing.Point(89, 433);
+            this.btnKaydet.Location = new System.Drawing.Point(87, 387);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(112, 38);
             this.btnKaydet.TabIndex = 19;
             this.btnKaydet.Text = "Kaydet";
             // 
-            // labelControl9
+            // CmbIlce
             // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(56, 123);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(28, 18);
-            this.labelControl9.TabIndex = 18;
-            this.labelControl9.Text = "İlçe:";
+            this.CmbIlce.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.CmbIlce.Appearance.Options.UseFont = true;
+            this.CmbIlce.Location = new System.Drawing.Point(56, 123);
+            this.CmbIlce.Name = "CmbIlce";
+            this.CmbIlce.Size = new System.Drawing.Size(28, 18);
+            this.CmbIlce.TabIndex = 18;
+            this.CmbIlce.Text = "İlçe:";
             // 
-            // labelControl6
+            // CmbIl
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(70, 99);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(13, 18);
-            this.labelControl6.TabIndex = 15;
-            this.labelControl6.Text = "İl:";
+            this.CmbIl.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.CmbIl.Appearance.Options.UseFont = true;
+            this.CmbIl.Location = new System.Drawing.Point(70, 99);
+            this.CmbIl.Name = "CmbIl";
+            this.CmbIl.Size = new System.Drawing.Size(13, 18);
+            this.CmbIl.TabIndex = 15;
+            this.CmbIl.Text = "İl:";
             // 
             // txtMail
             // 
@@ -203,52 +206,52 @@ namespace ticari_otomasyon
             this.txtMail.TabIndex = 14;
             this.txtMail.EditValueChanged += new System.EventHandler(this.txtMail_EditValueChanged);
             // 
-            // labelControl8
+            // TxtSube
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(46, 155);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(42, 18);
-            this.labelControl8.TabIndex = 13;
-            this.labelControl8.Text = "Sube: ";
+            this.TxtSube.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.TxtSube.Appearance.Options.UseFont = true;
+            this.TxtSube.Location = new System.Drawing.Point(46, 155);
+            this.TxtSube.Name = "TxtSube";
+            this.TxtSube.Size = new System.Drawing.Size(42, 18);
+            this.TxtSube.TabIndex = 13;
+            this.TxtSube.Text = "Sube: ";
             // 
-            // labelControl7
+            // TxtIBAN
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(46, 186);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(39, 18);
-            this.labelControl7.TabIndex = 11;
-            this.labelControl7.Text = "IBAN:";
+            this.TxtIBAN.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.TxtIBAN.Appearance.Options.UseFont = true;
+            this.TxtIBAN.Location = new System.Drawing.Point(46, 186);
+            this.TxtIBAN.Name = "TxtIBAN";
+            this.TxtIBAN.Size = new System.Drawing.Size(39, 18);
+            this.TxtIBAN.TabIndex = 11;
+            this.TxtIBAN.Text = "IBAN:";
             // 
-            // labelControl5
+            // MskTelefon
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(27, 268);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(54, 18);
-            this.labelControl5.TabIndex = 9;
-            this.labelControl5.Text = "Telefon:";
+            this.MskTelefon.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.MskTelefon.Appearance.Options.UseFont = true;
+            this.MskTelefon.Location = new System.Drawing.Point(27, 268);
+            this.MskTelefon.Name = "MskTelefon";
+            this.MskTelefon.Size = new System.Drawing.Size(54, 18);
+            this.MskTelefon.TabIndex = 9;
+            this.MskTelefon.Text = "Telefon:";
             // 
-            // txtAd
+            // txtBankaAdi
             // 
-            this.txtAd.Location = new System.Drawing.Point(89, 67);
-            this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(112, 20);
-            this.txtAd.TabIndex = 4;
+            this.txtBankaAdi.Location = new System.Drawing.Point(89, 67);
+            this.txtBankaAdi.Name = "txtBankaAdi";
+            this.txtBankaAdi.Size = new System.Drawing.Size(112, 20);
+            this.txtBankaAdi.TabIndex = 4;
             // 
-            // labelControl2
+            // TxtBankaAd
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(19, 66);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(64, 18);
-            this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "BankaAdı:";
+            this.TxtBankaAd.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.TxtBankaAd.Appearance.Options.UseFont = true;
+            this.TxtBankaAd.Location = new System.Drawing.Point(19, 66);
+            this.TxtBankaAd.Name = "TxtBankaAd";
+            this.TxtBankaAd.Size = new System.Drawing.Size(64, 18);
+            this.TxtBankaAd.TabIndex = 3;
+            this.TxtBankaAd.Text = "BankaAdı:";
             // 
             // maskedTelefon1
             // 
@@ -277,30 +280,31 @@ namespace ticari_otomasyon
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.BtnTemizle);
             this.groupControl1.Controls.Add(this.maskedTextBox3);
             this.groupControl1.Controls.Add(this.textEdit3);
-            this.groupControl1.Controls.Add(this.labelControl14);
+            this.groupControl1.Controls.Add(this.TxtHesapTürü);
             this.groupControl1.Controls.Add(this.textEdit2);
-            this.groupControl1.Controls.Add(this.labelControl13);
+            this.groupControl1.Controls.Add(this.TxtYetkili);
             this.groupControl1.Controls.Add(this.maskedTextBox2);
-            this.groupControl1.Controls.Add(this.labelControl12);
+            this.groupControl1.Controls.Add(this.TxtHesapNo);
             this.groupControl1.Controls.Add(this.maskedTextBox1);
             this.groupControl1.Controls.Add(this.comboBoxIlce);
             this.groupControl1.Controls.Add(this.comboBoxIl);
             this.groupControl1.Controls.Add(this.maskedTelefon2);
-            this.groupControl1.Controls.Add(this.labelControl11);
-            this.groupControl1.Controls.Add(this.labelControl10);
+            this.groupControl1.Controls.Add(this.TxtFirma);
+            this.groupControl1.Controls.Add(this.MskTarih);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnSil);
             this.groupControl1.Controls.Add(this.btnKaydet);
-            this.groupControl1.Controls.Add(this.labelControl9);
-            this.groupControl1.Controls.Add(this.labelControl6);
+            this.groupControl1.Controls.Add(this.CmbIlce);
+            this.groupControl1.Controls.Add(this.CmbIl);
             this.groupControl1.Controls.Add(this.txtMail);
-            this.groupControl1.Controls.Add(this.labelControl8);
-            this.groupControl1.Controls.Add(this.labelControl7);
-            this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.txtAd);
-            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.TxtSube);
+            this.groupControl1.Controls.Add(this.TxtIBAN);
+            this.groupControl1.Controls.Add(this.MskTelefon);
+            this.groupControl1.Controls.Add(this.txtBankaAdi);
+            this.groupControl1.Controls.Add(this.TxtBankaAd);
             this.groupControl1.Controls.Add(this.maskedTelefon1);
             this.groupControl1.Controls.Add(this.txtId);
             this.groupControl1.Controls.Add(this.labelControl1);
@@ -325,15 +329,15 @@ namespace ticari_otomasyon
             this.textEdit3.Size = new System.Drawing.Size(112, 20);
             this.textEdit3.TabIndex = 36;
             // 
-            // labelControl14
+            // TxtHesapTürü
             // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(2, 320);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(82, 18);
-            this.labelControl14.TabIndex = 35;
-            this.labelControl14.Text = "Hesap Türü:";
+            this.TxtHesapTürü.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.TxtHesapTürü.Appearance.Options.UseFont = true;
+            this.TxtHesapTürü.Location = new System.Drawing.Point(2, 320);
+            this.TxtHesapTürü.Name = "TxtHesapTürü";
+            this.TxtHesapTürü.Size = new System.Drawing.Size(82, 18);
+            this.TxtHesapTürü.TabIndex = 35;
+            this.TxtHesapTürü.Text = "Hesap Türü:";
             // 
             // textEdit2
             // 
@@ -342,15 +346,15 @@ namespace ticari_otomasyon
             this.textEdit2.Size = new System.Drawing.Size(112, 20);
             this.textEdit2.TabIndex = 34;
             // 
-            // labelControl13
+            // TxtYetkili
             // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(42, 240);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(41, 18);
-            this.labelControl13.TabIndex = 32;
-            this.labelControl13.Text = "Yetkili:";
+            this.TxtYetkili.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.TxtYetkili.Appearance.Options.UseFont = true;
+            this.TxtYetkili.Location = new System.Drawing.Point(42, 240);
+            this.TxtYetkili.Name = "TxtYetkili";
+            this.TxtYetkili.Size = new System.Drawing.Size(41, 18);
+            this.TxtYetkili.TabIndex = 32;
+            this.TxtYetkili.Text = "Yetkili:";
             // 
             // maskedTextBox2
             // 
@@ -360,15 +364,15 @@ namespace ticari_otomasyon
             this.maskedTextBox2.TabIndex = 31;
             this.maskedTextBox2.ValidatingType = typeof(int);
             // 
-            // labelControl12
+            // TxtHesapNo
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(15, 209);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(69, 18);
-            this.labelControl12.TabIndex = 30;
-            this.labelControl12.Text = "Hesap No:";
+            this.TxtHesapNo.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.TxtHesapNo.Appearance.Options.UseFont = true;
+            this.TxtHesapNo.Location = new System.Drawing.Point(15, 209);
+            this.TxtHesapNo.Name = "TxtHesapNo";
+            this.TxtHesapNo.Size = new System.Drawing.Size(69, 18);
+            this.TxtHesapNo.TabIndex = 30;
+            this.TxtHesapNo.Text = "Hesap No:";
             // 
             // maskedTextBox1
             // 
@@ -377,6 +381,17 @@ namespace ticari_otomasyon
             this.maskedTextBox1.Size = new System.Drawing.Size(112, 21);
             this.maskedTextBox1.TabIndex = 29;
             this.maskedTextBox1.ValidatingType = typeof(int);
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(87, 519);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
+            this.BtnTemizle.TabIndex = 38;
+            this.BtnTemizle.Text = "Temizle";
             // 
             // FrmBankalar
             // 
@@ -393,7 +408,7 @@ namespace ticari_otomasyon
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIlce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankaAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
@@ -404,6 +419,11 @@ namespace ticari_otomasyon
 
         }
 
+        private void txtMail_EditValueChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
@@ -411,30 +431,31 @@ namespace ticari_otomasyon
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxIlce;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxIl;
         private System.Windows.Forms.MaskedTextBox maskedTelefon2;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.LabelControl TxtFirma;
+        private DevExpress.XtraEditors.LabelControl MskTarih;
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.SimpleButton btnSil;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl CmbIlce;
+        private DevExpress.XtraEditors.LabelControl CmbIl;
         private DevExpress.XtraEditors.TextEdit txtMail;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit txtAd;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl TxtSube;
+        private DevExpress.XtraEditors.LabelControl TxtIBAN;
+        private DevExpress.XtraEditors.LabelControl MskTelefon;
+        private DevExpress.XtraEditors.TextEdit txtBankaAdi;
+        private DevExpress.XtraEditors.LabelControl TxtBankaAd;
         private System.Windows.Forms.MaskedTextBox maskedTelefon1;
         private DevExpress.XtraEditors.TextEdit txtId;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.LabelControl TxtHesapNo;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.LabelControl TxtHesapTürü;
         private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.LabelControl TxtYetkili;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
     }
 }
