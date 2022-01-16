@@ -350,6 +350,7 @@ namespace ticari_otomasyon
             this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
             this.BtnTemizle.TabIndex = 38;
             this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // maskedTarih
             // 

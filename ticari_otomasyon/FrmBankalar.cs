@@ -49,11 +49,28 @@ namespace ticari_otomasyon
             }
             bgl.baglanti().Close();
         }
+
+        void temizle()
+        {
+            txtId.Text = "";
+            txtBankaAdi.Text = "";
+            ComboBoxIl.Text = "";
+            comboBoxIlce.Text = "";
+            textSube.Text = "";
+            textIBAN.Text = "";
+            textHesapNo.Text = "";
+            textYetkili.Text = "";
+            maskedTelefon.Text = "";
+            maskedTarih.Text = "";
+            textHesapTürü.Text = "";
+
+        }
         private void FrmBankalar_Load(object sender, EventArgs e)
         {
             listele();
             sehirListesi();
             firmalistesi();
+            temizle();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -91,7 +108,13 @@ namespace ticari_otomasyon
 
         private void btnSil_Click(object sender, EventArgs e)
         {
-
+            SqlCommand komut = new SqlCommand("Delete From TBL_BANKALAR where ID=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", txtId.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            temizle();
+            MessageBox.Show("Banka bilgisi sistemden silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            listele();
         }
 
         private void comboBoxIl_SelectedIndexChanged(object sender, EventArgs e)
@@ -129,6 +152,11 @@ namespace ticari_otomasyon
                 maskedTarih.Text = dr["TARIH"].ToString();
                 textHesapTürü.Text = dr["HESAPTURU"].ToString();
             }
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }
