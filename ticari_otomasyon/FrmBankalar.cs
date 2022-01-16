@@ -158,5 +158,28 @@ namespace ticari_otomasyon
         {
             temizle();
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+
+            SqlCommand komut = new SqlCommand("update TBL_BANKALAR set BANKAADI=@P1,IL=@P2,ILCE=@P3,SUBE=@P4,IBAN=@P5,HESAPNO=@P6,YETKILI=@P7,TELEFON=@P8,TARIH=@P9,HESAPTURU=@P10,FIRMAID=@P11 where ID=@p12", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", txtBankaAdi.Text);
+            komut.Parameters.AddWithValue("@p2", ComboBoxIl.Text);
+            komut.Parameters.AddWithValue("@p3", comboBoxIlce.Text);
+            komut.Parameters.AddWithValue("@p4", textSube.Text);
+            komut.Parameters.AddWithValue("@p5", textIBAN.Text);
+            komut.Parameters.AddWithValue("@p6", textHesapNo.Text);
+            komut.Parameters.AddWithValue("@p7", textYetkili.Text);
+            komut.Parameters.AddWithValue("@p8", maskedTelefon.Text);
+            komut.Parameters.AddWithValue("@p9", maskedTarih.Text);
+            komut.Parameters.AddWithValue("@p10", textHesapTürü.Text);
+            komut.Parameters.AddWithValue("@p11", lookUpEdit2.Text);
+            komut.Parameters.AddWithValue("@p12", txtId.Text);
+            komut.ExecuteNonQuery();
+            listele();
+            bgl.baglanti().Close();
+            MessageBox.Show("Banka bilgisi güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+         
+        }
     }
 }

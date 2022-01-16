@@ -148,6 +148,7 @@ namespace ticari_otomasyon
             this.btnGuncelle.Size = new System.Drawing.Size(112, 38);
             this.btnGuncelle.TabIndex = 21;
             this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -316,7 +317,7 @@ namespace ticari_otomasyon
             this.lookUpEdit2.Name = "lookUpEdit2";
             this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit2.Properties.NullText = "Bir Firma Seçiniz";
+            this.lookUpEdit2.Properties.NullText = "Firma seçiniz";
             this.lookUpEdit2.Size = new System.Drawing.Size(112, 20);
             this.lookUpEdit2.TabIndex = 41;
             // 
