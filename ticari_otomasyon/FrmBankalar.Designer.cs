@@ -54,6 +54,7 @@ namespace ticari_otomasyon
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.TxtHesapTürü = new DevExpress.XtraEditors.LabelControl();
@@ -62,7 +63,6 @@ namespace ticari_otomasyon
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.TxtHesapNo = new DevExpress.XtraEditors.LabelControl();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIlce.Properties)).BeginInit();
@@ -124,6 +124,7 @@ namespace ticari_otomasyon
             this.maskedTelefon2.Name = "maskedTelefon2";
             this.maskedTelefon2.Size = new System.Drawing.Size(112, 21);
             this.maskedTelefon2.TabIndex = 25;
+            this.maskedTelefon2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTelefon2_MaskInputRejected);
             // 
             // TxtFirma
             // 
@@ -166,6 +167,7 @@ namespace ticari_otomasyon
             this.btnSil.Size = new System.Drawing.Size(112, 38);
             this.btnSil.TabIndex = 20;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnKaydet
             // 
@@ -177,6 +179,7 @@ namespace ticari_otomasyon
             this.btnKaydet.Size = new System.Drawing.Size(112, 38);
             this.btnKaydet.TabIndex = 19;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // CmbIlce
             // 
@@ -313,6 +316,17 @@ namespace ticari_otomasyon
             this.groupControl1.Size = new System.Drawing.Size(247, 747);
             this.groupControl1.TabIndex = 5;
             // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(87, 519);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
+            this.BtnTemizle.TabIndex = 38;
+            this.BtnTemizle.Text = "Temizle";
+            // 
             // maskedTextBox3
             // 
             this.maskedTextBox3.Location = new System.Drawing.Point(87, 293);
@@ -345,6 +359,7 @@ namespace ticari_otomasyon
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Size = new System.Drawing.Size(112, 20);
             this.textEdit2.TabIndex = 34;
+            this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
             // 
             // TxtYetkili
             // 
@@ -381,17 +396,6 @@ namespace ticari_otomasyon
             this.maskedTextBox1.Size = new System.Drawing.Size(112, 21);
             this.maskedTextBox1.TabIndex = 29;
             this.maskedTextBox1.ValidatingType = typeof(int);
-            // 
-            // BtnTemizle
-            // 
-            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.BtnTemizle.Appearance.Options.UseFont = true;
-            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
-            this.BtnTemizle.Location = new System.Drawing.Point(87, 519);
-            this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
-            this.BtnTemizle.TabIndex = 38;
-            this.BtnTemizle.Text = "Temizle";
             // 
             // FrmBankalar
             // 
