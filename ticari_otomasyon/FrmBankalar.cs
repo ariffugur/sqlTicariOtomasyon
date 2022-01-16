@@ -23,7 +23,7 @@ namespace ticari_otomasyon
 
         void firmalistesi()
         {
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_FIRMALAR",
+            SqlDataAdapter da = new SqlDataAdapter("Select ID,AD From Tbl_FIRMALAR",
                 bgl.baglanti());
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -71,7 +71,7 @@ namespace ticari_otomasyon
             komut.Parameters.AddWithValue("@p8", maskedTelefon.Text);
             komut.Parameters.AddWithValue("@p9", maskedTarih.Text);
             komut.Parameters.AddWithValue("@p10", textHesapTürü.Text);
-            komut.Parameters.AddWithValue("@p11", lookUpEdit2.Text);
+            komut.Parameters.AddWithValue("@p11", lookUpEdit2.EditValue);
             komut.ExecuteNonQuery();
             listele();
             bgl.baglanti().Close();

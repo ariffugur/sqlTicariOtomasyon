@@ -53,6 +53,8 @@ namespace ticari_otomasyon
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.ComboBoxIl = new DevExpress.XtraEditors.ComboBoxEdit();
             this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.maskedTarih = new System.Windows.Forms.MaskedTextBox();
@@ -62,8 +64,6 @@ namespace ticari_otomasyon
             this.textYetkili = new System.Windows.Forms.MaskedTextBox();
             this.TxtHesapNo = new DevExpress.XtraEditors.LabelControl();
             this.textHesapNo = new System.Windows.Forms.MaskedTextBox();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIlce.Properties)).BeginInit();
@@ -72,10 +72,10 @@ namespace ticari_otomasyon
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxIl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textHesapTürü.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridView1
@@ -309,6 +309,25 @@ namespace ticari_otomasyon
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
+            // lookUpEdit2
+            // 
+            this.lookUpEdit2.Location = new System.Drawing.Point(89, 347);
+            this.lookUpEdit2.Name = "lookUpEdit2";
+            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit2.Properties.NullText = "Bir Firma Seçiniz";
+            this.lookUpEdit2.Size = new System.Drawing.Size(112, 20);
+            this.lookUpEdit2.TabIndex = 41;
+            // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(0, 0);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Size = new System.Drawing.Size(100, 20);
+            this.lookUpEdit1.TabIndex = 40;
+            // 
             // ComboBoxIl
             // 
             this.ComboBoxIl.Location = new System.Drawing.Point(89, 93);
@@ -393,24 +412,6 @@ namespace ticari_otomasyon
             this.textHesapNo.TabIndex = 29;
             this.textHesapNo.ValidatingType = typeof(int);
             // 
-            // lookUpEdit1
-            // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(0, 0);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Size = new System.Drawing.Size(100, 20);
-            this.lookUpEdit1.TabIndex = 40;
-            // 
-            // lookUpEdit2
-            // 
-            this.lookUpEdit2.Location = new System.Drawing.Point(89, 347);
-            this.lookUpEdit2.Name = "lookUpEdit2";
-            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit2.Size = new System.Drawing.Size(112, 20);
-            this.lookUpEdit2.TabIndex = 41;
-            // 
             // FrmBankalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,10 +431,10 @@ namespace ticari_otomasyon
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxIl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textHesapTürü.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
