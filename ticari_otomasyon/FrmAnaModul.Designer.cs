@@ -183,6 +183,7 @@ namespace ticari_otomasyon
             this.barButtonItem9.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11F);
             this.barButtonItem9.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
             // barButtonItem10
             // 
@@ -254,6 +255,7 @@ namespace ticari_otomasyon
             this.Name = "FrmAnaModul";
             this.Text = "Tahoma; 11pt";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmAnaModul_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
