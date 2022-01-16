@@ -111,5 +111,24 @@ namespace ticari_otomasyon
         {
 
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                txtId.Text = dr["ID"].ToString();
+                txtBankaAdi.Text = dr["BANKAADI"].ToString();
+                ComboBoxIl.Text = dr["IL"].ToString();
+                comboBoxIlce.Text = dr["ILCE"].ToString();
+                textSube.Text = dr["SUBE"].ToString();
+                textIBAN.Text = dr["IBAN"].ToString();
+                textHesapNo.Text = dr["HESAPNO"].ToString();
+                textYetkili.Text = dr["YETKILI"].ToString();
+                maskedTelefon.Text = dr["TELEFON"].ToString();
+                maskedTarih.Text = dr["TARIH"].ToString();
+                textHesapTürü.Text = dr["HESAPTURU"].ToString();
+            }
+        }
     }
 }
