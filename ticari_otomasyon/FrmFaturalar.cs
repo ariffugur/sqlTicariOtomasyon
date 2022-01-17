@@ -30,5 +30,24 @@ namespace ticari_otomasyon
         {
             listele();
         }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            if(TxtFaturaId.Text == "")
+            {
+                SqlCommand komut = new SqlCommand("insert into TBL_FATURABILGI(SERI,SIRANO,TARIH,SAAT,VERGIDAIRE,ALICI,TESLIMEDEN,TESLIMALAN) VALUES (@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8)", bgl.baglanti());
+                komut.Parameters.AddWithValue("@P1", TxtSeri.Text);
+                komut.Parameters.AddWithValue("@P2", TxtSiraNo.Text);
+                komut.Parameters.AddWithValue("@P3", MskTarih.Text);
+                komut.Parameters.AddWithValue("@P4", MskSaat.Text);
+                komut.Parameters.AddWithValue("@P5", TxtVergiDairesi.Text);
+                komut.Parameters.AddWithValue("@P6", TxtAlici.Text);
+                komut.Parameters.AddWithValue("@P7", TxtTeslimEden.Text);
+                komut.Parameters.AddWithValue("@P8", TxtTeslimAlan.Text);
+                komut.ExecuteNonQuery();
+                MessageBox.Show("Fatura Bilgisi Sisteme Kaydedildi","Bilgi", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                listele();
+            }
+        }
     }
 }

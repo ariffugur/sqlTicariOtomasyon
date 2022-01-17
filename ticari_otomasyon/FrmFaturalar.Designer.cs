@@ -472,6 +472,7 @@
             this.btnKaydet.Size = new System.Drawing.Size(112, 38);
             this.btnKaydet.TabIndex = 19;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // labelControl10
             // 
