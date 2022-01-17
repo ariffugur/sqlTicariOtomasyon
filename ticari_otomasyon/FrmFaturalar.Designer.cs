@@ -62,16 +62,16 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.TxtUrunId = new DevExpress.XtraEditors.TextEdit();
-            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
-            this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
+            this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -124,6 +124,9 @@
             // 
             // groupControl4
             // 
+            this.groupControl4.Controls.Add(this.BtnTemizle);
+            this.groupControl4.Controls.Add(this.btnGuncelle);
+            this.groupControl4.Controls.Add(this.btnSil);
             this.groupControl4.Controls.Add(this.TxtTeslimAlan);
             this.groupControl4.Controls.Add(this.TxtTeslimEden);
             this.groupControl4.Controls.Add(this.labelControl19);
@@ -342,10 +345,7 @@
             this.groupControl5.Controls.Add(this.labelControl2);
             this.groupControl5.Controls.Add(this.labelControl1);
             this.groupControl5.Controls.Add(this.TxtUrunId);
-            this.groupControl5.Controls.Add(this.BtnTemizle);
-            this.groupControl5.Controls.Add(this.btnGuncelle);
             this.groupControl5.Controls.Add(this.labelControl11);
-            this.groupControl5.Controls.Add(this.btnSil);
             this.groupControl5.Controls.Add(this.btnKaydet);
             this.groupControl5.Controls.Add(this.labelControl10);
             this.groupControl5.Controls.Add(this.labelControl6);
@@ -419,29 +419,6 @@
             this.TxtUrunId.Size = new System.Drawing.Size(112, 20);
             this.TxtUrunId.TabIndex = 31;
             // 
-            // BtnTemizle
-            // 
-            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.BtnTemizle.Appearance.Options.UseFont = true;
-            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
-            this.BtnTemizle.Location = new System.Drawing.Point(109, 321);
-            this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
-            this.BtnTemizle.TabIndex = 29;
-            this.BtnTemizle.Text = "Temizle";
-            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
-            // 
-            // btnGuncelle
-            // 
-            this.btnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnGuncelle.Appearance.Options.UseFont = true;
-            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
-            this.btnGuncelle.Location = new System.Drawing.Point(110, 277);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(112, 38);
-            this.btnGuncelle.TabIndex = 21;
-            this.btnGuncelle.Text = "Güncelle";
-            // 
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
@@ -451,18 +428,6 @@
             this.labelControl11.Size = new System.Drawing.Size(36, 18);
             this.labelControl11.TabIndex = 24;
             this.labelControl11.Text = "Fiyat:";
-            // 
-            // btnSil
-            // 
-            this.btnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnSil.Appearance.Options.UseFont = true;
-            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(110, 233);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(112, 38);
-            this.btnSil.TabIndex = 20;
-            this.btnSil.Text = "Sil";
-            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnKaydet
             // 
@@ -525,6 +490,41 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(94, 202);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
+            this.BtnTemizle.TabIndex = 40;
+            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click_1);
+            // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.btnGuncelle.Appearance.Options.UseFont = true;
+            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
+            this.btnGuncelle.Location = new System.Drawing.Point(95, 158);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(112, 38);
+            this.btnGuncelle.TabIndex = 39;
+            this.btnGuncelle.Text = "Güncelle";
+            // 
+            // btnSil
+            // 
+            this.btnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.btnSil.Appearance.Options.UseFont = true;
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
+            this.btnSil.Location = new System.Drawing.Point(95, 114);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(112, 38);
+            this.btnSil.TabIndex = 38;
+            this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click_1);
             // 
             // FrmFaturalar
             // 
@@ -606,15 +606,15 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit TxtUrunId;
-        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
-        private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.SimpleButton btnSil;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
+        private DevExpress.XtraEditors.SimpleButton btnGuncelle;
+        private DevExpress.XtraEditors.SimpleButton btnSil;
     }
 }

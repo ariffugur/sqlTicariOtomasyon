@@ -104,12 +104,18 @@ namespace ticari_otomasyon
             }
         }
 
-        private void btnSil_Click(object sender, EventArgs e)
+
+        private void btnSil_Click_1(object sender, EventArgs e)
         {
-           
+            SqlCommand komut = new SqlCommand("Delete From tbl_FATURABILGI where FATURABILGIID=@P1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", Txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Fatura Silindi", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            listele();
         }
 
-        private void BtnTemizle_Click(object sender, EventArgs e)
+        private void BtnTemizle_Click_1(object sender, EventArgs e)
         {
             temizle();
         }
