@@ -200,8 +200,8 @@ namespace ticari_otomasyon
             // 
             this.BtnFaturalar.Caption = "Faturalar";
             this.BtnFaturalar.Id = 12;
-            this.BtnFaturalar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.BtnFaturalar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
+            this.BtnFaturalar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnFaturalar.ImageOptions.Image")));
+            this.BtnFaturalar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnFaturalar.ImageOptions.LargeImage")));
             this.BtnFaturalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11F);
             this.BtnFaturalar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnFaturalar.Name = "BtnFaturalar";
@@ -222,7 +222,7 @@ namespace ticari_otomasyon
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
+            this.ribbonPage1.Text = "Ticari Otomasyon";
             // 
             // ribbonPageGroup1
             // 
@@ -240,7 +240,6 @@ namespace ticari_otomasyon
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnFaturalar);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // xtraTabbedMdiManager1
             // 

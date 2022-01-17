@@ -26,9 +26,25 @@ namespace ticari_otomasyon
             da.Fill(dt);
             gridControl1.DataSource = dt;
         }
+
+        void temizle()
+        {
+            TxtAlici.Text = "";
+            Txtid.Text = "";
+            TxtSeri.Text = "";
+            TxtSiraNo.Text = "";
+            TxtTeslimAlan.Text = "";
+            TxtTeslimEden.Text = "";
+            TxtVergiDairesi.Text = "";
+            MskSaat.Text = "";
+            MskTarih.Text = "";
+        }
+
+
         private void FrmFaturalar_Load(object sender, EventArgs e)
         {
             listele();
+            temizle();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -48,6 +64,34 @@ namespace ticari_otomasyon
                 MessageBox.Show("Fatura Bilgisi Sisteme Kaydedildi","Bilgi", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 listele();
             }
+        }
+
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                Txtid.Text = dr["FATURABILGIID"].ToString();
+                TxtSiraNo.Text = dr["SIRANO"].ToString();
+                TxtSeri.Text = dr["SERI"].ToString();
+                MskTarih.Text = dr["TARIH"].ToString();
+                MskSaat.Text = dr["SAAT"].ToString();
+                TxtAlici.Text = dr["ALICI"].ToString();
+                TxtTeslimEden.Text = dr["TESLIMEDEN"].ToString();
+                TxtTeslimAlan.Text = dr["TESLIMALAN"].ToString();
+                TxtVergiDairesi.Text = dr["VERGIDAIRE"].ToString();
+            }
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }
