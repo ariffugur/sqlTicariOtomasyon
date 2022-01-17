@@ -119,5 +119,23 @@ namespace ticari_otomasyon
         {
             temizle();
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("update TBL_FATURABILGI set SERI=@P1,SIRANO=@P2,TARIH=@P3,SAAT=@P4,VERGIDAIRE=@P5,ALICI=@P6,TESLIMEDEN=@P7,TESLIMALAN=@P8 WHERE FATURABILGIID=@P9", bgl.baglanti());
+
+            komut.Parameters.AddWithValue("@P1", TxtSeri.Text);
+            komut.Parameters.AddWithValue("@P2", TxtSiraNo.Text);
+            komut.Parameters.AddWithValue("@P3", MskTarih.Text);
+            komut.Parameters.AddWithValue("@P4", MskSaat.Text);
+            komut.Parameters.AddWithValue("@P5", TxtVergiDairesi.Text);
+            komut.Parameters.AddWithValue("@P6", TxtAlici.Text);
+            komut.Parameters.AddWithValue("@P7", TxtTeslimEden.Text);
+            komut.Parameters.AddWithValue("@P8", TxtTeslimAlan.Text);
+            komut.Parameters.AddWithValue("@P9", Txtid.Text);
+            komut.ExecuteNonQuery();
+            MessageBox.Show("Fatura Bilgisi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            listele();
+        }
     }
 }
