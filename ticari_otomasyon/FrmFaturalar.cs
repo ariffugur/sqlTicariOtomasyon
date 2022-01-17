@@ -64,7 +64,27 @@ namespace ticari_otomasyon
                 MessageBox.Show("Fatura Bilgisi Sisteme Kaydedildi","Bilgi", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 listele();
             }
+
+            if (TxtFaturaId.Text != "")
+            {
+                double miktar, tutar, fiyat;
+                fiyat = Convert.ToDouble(TxtFiyat.Text);
+                miktar = Convert.ToDouble(TxtMiktar.Text);
+                tutar = miktar * fiyat;
+                TxtTutar.Text = tutar.ToString();
+
+                SqlCommand komut2 = new SqlCommand("insert into TBL_FATURADETAY (URUNAD,MIKTAR,FIYAT,TUTAR,FATURAID) VALUES (@P1,@P2,@P3,@P4,@P5)", bgl.baglanti());
+                komut2.Parameters.AddWithValue("@p1", TxtUrunAdi.Text);
+                komut2.Parameters.AddWithValue("@p2", TxtMiktar.Text);
+                komut2.Parameters.AddWithValue("@p3", TxtFiyat.Text);
+                komut2.Parameters.AddWithValue("@p4", TxtTutar.Text);
+                komut2.Parameters.AddWithValue("@p5", TxtFaturaId.Text);
+                komut2.ExecuteNonQuery();
+                MessageBox.Show("Faturaya Ait Ürün Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
         }
+
 
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
