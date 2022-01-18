@@ -37,7 +37,7 @@
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.RchDetay = new System.Windows.Forms.RichTextBox();
             this.TxtBaslik = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.Detay = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -120,6 +120,7 @@
             this.btnKaydet.Size = new System.Drawing.Size(155, 38);
             this.btnKaydet.TabIndex = 19;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // RchDetay
             // 
@@ -136,15 +137,15 @@
             this.TxtBaslik.Size = new System.Drawing.Size(155, 20);
             this.TxtBaslik.TabIndex = 14;
             // 
-            // labelControl8
+            // Detay
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(25, 201);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(44, 18);
-            this.labelControl8.TabIndex = 13;
-            this.labelControl8.Text = "Detay:";
+            this.Detay.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.Detay.Appearance.Options.UseFont = true;
+            this.Detay.Location = new System.Drawing.Point(25, 201);
+            this.Detay.Name = "Detay";
+            this.Detay.Size = new System.Drawing.Size(44, 18);
+            this.Detay.TabIndex = 13;
+            this.Detay.Text = "Detay:";
             // 
             // labelControl7
             // 
@@ -245,7 +246,7 @@
             this.groupControl1.Controls.Add(this.btnKaydet);
             this.groupControl1.Controls.Add(this.RchDetay);
             this.groupControl1.Controls.Add(this.TxtBaslik);
-            this.groupControl1.Controls.Add(this.labelControl8);
+            this.groupControl1.Controls.Add(this.Detay);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.labelControl4);
@@ -305,7 +306,7 @@
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private System.Windows.Forms.RichTextBox RchDetay;
         private DevExpress.XtraEditors.TextEdit TxtBaslik;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl Detay;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
