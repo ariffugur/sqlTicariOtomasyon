@@ -32,6 +32,9 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
+            this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             this.TxtTeslimAlan = new DevExpress.XtraEditors.TextEdit();
             this.TxtTeslimEden = new DevExpress.XtraEditors.TextEdit();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
@@ -69,9 +72,6 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
-            this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -140,19 +140,55 @@
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "groupControl4";
             // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(94, 202);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
+            this.BtnTemizle.TabIndex = 40;
+            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click_1);
+            // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.btnGuncelle.Appearance.Options.UseFont = true;
+            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
+            this.btnGuncelle.Location = new System.Drawing.Point(95, 158);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(112, 38);
+            this.btnGuncelle.TabIndex = 39;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
+            // 
+            // btnSil
+            // 
+            this.btnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.btnSil.Appearance.Options.UseFont = true;
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
+            this.btnSil.Location = new System.Drawing.Point(95, 114);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(112, 38);
+            this.btnSil.TabIndex = 38;
+            this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click_1);
+            // 
             // TxtTeslimAlan
             // 
             this.TxtTeslimAlan.Location = new System.Drawing.Point(95, 67);
             this.TxtTeslimAlan.Name = "TxtTeslimAlan";
             this.TxtTeslimAlan.Size = new System.Drawing.Size(112, 20);
-            this.TxtTeslimAlan.TabIndex = 37;
+            this.TxtTeslimAlan.TabIndex = 9;
             // 
             // TxtTeslimEden
             // 
             this.TxtTeslimEden.Location = new System.Drawing.Point(95, 41);
             this.TxtTeslimEden.Name = "TxtTeslimEden";
             this.TxtTeslimEden.Size = new System.Drawing.Size(112, 20);
-            this.TxtTeslimEden.TabIndex = 36;
+            this.TxtTeslimEden.TabIndex = 8;
             // 
             // labelControl19
             // 
@@ -179,7 +215,7 @@
             this.TxtAlici.Location = new System.Drawing.Point(95, 14);
             this.TxtAlici.Name = "TxtAlici";
             this.TxtAlici.Size = new System.Drawing.Size(112, 20);
-            this.TxtAlici.TabIndex = 34;
+            this.TxtAlici.TabIndex = 7;
             // 
             // labelControl18
             // 
@@ -211,7 +247,7 @@
             this.TxtVergiDairesi.Location = new System.Drawing.Point(95, 74);
             this.TxtVergiDairesi.Name = "TxtVergiDairesi";
             this.TxtVergiDairesi.Size = new System.Drawing.Size(112, 20);
-            this.TxtVergiDairesi.TabIndex = 36;
+            this.TxtVergiDairesi.TabIndex = 6;
             // 
             // MskSaat
             // 
@@ -219,7 +255,7 @@
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
             this.MskSaat.Size = new System.Drawing.Size(112, 21);
-            this.MskSaat.TabIndex = 36;
+            this.MskSaat.TabIndex = 5;
             this.MskSaat.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl16
@@ -238,7 +274,7 @@
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(112, 21);
-            this.MskTarih.TabIndex = 26;
+            this.MskTarih.TabIndex = 4;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl15
@@ -281,7 +317,7 @@
             this.TxtSiraNo.Location = new System.Drawing.Point(95, 69);
             this.TxtSiraNo.Name = "TxtSiraNo";
             this.TxtSiraNo.Size = new System.Drawing.Size(112, 20);
-            this.TxtSiraNo.TabIndex = 30;
+            this.TxtSiraNo.TabIndex = 2;
             // 
             // labelControl14
             // 
@@ -298,14 +334,14 @@
             this.TxtSeri.Location = new System.Drawing.Point(95, 42);
             this.TxtSeri.Name = "TxtSeri";
             this.TxtSeri.Size = new System.Drawing.Size(112, 20);
-            this.TxtSeri.TabIndex = 32;
+            this.TxtSeri.TabIndex = 1;
             // 
             // Txtid
             // 
             this.Txtid.Location = new System.Drawing.Point(95, 16);
             this.Txtid.Name = "Txtid";
             this.Txtid.Size = new System.Drawing.Size(112, 20);
-            this.Txtid.TabIndex = 30;
+            this.Txtid.TabIndex = 3;
             // 
             // labelControl12
             // 
@@ -362,35 +398,35 @@
             this.TxtFaturaId.Location = new System.Drawing.Point(110, 151);
             this.TxtFaturaId.Name = "TxtFaturaId";
             this.TxtFaturaId.Size = new System.Drawing.Size(112, 20);
-            this.TxtFaturaId.TabIndex = 38;
+            this.TxtFaturaId.TabIndex = 15;
             // 
             // TxtTutar
             // 
             this.TxtTutar.Location = new System.Drawing.Point(110, 125);
             this.TxtTutar.Name = "TxtTutar";
             this.TxtTutar.Size = new System.Drawing.Size(112, 20);
-            this.TxtTutar.TabIndex = 37;
+            this.TxtTutar.TabIndex = 14;
             // 
             // TxtFiyat
             // 
             this.TxtFiyat.Location = new System.Drawing.Point(110, 99);
             this.TxtFiyat.Name = "TxtFiyat";
             this.TxtFiyat.Size = new System.Drawing.Size(112, 20);
-            this.TxtFiyat.TabIndex = 36;
+            this.TxtFiyat.TabIndex = 13;
             // 
             // TxtMiktar
             // 
             this.TxtMiktar.Location = new System.Drawing.Point(110, 76);
             this.TxtMiktar.Name = "TxtMiktar";
             this.TxtMiktar.Size = new System.Drawing.Size(112, 20);
-            this.TxtMiktar.TabIndex = 35;
+            this.TxtMiktar.TabIndex = 12;
             // 
             // TxtUrunAdi
             // 
             this.TxtUrunAdi.Location = new System.Drawing.Point(110, 50);
             this.TxtUrunAdi.Name = "TxtUrunAdi";
             this.TxtUrunAdi.Size = new System.Drawing.Size(112, 20);
-            this.TxtUrunAdi.TabIndex = 34;
+            this.TxtUrunAdi.TabIndex = 11;
             // 
             // labelControl2
             // 
@@ -417,7 +453,7 @@
             this.TxtUrunId.Location = new System.Drawing.Point(110, 24);
             this.TxtUrunId.Name = "TxtUrunId";
             this.TxtUrunId.Size = new System.Drawing.Size(112, 20);
-            this.TxtUrunId.TabIndex = 31;
+            this.TxtUrunId.TabIndex = 10;
             // 
             // labelControl11
             // 
@@ -491,42 +527,6 @@
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
-            // 
-            // BtnTemizle
-            // 
-            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.BtnTemizle.Appearance.Options.UseFont = true;
-            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
-            this.BtnTemizle.Location = new System.Drawing.Point(94, 202);
-            this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
-            this.BtnTemizle.TabIndex = 40;
-            this.BtnTemizle.Text = "Temizle";
-            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click_1);
-            // 
-            // btnGuncelle
-            // 
-            this.btnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnGuncelle.Appearance.Options.UseFont = true;
-            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
-            this.btnGuncelle.Location = new System.Drawing.Point(95, 158);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(112, 38);
-            this.btnGuncelle.TabIndex = 39;
-            this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
-            // 
-            // btnSil
-            // 
-            this.btnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnSil.Appearance.Options.UseFont = true;
-            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(95, 114);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(112, 38);
-            this.btnSil.TabIndex = 38;
-            this.btnSil.Text = "Sil";
-            this.btnSil.Click += new System.EventHandler(this.btnSil_Click_1);
             // 
             // FrmFaturalar
             // 
