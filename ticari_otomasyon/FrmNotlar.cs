@@ -89,5 +89,21 @@ namespace ticari_otomasyon
             MessageBox.Show("Not Sistemden Silindi", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             listele();
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("update TBL_NOTLAR SET TARIH=@P1,SAAT=@P2,BASLIK=@P3,DETAY=@P4,OLUSTURAN=@P5,HITAP=@P6 WHERE ID=@P7", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", MskTarih.Text);
+            komut.Parameters.AddWithValue("@p2", MskSaat.Text);
+            komut.Parameters.AddWithValue("@p3", TxtBaslik.Text);
+            komut.Parameters.AddWithValue("@p4", RchDetay.Text);
+            komut.Parameters.AddWithValue("@p5", TxtOlusturan.Text);
+            komut.Parameters.AddWithValue("@p6", TxtHitap.Text);
+            komut.Parameters.AddWithValue("@p7", txtId.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Not Bilgisi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            listele();
+        }
     }
 }
