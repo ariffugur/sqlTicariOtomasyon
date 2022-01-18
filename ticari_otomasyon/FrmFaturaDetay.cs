@@ -32,5 +32,17 @@ namespace ticari_otomasyon
         {
             listele();
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmFaturaUrunDuzenleme fr = new FrmFaturaUrunDuzenleme();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                fr.urunid = dr["FATURAURUNID"].ToString();
+            }
+            fr.Show();
+            //this.Hide();
+        }
     }
 }
