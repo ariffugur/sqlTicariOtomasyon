@@ -137,5 +137,18 @@ namespace ticari_otomasyon
             MessageBox.Show("Fatura Bilgisi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             listele();
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmFaturaDetay fr = new FrmFaturaDetay();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if(dr != null)
+            {
+                fr.id = dr["FATURABILGIID"].ToString();
+
+            }
+            fr.Show();
+        }
     }
 }
