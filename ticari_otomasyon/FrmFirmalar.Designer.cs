@@ -141,7 +141,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 5);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1626, 1033);
+            this.gridControl1.Size = new System.Drawing.Size(1556, 1033);
             this.gridControl1.TabIndex = 4;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -153,8 +153,8 @@
             this.Cmbilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbilce.Size = new System.Drawing.Size(153, 20);
-            this.Cmbilce.TabIndex = 28;
-            this.Cmbilce.SelectedIndexChanged += new System.EventHandler(this.Cmbilce_SelectedIndexChanged);
+            this.Cmbilce.TabIndex = 12;
+            
             // 
             // Cmbil
             // 
@@ -163,15 +163,15 @@
             this.Cmbil.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbil.Size = new System.Drawing.Size(153, 20);
-            this.Cmbil.TabIndex = 27;
+            this.Cmbil.TabIndex = 1;
             // 
             // MskYetkiliTC
             // 
             this.MskYetkiliTC.Location = new System.Drawing.Point(95, 70);
             this.MskYetkiliTC.Mask = "00000000000";
             this.MskYetkiliTC.Name = "MskYetkiliTC";
-            this.MskYetkiliTC.Size = new System.Drawing.Size(112, 21);
-            this.MskYetkiliTC.TabIndex = 26;
+            this.MskYetkiliTC.Size = new System.Drawing.Size(182, 21);
+            this.MskYetkiliTC.TabIndex = 5;
             this.MskYetkiliTC.ValidatingType = typeof(int);
             // 
             // labelControl11
@@ -203,7 +203,7 @@
             this.btnGuncelle.Location = new System.Drawing.Point(77, 317);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(153, 38);
-            this.btnGuncelle.TabIndex = 21;
+            this.btnGuncelle.TabIndex = 17;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
@@ -215,7 +215,7 @@
             this.btnSil.Location = new System.Drawing.Point(77, 273);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(153, 38);
-            this.btnSil.TabIndex = 20;
+            this.btnSil.TabIndex = 16;
             this.btnSil.Text = "Sil";
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
@@ -227,7 +227,7 @@
             this.btnKaydet.Location = new System.Drawing.Point(77, 229);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(153, 38);
-            this.btnKaydet.TabIndex = 19;
+            this.btnKaydet.TabIndex = 15;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
@@ -247,7 +247,7 @@
             this.RchAdres.Location = new System.Drawing.Point(76, 112);
             this.RchAdres.Name = "RchAdres";
             this.RchAdres.Size = new System.Drawing.Size(154, 96);
-            this.RchAdres.TabIndex = 17;
+            this.RchAdres.TabIndex = 14;
             this.RchAdres.Text = "";
             // 
             // TxtVergi
@@ -257,7 +257,7 @@
             this.TxtVergi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.TxtVergi.Properties.Appearance.Options.UseFont = true;
             this.TxtVergi.Size = new System.Drawing.Size(154, 24);
-            this.TxtVergi.TabIndex = 16;
+            this.TxtVergi.TabIndex = 13;
             // 
             // labelControl6
             // 
@@ -272,16 +272,16 @@
             // 
             // TxtMail
             // 
-            this.TxtMail.Location = new System.Drawing.Point(95, 118);
+            this.TxtMail.Location = new System.Drawing.Point(95, 129);
             this.TxtMail.Name = "TxtMail";
-            this.TxtMail.Size = new System.Drawing.Size(112, 20);
-            this.TxtMail.TabIndex = 14;
+            this.TxtMail.Size = new System.Drawing.Size(182, 20);
+            this.TxtMail.TabIndex = 10;
             // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(62, 117);
+            this.labelControl8.Location = new System.Drawing.Point(62, 128);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(29, 18);
             this.labelControl8.TabIndex = 13;
@@ -299,10 +299,10 @@
             // 
             // xtraTabControl1
             // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(1595, 5);
+            this.xtraTabControl1.Location = new System.Drawing.Point(1558, 5);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(307, 1034);
+            this.xtraTabControl1.Size = new System.Drawing.Size(344, 1034);
             this.xtraTabControl1.TabIndex = 6;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -316,7 +316,7 @@
             this.xtraTabPage1.Controls.Add(this.groupControl2);
             this.xtraTabPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage1.ImageOptions.Image")));
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(305, 1006);
+            this.xtraTabPage1.Size = new System.Drawing.Size(342, 990);
             this.xtraTabPage1.Text = "Firma Bilgileri";
             // 
             // groupControl4
@@ -334,23 +334,23 @@
             this.groupControl4.Location = new System.Drawing.Point(3, 245);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.ShowCaption = false;
-            this.groupControl4.Size = new System.Drawing.Size(262, 278);
+            this.groupControl4.Size = new System.Drawing.Size(330, 172);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "groupControl4";
             // 
             // MskFax
             // 
-            this.MskFax.Location = new System.Drawing.Point(95, 91);
+            this.MskFax.Location = new System.Drawing.Point(95, 102);
             this.MskFax.Mask = "(999) 000-0000";
             this.MskFax.Name = "MskFax";
-            this.MskFax.Size = new System.Drawing.Size(112, 21);
-            this.MskFax.TabIndex = 36;
+            this.MskFax.Size = new System.Drawing.Size(182, 21);
+            this.MskFax.TabIndex = 9;
             // 
             // labelControl19
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Location = new System.Drawing.Point(24, 64);
+            this.labelControl19.Location = new System.Drawing.Point(24, 75);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(67, 18);
             this.labelControl19.TabIndex = 35;
@@ -361,7 +361,7 @@
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.labelControl20.Appearance.Options.UseFont = true;
-            this.labelControl20.Location = new System.Drawing.Point(62, 91);
+            this.labelControl20.Location = new System.Drawing.Point(62, 102);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(29, 18);
             this.labelControl20.TabIndex = 34;
@@ -369,33 +369,33 @@
             // 
             // MskTelefon3
             // 
-            this.MskTelefon3.Location = new System.Drawing.Point(95, 64);
+            this.MskTelefon3.Location = new System.Drawing.Point(95, 75);
             this.MskTelefon3.Mask = "(999) 000-0000";
             this.MskTelefon3.Name = "MskTelefon3";
-            this.MskTelefon3.Size = new System.Drawing.Size(112, 21);
-            this.MskTelefon3.TabIndex = 33;
+            this.MskTelefon3.Size = new System.Drawing.Size(182, 21);
+            this.MskTelefon3.TabIndex = 8;
             // 
             // MskTelefon2
             // 
-            this.MskTelefon2.Location = new System.Drawing.Point(95, 37);
+            this.MskTelefon2.Location = new System.Drawing.Point(95, 48);
             this.MskTelefon2.Mask = "(999) 000-0000";
             this.MskTelefon2.Name = "MskTelefon2";
-            this.MskTelefon2.Size = new System.Drawing.Size(112, 21);
-            this.MskTelefon2.TabIndex = 32;
+            this.MskTelefon2.Size = new System.Drawing.Size(182, 21);
+            this.MskTelefon2.TabIndex = 7;
             // 
             // MskTelefon1
             // 
-            this.MskTelefon1.Location = new System.Drawing.Point(95, 10);
+            this.MskTelefon1.Location = new System.Drawing.Point(95, 21);
             this.MskTelefon1.Mask = "(999) 000-0000";
             this.MskTelefon1.Name = "MskTelefon1";
-            this.MskTelefon1.Size = new System.Drawing.Size(112, 21);
-            this.MskTelefon1.TabIndex = 29;
+            this.MskTelefon1.Size = new System.Drawing.Size(182, 21);
+            this.MskTelefon1.TabIndex = 6;
             // 
             // labelControl17
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Location = new System.Drawing.Point(35, 13);
+            this.labelControl17.Location = new System.Drawing.Point(35, 24);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(54, 18);
             this.labelControl17.TabIndex = 31;
@@ -405,7 +405,7 @@
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.labelControl18.Appearance.Options.UseFont = true;
-            this.labelControl18.Location = new System.Drawing.Point(28, 40);
+            this.labelControl18.Location = new System.Drawing.Point(28, 51);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(62, 18);
             this.labelControl18.TabIndex = 30;
@@ -422,7 +422,7 @@
             this.groupControl3.Location = new System.Drawing.Point(3, 122);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.ShowCaption = false;
-            this.groupControl3.Size = new System.Drawing.Size(262, 117);
+            this.groupControl3.Size = new System.Drawing.Size(330, 117);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "groupControl3";
             // 
@@ -430,8 +430,8 @@
             // 
             this.TxtYetkiliGorev.Location = new System.Drawing.Point(95, 44);
             this.TxtYetkiliGorev.Name = "TxtYetkiliGorev";
-            this.TxtYetkiliGorev.Size = new System.Drawing.Size(112, 20);
-            this.TxtYetkiliGorev.TabIndex = 36;
+            this.TxtYetkiliGorev.Size = new System.Drawing.Size(182, 20);
+            this.TxtYetkiliGorev.TabIndex = 4;
             // 
             // labelControl16
             // 
@@ -447,8 +447,8 @@
             // 
             this.TxtYetkili.Location = new System.Drawing.Point(95, 18);
             this.TxtYetkili.Name = "TxtYetkili";
-            this.TxtYetkili.Size = new System.Drawing.Size(112, 20);
-            this.TxtYetkili.TabIndex = 34;
+            this.TxtYetkili.Size = new System.Drawing.Size(182, 20);
+            this.TxtYetkili.TabIndex = 3;
             // 
             // labelControl15
             // 
@@ -471,7 +471,7 @@
             this.groupControl2.Location = new System.Drawing.Point(3, 3);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.ShowCaption = false;
-            this.groupControl2.Size = new System.Drawing.Size(262, 113);
+            this.groupControl2.Size = new System.Drawing.Size(330, 113);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "groupControl2";
             // 
@@ -479,8 +479,8 @@
             // 
             this.TxtSektor.Location = new System.Drawing.Point(95, 69);
             this.TxtSektor.Name = "TxtSektor";
-            this.TxtSektor.Size = new System.Drawing.Size(112, 20);
-            this.TxtSektor.TabIndex = 30;
+            this.TxtSektor.Size = new System.Drawing.Size(182, 20);
+            this.TxtSektor.TabIndex = 2;
             // 
             // labelControl14
             // 
@@ -497,15 +497,15 @@
             // 
             this.TxtAd.Location = new System.Drawing.Point(95, 42);
             this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(112, 20);
-            this.TxtAd.TabIndex = 32;
+            this.TxtAd.Size = new System.Drawing.Size(182, 20);
+            this.TxtAd.TabIndex = 1;
             // 
             // Txtid
             // 
             this.Txtid.Location = new System.Drawing.Point(95, 16);
             this.Txtid.Name = "Txtid";
-            this.Txtid.Size = new System.Drawing.Size(112, 20);
-            this.Txtid.TabIndex = 30;
+            this.Txtid.Size = new System.Drawing.Size(182, 20);
+            this.Txtid.TabIndex = 50;
             // 
             // labelControl12
             // 
@@ -532,7 +532,7 @@
             this.xtraTabPage2.Controls.Add(this.groupControl5);
             this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(305, 1006);
+            this.xtraTabPage2.Size = new System.Drawing.Size(342, 990);
             this.xtraTabPage2.Text = "Adres Bilgileri";
             // 
             // groupControl5
@@ -564,7 +564,7 @@
             this.BtnTemizle.Location = new System.Drawing.Point(76, 361);
             this.BtnTemizle.Name = "BtnTemizle";
             this.BtnTemizle.Size = new System.Drawing.Size(153, 38);
-            this.BtnTemizle.TabIndex = 29;
+            this.BtnTemizle.TabIndex = 18;
             this.BtnTemizle.Text = "Temizle";
             this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
@@ -574,7 +574,7 @@
             this.xtraTabPage3.Controls.Add(this.groupControl6);
             this.xtraTabPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.ImageOptions.Image")));
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(305, 1006);
+            this.xtraTabPage3.Size = new System.Drawing.Size(342, 990);
             this.xtraTabPage3.Text = "Özel Kodlar";
             // 
             // groupControl7
@@ -610,7 +610,7 @@
             this.RchKod1.Location = new System.Drawing.Point(-1, 0);
             this.RchKod1.Name = "RchKod1";
             this.RchKod1.Size = new System.Drawing.Size(250, 318);
-            this.RchKod1.TabIndex = 1;
+            this.RchKod1.TabIndex = 22;
             this.RchKod1.Text = "";
             // 
             // xtraTabPage5
@@ -625,7 +625,7 @@
             this.RchKod2.Location = new System.Drawing.Point(-1, 0);
             this.RchKod2.Name = "RchKod2";
             this.RchKod2.Size = new System.Drawing.Size(250, 319);
-            this.RchKod2.TabIndex = 0;
+            this.RchKod2.TabIndex = 23;
             this.RchKod2.Text = "";
             // 
             // xtraTabPage6
@@ -640,7 +640,7 @@
             this.RchKod3.Location = new System.Drawing.Point(-1, 0);
             this.RchKod3.Name = "RchKod3";
             this.RchKod3.Size = new System.Drawing.Size(250, 318);
-            this.RchKod3.TabIndex = 1;
+            this.RchKod3.TabIndex = 24;
             this.RchKod3.Text = "";
             // 
             // groupControl6
@@ -673,7 +673,7 @@
             this.TxtKod3.Location = new System.Drawing.Point(81, 96);
             this.TxtKod3.Name = "TxtKod3";
             this.TxtKod3.Size = new System.Drawing.Size(154, 20);
-            this.TxtKod3.TabIndex = 28;
+            this.TxtKod3.TabIndex = 21;
             // 
             // labelControl22
             // 
@@ -691,7 +691,7 @@
             this.TxtKod2.Location = new System.Drawing.Point(81, 58);
             this.TxtKod2.Name = "TxtKod2";
             this.TxtKod2.Size = new System.Drawing.Size(154, 20);
-            this.TxtKod2.TabIndex = 26;
+            this.TxtKod2.TabIndex = 20;
             // 
             // labelControl21
             // 
@@ -708,7 +708,7 @@
             this.TxtKod1.Location = new System.Drawing.Point(81, 20);
             this.TxtKod1.Name = "TxtKod1";
             this.TxtKod1.Size = new System.Drawing.Size(154, 20);
-            this.TxtKod1.TabIndex = 24;
+            this.TxtKod1.TabIndex = 19;
             // 
             // Firmalar
             // 

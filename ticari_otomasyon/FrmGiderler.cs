@@ -88,7 +88,7 @@ namespace ticari_otomasyon
         private void btnSil_Click(object sender, EventArgs e)
         {
             SqlCommand komutSil = new SqlCommand("Delete from TBL_GIDERLER where ID=@p1", bgl.baglanti());
-            komutSil.Parameters.Add("@p1", txtId.Text);
+            komutSil.Parameters.AddWithValue("@p1", txtId.Text);
             komutSil.ExecuteNonQuery();
             bgl.baglanti().Close();
             giderlistesi();
