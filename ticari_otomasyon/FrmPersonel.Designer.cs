@@ -117,23 +117,23 @@ namespace ticari_otomasyon
             // 
             this.comboBoxIlce.Location = new System.Drawing.Point(89, 231);
             this.comboBoxIlce.Name = "comboBoxIlce";
-            this.comboBoxIlce.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.comboBoxIlce.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBoxIlce.Properties.Appearance.Options.UseFont = true;
             this.comboBoxIlce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxIlce.Size = new System.Drawing.Size(112, 24);
-            this.comboBoxIlce.TabIndex = 28;
+            this.comboBoxIlce.Size = new System.Drawing.Size(112, 20);
+            this.comboBoxIlce.TabIndex = 7;
             // 
             // comboBoxIl
             // 
             this.comboBoxIl.Location = new System.Drawing.Point(89, 201);
             this.comboBoxIl.Name = "comboBoxIl";
-            this.comboBoxIl.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.comboBoxIl.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBoxIl.Properties.Appearance.Options.UseFont = true;
             this.comboBoxIl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxIl.Size = new System.Drawing.Size(112, 24);
-            this.comboBoxIl.TabIndex = 27;
+            this.comboBoxIl.Size = new System.Drawing.Size(112, 20);
+            this.comboBoxIl.TabIndex = 6;
             this.comboBoxIl.SelectedIndexChanged += new System.EventHandler(this.comboBoxIl_SelectedIndexChanged);
             // 
             // maskedTc
@@ -142,7 +142,7 @@ namespace ticari_otomasyon
             this.maskedTc.Mask = "00000000000";
             this.maskedTc.Name = "maskedTc";
             this.maskedTc.Size = new System.Drawing.Size(112, 21);
-            this.maskedTc.TabIndex = 26;
+            this.maskedTc.TabIndex = 4;
             this.maskedTc.ValidatingType = typeof(int);
             // 
             // labelControl11
@@ -217,7 +217,7 @@ namespace ticari_otomasyon
             this.RchAdres.Location = new System.Drawing.Point(89, 287);
             this.RchAdres.Name = "RchAdres";
             this.RchAdres.Size = new System.Drawing.Size(112, 96);
-            this.RchAdres.TabIndex = 17;
+            this.RchAdres.TabIndex = 9;
             this.RchAdres.Text = "";
             // 
             // txtGorev
@@ -225,7 +225,7 @@ namespace ticari_otomasyon
             this.txtGorev.Location = new System.Drawing.Point(89, 261);
             this.txtGorev.Name = "txtGorev";
             this.txtGorev.Size = new System.Drawing.Size(112, 20);
-            this.txtGorev.TabIndex = 16;
+            this.txtGorev.TabIndex = 8;
             // 
             // labelControl6
             // 
@@ -242,7 +242,7 @@ namespace ticari_otomasyon
             this.txtMail.Location = new System.Drawing.Point(89, 175);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(112, 20);
-            this.txtMail.TabIndex = 14;
+            this.txtMail.TabIndex = 5;
             // 
             // labelControl8
             // 
@@ -279,7 +279,7 @@ namespace ticari_otomasyon
             this.txtSoyad.Location = new System.Drawing.Point(89, 93);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(112, 20);
-            this.txtSoyad.TabIndex = 6;
+            this.txtSoyad.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -296,7 +296,7 @@ namespace ticari_otomasyon
             this.txtAd.Location = new System.Drawing.Point(89, 67);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(112, 20);
-            this.txtAd.TabIndex = 4;
+            this.txtAd.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -314,14 +314,14 @@ namespace ticari_otomasyon
             this.maskedTelefon1.Mask = "(999) 000-0000";
             this.maskedTelefon1.Name = "maskedTelefon1";
             this.maskedTelefon1.Size = new System.Drawing.Size(112, 21);
-            this.maskedTelefon1.TabIndex = 2;
+            this.maskedTelefon1.TabIndex = 3;
             // 
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(89, 41);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(112, 20);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 100;
             // 
             // labelControl1
             // 

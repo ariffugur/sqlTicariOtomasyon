@@ -154,7 +154,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbilce.Size = new System.Drawing.Size(153, 20);
             this.Cmbilce.TabIndex = 12;
-            
             // 
             // Cmbil
             // 
@@ -254,9 +253,9 @@
             // 
             this.TxtVergi.Location = new System.Drawing.Point(76, 76);
             this.TxtVergi.Name = "TxtVergi";
-            this.TxtVergi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.TxtVergi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtVergi.Properties.Appearance.Options.UseFont = true;
-            this.TxtVergi.Size = new System.Drawing.Size(154, 24);
+            this.TxtVergi.Size = new System.Drawing.Size(154, 20);
             this.TxtVergi.TabIndex = 13;
             // 
             // labelControl6
