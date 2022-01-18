@@ -34,6 +34,7 @@ namespace ticari_otomasyon
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -90,6 +91,7 @@ namespace ticari_otomasyon
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.BtnTemizle);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnSil);
             this.groupControl1.Controls.Add(this.btnKaydet);
@@ -115,6 +117,18 @@ namespace ticari_otomasyon
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(244, 1062);
             this.groupControl1.TabIndex = 1;
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(85, 490);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(112, 38);
+            this.BtnTemizle.TabIndex = 22;
+            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // btnGuncelle
             // 
@@ -167,7 +181,7 @@ namespace ticari_otomasyon
             this.RchDetay.Location = new System.Drawing.Point(85, 256);
             this.RchDetay.Name = "RchDetay";
             this.RchDetay.Size = new System.Drawing.Size(112, 96);
-            this.RchDetay.TabIndex = 17;
+            this.RchDetay.TabIndex = 8;
             this.RchDetay.Text = "";
             // 
             // txtSatis
@@ -175,7 +189,7 @@ namespace ticari_otomasyon
             this.txtSatis.Location = new System.Drawing.Point(85, 230);
             this.txtSatis.Name = "txtSatis";
             this.txtSatis.Size = new System.Drawing.Size(112, 20);
-            this.txtSatis.TabIndex = 16;
+            this.txtSatis.TabIndex = 7;
             // 
             // labelControl6
             // 
@@ -192,7 +206,7 @@ namespace ticari_otomasyon
             this.txtAlis.Location = new System.Drawing.Point(85, 204);
             this.txtAlis.Name = "txtAlis";
             this.txtAlis.Size = new System.Drawing.Size(112, 20);
-            this.txtAlis.TabIndex = 14;
+            this.txtAlis.TabIndex = 6;
             // 
             // labelControl8
             // 
@@ -210,7 +224,7 @@ namespace ticari_otomasyon
             this.txtModel.Location = new System.Drawing.Point(85, 121);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(112, 20);
-            this.txtModel.TabIndex = 12;
+            this.txtModel.TabIndex = 3;
             // 
             // labelControl7
             // 
@@ -237,8 +251,8 @@ namespace ticari_otomasyon
             this.numericAdet.Font = new System.Drawing.Font("Tahoma", 11F);
             this.numericAdet.Location = new System.Drawing.Point(85, 173);
             this.numericAdet.Name = "numericAdet";
-            this.numericAdet.Size = new System.Drawing.Size(132, 25);
-            this.numericAdet.TabIndex = 8;
+            this.numericAdet.Size = new System.Drawing.Size(112, 25);
+            this.numericAdet.TabIndex = 5;
             // 
             // labelControl4
             // 
@@ -255,7 +269,7 @@ namespace ticari_otomasyon
             this.txtMarka.Location = new System.Drawing.Point(85, 95);
             this.txtMarka.Name = "txtMarka";
             this.txtMarka.Size = new System.Drawing.Size(112, 20);
-            this.txtMarka.TabIndex = 6;
+            this.txtMarka.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -273,7 +287,7 @@ namespace ticari_otomasyon
             this.txtAd.Location = new System.Drawing.Point(85, 69);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(112, 20);
-            this.txtAd.TabIndex = 4;
+            this.txtAd.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -291,7 +305,7 @@ namespace ticari_otomasyon
             this.maskedYil.Mask = "0000";
             this.maskedYil.Name = "maskedYil";
             this.maskedYil.Size = new System.Drawing.Size(112, 21);
-            this.maskedYil.TabIndex = 2;
+            this.maskedYil.TabIndex = 4;
             this.maskedYil.ValidatingType = typeof(int);
             // 
             // txtId
@@ -299,7 +313,7 @@ namespace ticari_otomasyon
             this.txtId.Location = new System.Drawing.Point(85, 43);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(112, 20);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 15;
             // 
             // labelControl1
             // 
@@ -380,5 +394,6 @@ namespace ticari_otomasyon
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.SimpleButton btnSil;
+        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
     }
 }

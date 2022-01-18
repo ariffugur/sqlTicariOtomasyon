@@ -26,9 +26,22 @@ namespace ticari_otomasyon
 
         }
 
+        void temizle()
+        {
+            txtAd.Text = "";
+            txtAlis.Text = "";
+            txtId.Text = "";
+            txtMarka.Text = "";
+            txtModel.Text = "";
+            txtSatis.Text = "";
+            maskedYil.Text = "";
+            numericAdet.Value = 0;
+            RchDetay.Text = "";
+        }
         private void FrmUrunler_Load(object sender, EventArgs e)
         {
             listele();
+            temizle();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -91,6 +104,11 @@ namespace ticari_otomasyon
             MessageBox.Show("Ürün güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             listele();
 
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }
