@@ -155,33 +155,34 @@ namespace ticari_otomasyon
             this.txtEkstra.Location = new System.Drawing.Point(89, 261);
             this.txtEkstra.Name = "txtEkstra";
             this.txtEkstra.Size = new System.Drawing.Size(112, 20);
-            this.txtEkstra.TabIndex = 33;
+            this.txtEkstra.TabIndex = 8;
             // 
             // txtInternet
             // 
             this.txtInternet.Location = new System.Drawing.Point(89, 205);
             this.txtInternet.Name = "txtInternet";
             this.txtInternet.Size = new System.Drawing.Size(112, 20);
-            this.txtInternet.TabIndex = 32;
+            this.txtInternet.TabIndex = 6;
             // 
             // txtMaaslar
             // 
             this.txtMaaslar.Location = new System.Drawing.Point(89, 235);
             this.txtMaaslar.Name = "txtMaaslar";
             this.txtMaaslar.Size = new System.Drawing.Size(112, 20);
-            this.txtMaaslar.TabIndex = 31;
+            this.txtMaaslar.TabIndex = 7;
             // 
             // txtDogalGaz
             // 
             this.txtDogalGaz.Location = new System.Drawing.Point(89, 179);
             this.txtDogalGaz.Name = "txtDogalGaz";
             this.txtDogalGaz.Size = new System.Drawing.Size(112, 20);
-            this.txtDogalGaz.TabIndex = 30;
+            this.txtDogalGaz.TabIndex = 5;
             // 
             // BtnTemizle
             // 
             this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
             this.BtnTemizle.Location = new System.Drawing.Point(89, 538);
             this.BtnTemizle.Name = "BtnTemizle";
@@ -194,21 +195,21 @@ namespace ticari_otomasyon
             // 
             this.comboBoxYıl.Location = new System.Drawing.Point(89, 97);
             this.comboBoxYıl.Name = "comboBoxYıl";
-            this.comboBoxYıl.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.comboBoxYıl.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBoxYıl.Properties.Appearance.Options.UseFont = true;
             this.comboBoxYıl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxYıl.Properties.Items.AddRange(new object[] {
             "2020",
             "2021"});
-            this.comboBoxYıl.Size = new System.Drawing.Size(112, 24);
-            this.comboBoxYıl.TabIndex = 28;
+            this.comboBoxYıl.Size = new System.Drawing.Size(112, 20);
+            this.comboBoxYıl.TabIndex = 2;
             // 
             // comboBoxAy
             // 
             this.comboBoxAy.Location = new System.Drawing.Point(89, 67);
             this.comboBoxAy.Name = "comboBoxAy";
-            this.comboBoxAy.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.comboBoxAy.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBoxAy.Properties.Appearance.Options.UseFont = true;
             this.comboBoxAy.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -225,8 +226,8 @@ namespace ticari_otomasyon
             "Ekim",
             "Kasım",
             "Aralık"});
-            this.comboBoxAy.Size = new System.Drawing.Size(112, 24);
-            this.comboBoxAy.TabIndex = 27;
+            this.comboBoxAy.Size = new System.Drawing.Size(112, 20);
+            this.comboBoxAy.TabIndex = 1;
             // 
             // labelControl11
             // 
@@ -299,7 +300,7 @@ namespace ticari_otomasyon
             this.RchNotlar.Location = new System.Drawing.Point(89, 287);
             this.RchNotlar.Name = "RchNotlar";
             this.RchNotlar.Size = new System.Drawing.Size(112, 96);
-            this.RchNotlar.TabIndex = 17;
+            this.RchNotlar.TabIndex = 9;
             this.RchNotlar.Text = "";
             // 
             // txtSu
@@ -307,7 +308,7 @@ namespace ticari_otomasyon
             this.txtSu.Location = new System.Drawing.Point(89, 153);
             this.txtSu.Name = "txtSu";
             this.txtSu.Size = new System.Drawing.Size(112, 20);
-            this.txtSu.TabIndex = 16;
+            this.txtSu.TabIndex = 4;
             // 
             // labelControl6
             // 
@@ -324,7 +325,7 @@ namespace ticari_otomasyon
             this.txtElektrik.Location = new System.Drawing.Point(89, 127);
             this.txtElektrik.Name = "txtElektrik";
             this.txtElektrik.Size = new System.Drawing.Size(112, 20);
-            this.txtElektrik.TabIndex = 14;
+            this.txtElektrik.TabIndex = 3;
             // 
             // labelControl8
             // 
@@ -381,7 +382,7 @@ namespace ticari_otomasyon
             this.txtId.Location = new System.Drawing.Point(89, 41);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(112, 20);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 100;
             // 
             // labelControl1
             // 
@@ -409,8 +410,10 @@ namespace ticari_otomasyon
             // 
             // FrmGiderler
             // 
+            this.AcceptButton = this.btnKaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.BtnTemizle;
             this.ClientSize = new System.Drawing.Size(1904, 1038);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl2);
