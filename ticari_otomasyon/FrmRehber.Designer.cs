@@ -763,12 +763,14 @@ namespace ticari_otomasyon
             this.gridControl3.TabIndex = 5;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
+            this.gridControl3.Click += new System.EventHandler(this.gridControl3_Click);
             // 
             // gridView3
             // 
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ShowGroupPanel = false;
+            this.gridView3.DoubleClick += new System.EventHandler(this.gridView3_DoubleClick);
             // 
             // xtraTabPage8
             // 
@@ -793,6 +795,7 @@ namespace ticari_otomasyon
             this.gridView4.GridControl = this.gridControl4;
             this.gridView4.Name = "gridView4";
             this.gridView4.OptionsView.ShowGroupPanel = false;
+            this.gridView4.DoubleClick += new System.EventHandler(this.gridView4_DoubleClick);
             // 
             // FrmRehber
             // 
