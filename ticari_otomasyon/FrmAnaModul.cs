@@ -111,5 +111,16 @@ namespace ticari_otomasyon
                 fr8.Show();
             }
         }
+
+        FrmNotlar fr9;
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr9 == null)
+            {
+                fr9 = new FrmNotlar();
+                fr9.MdiParent = this;
+                fr9.Show();
+            }
+        }
     }
 }
