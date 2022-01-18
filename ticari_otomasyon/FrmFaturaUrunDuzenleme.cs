@@ -49,5 +49,14 @@ namespace ticari_otomasyon
             bgl.baglanti().Close();
             MessageBox.Show("Değişiklikler Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Delete from Tbl_FaturaDetay where FATURAURUNID=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", TxtUrunId.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Silme İşlemi Başarılı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Question);
+        }
     }
 }

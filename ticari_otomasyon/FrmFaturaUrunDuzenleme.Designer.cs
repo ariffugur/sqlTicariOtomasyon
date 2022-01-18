@@ -179,6 +179,7 @@
             this.btnSil.Size = new System.Drawing.Size(112, 38);
             this.btnSil.TabIndex = 40;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // FrmFaturaUrunDuzenleme
             // 
