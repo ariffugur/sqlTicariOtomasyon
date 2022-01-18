@@ -79,5 +79,15 @@ namespace ticari_otomasyon
         {
             temizle();
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Delete from tbl_notlar where ID=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", txtId.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Not Sistemden Silindi", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            listele();
+        }
     }
 }

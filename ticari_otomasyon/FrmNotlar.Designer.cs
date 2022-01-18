@@ -110,6 +110,7 @@
             this.btnSil.Size = new System.Drawing.Size(155, 38);
             this.btnSil.TabIndex = 20;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnKaydet
             // 
