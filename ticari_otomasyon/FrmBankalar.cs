@@ -75,9 +75,7 @@ namespace ticari_otomasyon
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("insert into TBL_BANKALAR" +
-                "(BANKAADI,IL,ILCE,SUBE,IBAN,HESAPNO,YETKILI,TELEFON,TARIH,HESAPTURU,FIRMAID) values " +
-                "(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("insert into TBL_BANKALAR (BANKAADI,IL,ILCE,SUBE,IBAN,HESAPNO,YETKILI,TELEFON,TARIH,HESAPTURU,FIRMAID) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", txtBankaAdi.Text);
             komut.Parameters.AddWithValue("@p2", ComboBoxIl.Text);
             komut.Parameters.AddWithValue("@p3", comboBoxIlce.Text);

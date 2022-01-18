@@ -102,12 +102,12 @@ namespace ticari_otomasyon
             // 
             this.comboBoxIlce.Location = new System.Drawing.Point(89, 123);
             this.comboBoxIlce.Name = "comboBoxIlce";
-            this.comboBoxIlce.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.comboBoxIlce.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBoxIlce.Properties.Appearance.Options.UseFont = true;
             this.comboBoxIlce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxIlce.Size = new System.Drawing.Size(112, 24);
-            this.comboBoxIlce.TabIndex = 28;
+            this.comboBoxIlce.Size = new System.Drawing.Size(112, 20);
+            this.comboBoxIlce.TabIndex = 3;
             // 
             // maskedTelefon
             // 
@@ -115,7 +115,7 @@ namespace ticari_otomasyon
             this.maskedTelefon.Mask = "(999) 000-0000";
             this.maskedTelefon.Name = "maskedTelefon";
             this.maskedTelefon.Size = new System.Drawing.Size(112, 21);
-            this.maskedTelefon.TabIndex = 25;
+            this.maskedTelefon.TabIndex = 8;
             this.maskedTelefon.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTelefon2_MaskInputRejected);
             // 
             // CmbFirma
@@ -199,7 +199,7 @@ namespace ticari_otomasyon
             this.textSube.Location = new System.Drawing.Point(89, 153);
             this.textSube.Name = "textSube";
             this.textSube.Size = new System.Drawing.Size(112, 20);
-            this.textSube.TabIndex = 14;
+            this.textSube.TabIndex = 4;
             this.textSube.EditValueChanged += new System.EventHandler(this.textSube_EditValueChanged);
             // 
             // TxtSube
@@ -229,7 +229,7 @@ namespace ticari_otomasyon
             this.MskTelefon.Location = new System.Drawing.Point(27, 268);
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(54, 18);
-            this.MskTelefon.TabIndex = 9;
+            this.MskTelefon.TabIndex = 8;
             this.MskTelefon.Text = "Telefon:";
             // 
             // txtBankaAdi
@@ -237,7 +237,7 @@ namespace ticari_otomasyon
             this.txtBankaAdi.Location = new System.Drawing.Point(89, 67);
             this.txtBankaAdi.Name = "txtBankaAdi";
             this.txtBankaAdi.Size = new System.Drawing.Size(112, 20);
-            this.txtBankaAdi.TabIndex = 4;
+            this.txtBankaAdi.TabIndex = 1;
             // 
             // TxtBankaAd
             // 
@@ -254,7 +254,7 @@ namespace ticari_otomasyon
             this.textIBAN.Location = new System.Drawing.Point(87, 183);
             this.textIBAN.Name = "textIBAN";
             this.textIBAN.Size = new System.Drawing.Size(112, 21);
-            this.textIBAN.TabIndex = 2;
+            this.textIBAN.TabIndex = 5;
             this.textIBAN.ValidatingType = typeof(int);
             // 
             // txtId
@@ -262,7 +262,7 @@ namespace ticari_otomasyon
             this.txtId.Location = new System.Drawing.Point(89, 41);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(112, 20);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 100;
             // 
             // labelControl1
             // 
@@ -313,13 +313,13 @@ namespace ticari_otomasyon
             // 
             // lookUpEdit2
             // 
-            this.lookUpEdit2.Location = new System.Drawing.Point(89, 347);
+            this.lookUpEdit2.Location = new System.Drawing.Point(87, 347);
             this.lookUpEdit2.Name = "lookUpEdit2";
             this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit2.Properties.NullText = "Firma seçiniz";
             this.lookUpEdit2.Size = new System.Drawing.Size(112, 20);
-            this.lookUpEdit2.TabIndex = 41;
+            this.lookUpEdit2.TabIndex = 11;
             // 
             // lookUpEdit1
             // 
@@ -334,17 +334,18 @@ namespace ticari_otomasyon
             // 
             this.ComboBoxIl.Location = new System.Drawing.Point(89, 93);
             this.ComboBoxIl.Name = "ComboBoxIl";
-            this.ComboBoxIl.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.ComboBoxIl.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ComboBoxIl.Properties.Appearance.Options.UseFont = true;
             this.ComboBoxIl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.ComboBoxIl.Size = new System.Drawing.Size(112, 24);
-            this.ComboBoxIl.TabIndex = 39;
+            this.ComboBoxIl.Size = new System.Drawing.Size(112, 20);
+            this.ComboBoxIl.TabIndex = 2;
             // 
             // BtnTemizle
             // 
             this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
             this.BtnTemizle.Location = new System.Drawing.Point(87, 519);
             this.BtnTemizle.Name = "BtnTemizle";
@@ -359,15 +360,15 @@ namespace ticari_otomasyon
             this.maskedTarih.Mask = "00/00/0000";
             this.maskedTarih.Name = "maskedTarih";
             this.maskedTarih.Size = new System.Drawing.Size(112, 21);
-            this.maskedTarih.TabIndex = 37;
+            this.maskedTarih.TabIndex = 9;
             this.maskedTarih.ValidatingType = typeof(System.DateTime);
             // 
             // textHesapTürü
             // 
-            this.textHesapTürü.Location = new System.Drawing.Point(89, 318);
+            this.textHesapTürü.Location = new System.Drawing.Point(87, 320);
             this.textHesapTürü.Name = "textHesapTürü";
             this.textHesapTürü.Size = new System.Drawing.Size(112, 20);
-            this.textHesapTürü.TabIndex = 36;
+            this.textHesapTürü.TabIndex = 10;
             // 
             // TxtHesapTürü
             // 
@@ -394,7 +395,7 @@ namespace ticari_otomasyon
             this.textYetkili.Location = new System.Drawing.Point(89, 237);
             this.textYetkili.Name = "textYetkili";
             this.textYetkili.Size = new System.Drawing.Size(112, 21);
-            this.textYetkili.TabIndex = 31;
+            this.textYetkili.TabIndex = 7;
             this.textYetkili.ValidatingType = typeof(int);
             // 
             // TxtHesapNo
@@ -412,18 +413,20 @@ namespace ticari_otomasyon
             this.textHesapNo.Location = new System.Drawing.Point(87, 210);
             this.textHesapNo.Name = "textHesapNo";
             this.textHesapNo.Size = new System.Drawing.Size(112, 21);
-            this.textHesapNo.TabIndex = 29;
+            this.textHesapNo.TabIndex = 6;
             this.textHesapNo.ValidatingType = typeof(int);
             // 
             // FrmBankalar
             // 
+            this.AcceptButton = this.btnKaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.BtnTemizle;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmBankalar";
-            this.Text = "BANKALAR";
+            this.Text = "Bankalar";
             this.Load += new System.EventHandler(this.FrmBankalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
