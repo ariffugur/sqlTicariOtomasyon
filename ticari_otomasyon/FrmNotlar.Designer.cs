@@ -265,7 +265,7 @@
             // 
             this.btnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnTemizle.Appearance.Options.UseFont = true;
-            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
             this.btnTemizle.Location = new System.Drawing.Point(75, 512);
             this.btnTemizle.Name = "btnTemizle";
             this.btnTemizle.Size = new System.Drawing.Size(155, 38);
@@ -281,6 +281,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmNotlar";
             this.Text = "Notlar";
+            this.Load += new System.EventHandler(this.FrmNotlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBaslik.Properties)).EndInit();
