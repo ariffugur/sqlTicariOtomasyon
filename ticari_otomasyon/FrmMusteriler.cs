@@ -26,6 +26,22 @@ namespace ticari_otomasyon
             da.Fill(dt);
             gridControl1.DataSource = dt;
         }
+
+        void temizle()
+        {
+            txtAd.Text = "";
+            txtId.Text = "";
+            txtMail.Text = "";
+            txtSoyad.Text = "";
+            txtVergiDairesi.Text = "";
+            maskedTc.Text = "";
+            maskedTelefon1.Text = "";
+            maskedTelefon2.Text = "";
+            comboBoxIl.Text = "";
+            comboBoxIlce.Text = "";
+            RchAdres.Text = "";
+            
+        }
         void sehirListesi()
         {
             SqlCommand komut = new SqlCommand("Select SEHIR From TBL_ILLER", bgl.baglanti());
@@ -40,6 +56,7 @@ namespace ticari_otomasyon
         {
             listele();
             sehirListesi();
+            temizle();
         }
 
         private void comboBoxIl_SelectedIndexChanged(object sender, EventArgs e)
@@ -132,6 +149,16 @@ namespace ticari_otomasyon
         private void comboBoxIlce_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtVergiDairesi_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }
