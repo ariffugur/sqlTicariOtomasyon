@@ -27,9 +27,21 @@ namespace ticari_otomasyon
 
         }
 
+        void temizle()
+        {
+            TxtBaslik.Text = "";
+            TxtHitap.Text = "";
+            TxtOlusturan.Text = "";
+            MskTarih.Text = "";
+            MskSaat.Text = "";
+            RchDetay.Text = "";
+            txtId.Text = "";
+        }
+
         private void FrmNotlar_Load(object sender, EventArgs e)
         {
             listele();
+            temizle();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -45,6 +57,27 @@ namespace ticari_otomasyon
             bgl.baglanti().Close();
             listele();
             MessageBox.Show("Not Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                txtId.Text = dr["ID"].ToString();
+                TxtBaslik.Text = dr["BASLIK"].ToString();
+                RchDetay.Text = dr["DETAY"].ToString();
+                TxtOlusturan.Text = dr["OLUSTURAN"].ToString();
+                TxtHitap.Text = dr["HITAP"].ToString();
+                MskTarih.Text = dr["TARIH"].ToString();
+                MskSaat.Text = dr["SAAT"].ToString();
+            }
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }
