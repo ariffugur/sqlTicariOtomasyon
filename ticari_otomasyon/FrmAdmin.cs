@@ -47,5 +47,10 @@ namespace ticari_otomasyon
 
             }
         }
+
+        private void FrmAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

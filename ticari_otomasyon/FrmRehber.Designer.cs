@@ -807,7 +807,7 @@ namespace ticari_otomasyon
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmRehber";
-            this.Text = "REHBER";
+            this.Text = "Rehber";
             this.Load += new System.EventHandler(this.FrmRehber_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);

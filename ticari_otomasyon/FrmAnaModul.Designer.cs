@@ -48,11 +48,11 @@ namespace ticari_otomasyon
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnFaturalar = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.Btn_Hareketler = new DevExpress.XtraBars.BarButtonItem();
+            this.Btn_Raporlar = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.Btn_Hareketler = new DevExpress.XtraBars.BarButtonItem();
-            this.Btn_Raporlar = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -225,6 +225,28 @@ namespace ticari_otomasyon
             this.barButtonItem12.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem12.Name = "barButtonItem12";
             // 
+            // Btn_Hareketler
+            // 
+            this.Btn_Hareketler.Caption = "Hareketler";
+            this.Btn_Hareketler.Id = 14;
+            this.Btn_Hareketler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Hareketler.ImageOptions.Image")));
+            this.Btn_Hareketler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Btn_Hareketler.ImageOptions.LargeImage")));
+            this.Btn_Hareketler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Hareketler.ItemAppearance.Normal.Options.UseFont = true;
+            this.Btn_Hareketler.Name = "Btn_Hareketler";
+            this.Btn_Hareketler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btn_Hareketler_ItemClick);
+            // 
+            // Btn_Raporlar
+            // 
+            this.Btn_Raporlar.Caption = "Raporlar";
+            this.Btn_Raporlar.Id = 15;
+            this.Btn_Raporlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Raporlar.ImageOptions.Image")));
+            this.Btn_Raporlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Btn_Raporlar.ImageOptions.LargeImage")));
+            this.Btn_Raporlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Raporlar.ItemAppearance.Normal.Options.UseFont = true;
+            this.Btn_Raporlar.Name = "Btn_Raporlar";
+            this.Btn_Raporlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btn_Raporlar_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -254,27 +276,6 @@ namespace ticari_otomasyon
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // Btn_Hareketler
-            // 
-            this.Btn_Hareketler.Caption = "Hareketler";
-            this.Btn_Hareketler.Id = 14;
-            this.Btn_Hareketler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.Btn_Hareketler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
-            this.Btn_Hareketler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Hareketler.ItemAppearance.Normal.Options.UseFont = true;
-            this.Btn_Hareketler.Name = "Btn_Hareketler";
-            this.Btn_Hareketler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btn_Hareketler_ItemClick);
-            // 
-            // Btn_Raporlar
-            // 
-            this.Btn_Raporlar.Caption = "Raporlar";
-            this.Btn_Raporlar.Id = 15;
-            this.Btn_Raporlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.Btn_Raporlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
-            this.Btn_Raporlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Raporlar.ItemAppearance.Normal.Options.UseFont = true;
-            this.Btn_Raporlar.Name = "Btn_Raporlar";
             // 
             // FrmAnaModul
             // 

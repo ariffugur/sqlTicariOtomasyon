@@ -361,7 +361,7 @@ namespace ticari_otomasyon
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmPersonel";
-            this.Text = "PERSONELLER";
+            this.Text = "Personeller";
             this.Load += new System.EventHandler(this.FrmPersonel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

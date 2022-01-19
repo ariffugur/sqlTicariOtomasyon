@@ -135,7 +135,16 @@ namespace ticari_otomasyon
             }
 
         }
-
-
+        FrmRaporlar fr11;
+        private void Btn_Raporlar_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            
+            if (fr11 == null)
+            {
+                fr11 = new FrmRaporlar();
+                fr11.MdiParent = this;
+                fr11.Show();
+            }
+        }
     }
 }
