@@ -1,4 +1,7 @@
 ﻿
+using DevExpress.XtraBars;
+using System;
+
 namespace ticari_otomasyon
 {
     partial class FrmAnaModul
@@ -48,6 +51,8 @@ namespace ticari_otomasyon
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.Btn_Hareketler = new DevExpress.XtraBars.BarButtonItem();
+            this.Btn_Raporlar = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -70,9 +75,11 @@ namespace ticari_otomasyon
             this.barButtonItem9,
             this.barButtonItem10,
             this.BtnFaturalar,
-            this.barButtonItem12});
+            this.barButtonItem12,
+            this.Btn_Hareketler,
+            this.Btn_Raporlar});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 14;
+            this.ribbonControl1.MaxItemId = 16;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -239,12 +246,35 @@ namespace ticari_otomasyon
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnFaturalar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.Btn_Hareketler);
+            this.ribbonPageGroup1.ItemLinks.Add(this.Btn_Raporlar);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // Btn_Hareketler
+            // 
+            this.Btn_Hareketler.Caption = "Hareketler";
+            this.Btn_Hareketler.Id = 14;
+            this.Btn_Hareketler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
+            this.Btn_Hareketler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
+            this.Btn_Hareketler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Hareketler.ItemAppearance.Normal.Options.UseFont = true;
+            this.Btn_Hareketler.Name = "Btn_Hareketler";
+            this.Btn_Hareketler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btn_Hareketler_ItemClick);
+            // 
+            // Btn_Raporlar
+            // 
+            this.Btn_Raporlar.Caption = "Raporlar";
+            this.Btn_Raporlar.Id = 15;
+            this.Btn_Raporlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
+            this.Btn_Raporlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
+            this.Btn_Raporlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Raporlar.ItemAppearance.Normal.Options.UseFont = true;
+            this.Btn_Raporlar.Name = "Btn_Raporlar";
             // 
             // FrmAnaModul
             // 
@@ -263,6 +293,8 @@ namespace ticari_otomasyon
             this.PerformLayout();
 
         }
+
+        
 
         #endregion
 
@@ -283,6 +315,8 @@ namespace ticari_otomasyon
         private DevExpress.XtraBars.BarButtonItem BtnFaturalar;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem Btn_Hareketler;
+        private DevExpress.XtraBars.BarButtonItem Btn_Raporlar;
     }
 }
 

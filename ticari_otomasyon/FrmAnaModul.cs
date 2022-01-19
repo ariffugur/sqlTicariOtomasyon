@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraBars;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -122,5 +123,19 @@ namespace ticari_otomasyon
                 fr9.Show();
             }
         }
+
+        FrmHareketler fr10;
+        private void Btn_Hareketler_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (fr10==null)
+            {
+                fr10 = new FrmHareketler();
+                fr10.MdiParent = this;
+                fr10.Show();
+            }
+
+        }
+
+
     }
 }
