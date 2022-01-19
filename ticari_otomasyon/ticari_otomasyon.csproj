@@ -216,6 +216,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TicariOtomasyonSonDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TicariOtomasyonSonDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TicariOtomasyonSonDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TicariOtomasyonSonDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TicariOtomasyonSonDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TicariOtomasyonSonDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TicariOtomasyonSonDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmAdmin.resx">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,6 +282,8 @@
     <EmbeddedResource Include="FrmUrunler.resx">
       <DependentUpon>FrmUrunler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GiderRaporlari.rdlc" />
+    <EmbeddedResource Include="PersonelRaporlari.rdlc" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -278,6 +295,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -298,6 +316,39 @@
     </None>
     <None Include="TicariOtomasyonSonDataSet.xss">
       <DependentUpon>TicariOtomasyonSonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TicariOtomasyonSonDataSet1.xsc">
+      <DependentUpon>TicariOtomasyonSonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TicariOtomasyonSonDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TicariOtomasyonSonDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TicariOtomasyonSonDataSet1.xss">
+      <DependentUpon>TicariOtomasyonSonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TicariOtomasyonSonDataSet2.xsc">
+      <DependentUpon>TicariOtomasyonSonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TicariOtomasyonSonDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TicariOtomasyonSonDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TicariOtomasyonSonDataSet2.xss">
+      <DependentUpon>TicariOtomasyonSonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TicariOtomasyonSonDataSet3.xsc">
+      <DependentUpon>TicariOtomasyonSonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TicariOtomasyonSonDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TicariOtomasyonSonDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TicariOtomasyonSonDataSet3.xss">
+      <DependentUpon>TicariOtomasyonSonDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -30,7 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRaporlar));
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.recentlyUsedItemsComboBox1 = new DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox();
             this.designRepositoryItemComboBox1 = new DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox();
             this.errorListDockPanel1 = new DevExpress.XtraReports.UserDesigner.ErrorListDockPanel();
@@ -140,15 +143,36 @@
             this.TicariOtomasyonSonDataSet = new ticari_otomasyon.TicariOtomasyonSonDataSet();
             this.TBL_FIRMALARBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TBL_FIRMALARTableAdapter = new ticari_otomasyon.TicariOtomasyonSonDataSetTableAdapters.TBL_FIRMALARTableAdapter();
+            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.TicariOtomasyonSonDataSet1 = new ticari_otomasyon.TicariOtomasyonSonDataSet1();
+            this.TBL_MUSTERILERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.TBL_MUSTERILERTableAdapter = new ticari_otomasyon.TicariOtomasyonSonDataSet1TableAdapters.TBL_MUSTERILERTableAdapter();
+            this.reportViewer3 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.TicariOtomasyonSonDataSet2 = new ticari_otomasyon.TicariOtomasyonSonDataSet2();
+            this.TBL_GIDERLERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.TBL_GIDERLERTableAdapter = new ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters.TBL_GIDERLERTableAdapter();
+            this.reportViewer4 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.TicariOtomasyonSonDataSet3 = new ticari_otomasyon.TicariOtomasyonSonDataSet3();
+            this.TBL_PERSONELLERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.TBL_PERSONELLERTableAdapter = new ticari_otomasyon.TicariOtomasyonSonDataSet3TableAdapters.TBL_PERSONELLERTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.recentlyUsedItemsComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.designRepositoryItemComboBox1)).BeginInit();
+            this.xtraTabPage7.SuspendLayout();
             this.xtraTabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
             this.xtraTabControl3.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            this.xtraTabPage2.SuspendLayout();
+            this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.designRepositoryItemComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TicariOtomasyonSonDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TBL_FIRMALARBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TicariOtomasyonSonDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_MUSTERILERBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TicariOtomasyonSonDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_GIDERLERBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TicariOtomasyonSonDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_PERSONELLERBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // recentlyUsedItemsComboBox1
@@ -223,6 +247,7 @@
             // 
             // xtraTabPage7
             // 
+            this.xtraTabPage7.Controls.Add(this.reportViewer2);
             this.xtraTabPage7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage7.ImageOptions.Image")));
             this.xtraTabPage7.Name = "xtraTabPage7";
             this.xtraTabPage7.Size = new System.Drawing.Size(1902, 997);
@@ -257,7 +282,7 @@
             this.xtraTabPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage1.ImageOptions.Image")));
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(1902, 997);
-            this.xtraTabPage1.Text = "Kasar Raporları";
+            this.xtraTabPage1.Text = "Kasa Raporları";
             // 
             // reportViewer6
             // 
@@ -269,6 +294,7 @@
             // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Controls.Add(this.reportViewer3);
             this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1902, 997);
@@ -276,6 +302,7 @@
             // 
             // xtraTabPage3
             // 
+            this.xtraTabPage3.Controls.Add(this.reportViewer4);
             this.xtraTabPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.ImageOptions.Image")));
             this.xtraTabPage3.Name = "xtraTabPage3";
             this.xtraTabPage3.Size = new System.Drawing.Size(1902, 997);
@@ -908,9 +935,9 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.TBL_FIRMALARBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.TBL_FIRMALARBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ticari_otomasyon.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -932,6 +959,87 @@
             // 
             this.TBL_FIRMALARTableAdapter.ClearBeforeFill = true;
             // 
+            // reportViewer2
+            // 
+            this.reportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.TBL_MUSTERILERBindingSource;
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer2.LocalReport.ReportEmbeddedResource = "ticari_otomasyon.Report2.rdlc";
+            this.reportViewer2.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer2.Name = "reportViewer2";
+            this.reportViewer2.ServerReport.BearerToken = null;
+            this.reportViewer2.Size = new System.Drawing.Size(1902, 997);
+            this.reportViewer2.TabIndex = 0;
+            // 
+            // TicariOtomasyonSonDataSet1
+            // 
+            this.TicariOtomasyonSonDataSet1.DataSetName = "TicariOtomasyonSonDataSet1";
+            this.TicariOtomasyonSonDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // TBL_MUSTERILERBindingSource
+            // 
+            this.TBL_MUSTERILERBindingSource.DataMember = "TBL_MUSTERILER";
+            this.TBL_MUSTERILERBindingSource.DataSource = this.TicariOtomasyonSonDataSet1;
+            // 
+            // TBL_MUSTERILERTableAdapter
+            // 
+            this.TBL_MUSTERILERTableAdapter.ClearBeforeFill = true;
+            // 
+            // reportViewer3
+            // 
+            this.reportViewer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource3.Name = "DataSet1";
+            reportDataSource3.Value = this.TBL_GIDERLERBindingSource;
+            this.reportViewer3.LocalReport.DataSources.Add(reportDataSource3);
+            this.reportViewer3.LocalReport.ReportEmbeddedResource = "ticari_otomasyon.GiderRaporlari.rdlc";
+            this.reportViewer3.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer3.Name = "reportViewer3";
+            this.reportViewer3.ServerReport.BearerToken = null;
+            this.reportViewer3.Size = new System.Drawing.Size(1902, 997);
+            this.reportViewer3.TabIndex = 0;
+            // 
+            // TicariOtomasyonSonDataSet2
+            // 
+            this.TicariOtomasyonSonDataSet2.DataSetName = "TicariOtomasyonSonDataSet2";
+            this.TicariOtomasyonSonDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // TBL_GIDERLERBindingSource
+            // 
+            this.TBL_GIDERLERBindingSource.DataMember = "TBL_GIDERLER";
+            this.TBL_GIDERLERBindingSource.DataSource = this.TicariOtomasyonSonDataSet2;
+            // 
+            // TBL_GIDERLERTableAdapter
+            // 
+            this.TBL_GIDERLERTableAdapter.ClearBeforeFill = true;
+            // 
+            // reportViewer4
+            // 
+            this.reportViewer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource4.Name = "DataSet1";
+            reportDataSource4.Value = this.TBL_PERSONELLERBindingSource;
+            this.reportViewer4.LocalReport.DataSources.Add(reportDataSource4);
+            this.reportViewer4.LocalReport.ReportEmbeddedResource = "ticari_otomasyon.PersonelRaporlari.rdlc";
+            this.reportViewer4.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer4.Name = "reportViewer4";
+            this.reportViewer4.ServerReport.BearerToken = null;
+            this.reportViewer4.Size = new System.Drawing.Size(1902, 997);
+            this.reportViewer4.TabIndex = 0;
+            // 
+            // TicariOtomasyonSonDataSet3
+            // 
+            this.TicariOtomasyonSonDataSet3.DataSetName = "TicariOtomasyonSonDataSet3";
+            this.TicariOtomasyonSonDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // TBL_PERSONELLERBindingSource
+            // 
+            this.TBL_PERSONELLERBindingSource.DataMember = "TBL_PERSONELLER";
+            this.TBL_PERSONELLERBindingSource.DataSource = this.TicariOtomasyonSonDataSet3;
+            // 
+            // TBL_PERSONELLERTableAdapter
+            // 
+            this.TBL_PERSONELLERTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmRaporlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -943,13 +1051,22 @@
             this.Load += new System.EventHandler(this.FrmRaporlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.recentlyUsedItemsComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.designRepositoryItemComboBox1)).EndInit();
+            this.xtraTabPage7.ResumeLayout(false);
             this.xtraTabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
             this.xtraTabControl3.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
+            this.xtraTabPage2.ResumeLayout(false);
+            this.xtraTabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.designRepositoryItemComboBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TicariOtomasyonSonDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TBL_FIRMALARBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TicariOtomasyonSonDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_MUSTERILERBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TicariOtomasyonSonDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_GIDERLERBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TicariOtomasyonSonDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_PERSONELLERBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1064,5 +1181,17 @@
         private System.Windows.Forms.BindingSource TBL_FIRMALARBindingSource;
         private TicariOtomasyonSonDataSet TicariOtomasyonSonDataSet;
         private TicariOtomasyonSonDataSetTableAdapters.TBL_FIRMALARTableAdapter TBL_FIRMALARTableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
+        private System.Windows.Forms.BindingSource TBL_MUSTERILERBindingSource;
+        private TicariOtomasyonSonDataSet1 TicariOtomasyonSonDataSet1;
+        private TicariOtomasyonSonDataSet1TableAdapters.TBL_MUSTERILERTableAdapter TBL_MUSTERILERTableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer3;
+        private System.Windows.Forms.BindingSource TBL_GIDERLERBindingSource;
+        private TicariOtomasyonSonDataSet2 TicariOtomasyonSonDataSet2;
+        private TicariOtomasyonSonDataSet2TableAdapters.TBL_GIDERLERTableAdapter TBL_GIDERLERTableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer4;
+        private System.Windows.Forms.BindingSource TBL_PERSONELLERBindingSource;
+        private TicariOtomasyonSonDataSet3 TicariOtomasyonSonDataSet3;
+        private TicariOtomasyonSonDataSet3TableAdapters.TBL_PERSONELLERTableAdapter TBL_PERSONELLERTableAdapter;
     }
 }
