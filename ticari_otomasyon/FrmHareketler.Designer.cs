@@ -146,6 +146,7 @@ namespace ticari_otomasyon
             this.Controls.Add(this.xtraTabControl3);
             this.Name = "FrmHareketler";
             this.Text = "HAREKETLER";
+            this.Load += new System.EventHandler(this.FrmHareketler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
             this.xtraTabControl3.ResumeLayout(false);
             this.xtraTabPage7.ResumeLayout(false);
