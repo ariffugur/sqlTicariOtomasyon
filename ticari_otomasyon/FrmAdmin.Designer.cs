@@ -31,13 +31,13 @@ namespace ticari_otomasyon
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdmin));
             this.label1 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtKullaniciAdi = new DevExpress.XtraEditors.TextEdit();
+            this.txtSifre = new DevExpress.XtraEditors.TextEdit();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGiris = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,24 +51,24 @@ namespace ticari_otomasyon
             this.label1.TabIndex = 0;
             this.label1.Text = "Kullanıcı Adı:";
             // 
-            // textEdit1
+            // txtKullaniciAdi
             // 
-            this.textEdit1.Location = new System.Drawing.Point(436, 216);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(100, 28);
-            this.textEdit1.TabIndex = 2;
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(436, 216);
+            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
+            this.txtKullaniciAdi.Properties.Appearance.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKullaniciAdi.Properties.Appearance.Options.UseFont = true;
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(100, 28);
+            this.txtKullaniciAdi.TabIndex = 2;
             // 
-            // textEdit2
+            // txtSifre
             // 
-            this.textEdit2.Location = new System.Drawing.Point(436, 291);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.UseSystemPasswordChar = true;
-            this.textEdit2.Size = new System.Drawing.Size(100, 28);
-            this.textEdit2.TabIndex = 4;
+            this.txtSifre.Location = new System.Drawing.Point(436, 291);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Properties.Appearance.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.Properties.Appearance.Options.UseFont = true;
+            this.txtSifre.Properties.UseSystemPasswordChar = true;
+            this.txtSifre.Size = new System.Drawing.Size(100, 28);
+            this.txtSifre.TabIndex = 4;
             // 
             // label2
             // 
@@ -81,18 +81,19 @@ namespace ticari_otomasyon
             this.label2.TabIndex = 3;
             this.label2.Text = "Şifre:";
             // 
-            // button1
+            // btnGiris
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSalmon;
-            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(436, 354);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 31);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Giriş Yap";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
-            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
+            this.btnGiris.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnGiris.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGiris.Location = new System.Drawing.Point(436, 354);
+            this.btnGiris.Name = "btnGiris";
+            this.btnGiris.Size = new System.Drawing.Size(100, 31);
+            this.btnGiris.TabIndex = 5;
+            this.btnGiris.Text = "Giriş Yap";
+            this.btnGiris.UseVisualStyleBackColor = false;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
+            this.btnGiris.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.btnGiris.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // label3
             // 
@@ -113,16 +114,16 @@ namespace ticari_otomasyon
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(850, 655);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textEdit2);
+            this.Controls.Add(this.btnGiris);
+            this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.txtKullaniciAdi);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,10 +132,10 @@ namespace ticari_otomasyon
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtKullaniciAdi;
+        private DevExpress.XtraEditors.TextEdit txtSifre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGiris;
         private System.Windows.Forms.Label label3;
     }
 }
