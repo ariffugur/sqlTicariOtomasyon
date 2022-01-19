@@ -45,7 +45,7 @@ namespace ticari_otomasyon
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(41, 105);
+            this.label1.Location = new System.Drawing.Point(269, 214);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 28);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace ticari_otomasyon
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(208, 107);
+            this.textEdit1.Location = new System.Drawing.Point(436, 216);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
@@ -62,10 +62,11 @@ namespace ticari_otomasyon
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(208, 182);
+            this.textEdit2.Location = new System.Drawing.Point(436, 291);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Properties.UseSystemPasswordChar = true;
             this.textEdit2.Size = new System.Drawing.Size(100, 28);
             this.textEdit2.TabIndex = 4;
             // 
@@ -74,7 +75,7 @@ namespace ticari_otomasyon
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(118, 180);
+            this.label2.Location = new System.Drawing.Point(346, 289);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 28);
             this.label2.TabIndex = 3;
@@ -82,13 +83,16 @@ namespace ticari_otomasyon
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LightSalmon;
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(208, 245);
+            this.button1.Location = new System.Drawing.Point(436, 354);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 31);
             this.button1.TabIndex = 5;
             this.button1.Text = "Giriş Yap";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // label3
             // 
@@ -114,8 +118,9 @@ namespace ticari_otomasyon
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdmin";
-            this.Text = "FrmAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.ResumeLayout(false);

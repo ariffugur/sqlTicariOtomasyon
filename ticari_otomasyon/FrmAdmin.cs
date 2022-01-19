@@ -16,5 +16,15 @@ namespace ticari_otomasyon
         {
             InitializeComponent();
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Green;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.LightSalmon;
+        }
     }
 }
