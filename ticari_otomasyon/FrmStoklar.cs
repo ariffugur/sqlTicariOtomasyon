@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using DevExpress.XtraCharts;
 
 namespace ticari_otomasyon
 {
@@ -19,7 +20,9 @@ namespace ticari_otomasyon
         }
 
         sqlBaglantisi bgl = new sqlBaglantisi();
+
         
+
         private void FrmStoklar_Load(object sender, EventArgs e)
         {
             //chartControl1.Series["Series 1"].Points.AddPoint("İstanbul", 4);
@@ -40,8 +43,18 @@ namespace ticari_otomasyon
             while (dr.Read())
             {
                 chartControl1.Series["Series 1"].Points.AddPoint(Convert.ToString(dr[0]), int.Parse(dr[1].ToString()));
-                bgl.baglanti().Close();
+                chartControl1.Series[0].LegendTextPattern = ("{A}"); 
             }
+            bgl.baglanti().Close();
+
+            SqlCommand komut2 = new SqlCommand("Select IL,Count(*) From Tbl_Fırmalar Group By IL", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                chartControl2.Series["Series 1"].Points.AddPoint(Convert.ToString(dr2[0]), int.Parse(dr2[1].ToString()));
+                
+            }
+            bgl.baglanti().Close();
         }
     }
 }
