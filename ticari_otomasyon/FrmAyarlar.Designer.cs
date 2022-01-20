@@ -38,6 +38,7 @@
             this.TxtPass = new System.Windows.Forms.TextBox();
             this.TxtKulAd = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnClr = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +67,7 @@
             // 
             this.BtnIslem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnIslem.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnIslem.Location = new System.Drawing.Point(145, 342);
+            this.BtnIslem.Location = new System.Drawing.Point(60, 338);
             this.BtnIslem.Name = "BtnIslem";
             this.BtnIslem.Size = new System.Drawing.Size(110, 32);
             this.BtnIslem.TabIndex = 18;
@@ -132,12 +133,25 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Kullanıcı Adı:";
             // 
+            // BtnClr
+            // 
+            this.BtnClr.BackColor = System.Drawing.Color.LightSalmon;
+            this.BtnClr.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnClr.Location = new System.Drawing.Point(232, 338);
+            this.BtnClr.Name = "BtnClr";
+            this.BtnClr.Size = new System.Drawing.Size(110, 32);
+            this.BtnClr.TabIndex = 19;
+            this.BtnClr.Text = "TEMİZLE";
+            this.BtnClr.UseVisualStyleBackColor = false;
+            this.BtnClr.Click += new System.EventHandler(this.BtnClr_Click);
+            // 
             // FrmAyarlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(414, 402);
+            this.Controls.Add(this.BtnClr);
             this.Controls.Add(this.BtnIslem);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton2);
@@ -168,5 +182,6 @@
         private System.Windows.Forms.TextBox TxtPass;
         private System.Windows.Forms.TextBox TxtKulAd;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnClr;
     }
 }

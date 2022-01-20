@@ -26,6 +26,13 @@ namespace ticari_otomasyon
             da.Fill(dt);
             gridControl1.DataSource = dt;
         }
+
+        void temizle()
+        {
+            TxtKulAd.Text = "";
+            TxtPass.Text = "";
+        }
+
         private void FrmAyarlar_Load(object sender, EventArgs e)
         {
             listele();
@@ -67,19 +74,24 @@ namespace ticari_otomasyon
             if (dr != null)
             {
                 TxtKulAd.Text = dr["KullaniciAd"].ToString();
-                TxtPass.Text = dr["Sifre"].ToString();            }
+                TxtPass.Text = dr["Sifre"].ToString();
+                BtnIslem.Text = "Güncelle";
+            }
         }
 
         private void TxtKulAd_TextChanged(object sender, EventArgs e)
         {
-            if (TxtKulAd.Text != "")
-            {
-                BtnIslem.Text = "Güncelle";
-            }
-            else
+            if (TxtKulAd.Text == "")
             {
                 BtnIslem.Text = "Kaydet";
             }
         }
+
+        private void BtnClr_Click(object sender, EventArgs e)
+        {
+            temizle();
+        }
+        
+
     }
 }

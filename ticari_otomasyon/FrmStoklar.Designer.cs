@@ -29,32 +29,32 @@ namespace ticari_otomasyon
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraCharts.Legend legend1 = new DevExpress.XtraCharts.Legend();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
             DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D1 = new DevExpress.XtraCharts.SimpleDiagram3D();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView1 = new DevExpress.XtraCharts.Pie3DSeriesView();
+            DevExpress.XtraCharts.Legend legend1 = new DevExpress.XtraCharts.Legend();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.xtraTabPage2.SuspendLayout();
-            this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
-            this.xtraTabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).BeginInit();
+            this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -83,23 +83,28 @@ namespace ticari_otomasyon
             this.xtraTabPage2.Size = new System.Drawing.Size(1353, 832);
             this.xtraTabPage2.Text = "FİRMA - ŞEHİR";
             // 
+            // chartControl2
+            // 
+            simpleDiagram3D1.RotationMatrixSerializable = "1;0;0;0;0;0.511823942534837;-0.8590903630283;0;0;0.8590903630283;0.51182394253483" +
+    "7;0;0;0;0;1";
+            this.chartControl2.Diagram = simpleDiagram3D1;
+            this.chartControl2.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            this.chartControl2.Location = new System.Drawing.Point(-3, 43);
+            this.chartControl2.Name = "chartControl2";
+            series1.Name = "Series 1";
+            series1.SeriesPointsSortingKey = DevExpress.XtraCharts.SeriesPointKey.Value_1;
+            series1.View = pie3DSeriesView1;
+            this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1};
+            this.chartControl2.Size = new System.Drawing.Size(1358, 747);
+            this.chartControl2.TabIndex = 10;
+            // 
             // xtraTabPage1
             // 
             this.xtraTabPage1.Controls.Add(this.chartControl1);
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(1353, 832);
             this.xtraTabPage1.Text = "ÜRÜN - MİKTAR";
-            // 
-            // xtraTabControl1
-            // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(548, 3);
-            this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1355, 857);
-            this.xtraTabControl1.TabIndex = 4;
-            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage1,
-            this.xtraTabPage2});
             // 
             // chartControl1
             // 
@@ -117,21 +122,16 @@ namespace ticari_otomasyon
             this.chartControl1.Size = new System.Drawing.Size(1358, 747);
             this.chartControl1.TabIndex = 9;
             // 
-            // chartControl2
+            // xtraTabControl1
             // 
-            simpleDiagram3D1.RotationMatrixSerializable = "1;0;0;0;0;0.511823942534837;-0.8590903630283;0;0;0.8590903630283;0.51182394253483" +
-    "7;0;0;0;0;1";
-            this.chartControl2.Diagram = simpleDiagram3D1;
-            this.chartControl2.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            this.chartControl2.Location = new System.Drawing.Point(-3, 43);
-            this.chartControl2.Name = "chartControl2";
-            series1.Name = "Series 1";
-            series1.SeriesPointsSortingKey = DevExpress.XtraCharts.SeriesPointKey.Value_1;
-            series1.View = pie3DSeriesView1;
-            this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.chartControl2.Size = new System.Drawing.Size(1358, 747);
-            this.chartControl2.TabIndex = 10;
+            this.xtraTabControl1.Location = new System.Drawing.Point(548, 3);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
+            this.xtraTabControl1.Size = new System.Drawing.Size(1355, 857);
+            this.xtraTabControl1.TabIndex = 4;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage1,
+            this.xtraTabPage2});
             // 
             // FrmStoklar
             // 
@@ -141,21 +141,21 @@ namespace ticari_otomasyon
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmStoklar";
-            this.Text = "STOKLAR";
+            this.Text = "Stoklar";
             this.Load += new System.EventHandler(this.FrmStoklar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.xtraTabPage2.ResumeLayout(false);
-            this.xtraTabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
-            this.xtraTabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
+            this.xtraTabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
