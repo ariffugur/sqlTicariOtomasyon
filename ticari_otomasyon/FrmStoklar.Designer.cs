@@ -29,40 +29,25 @@ namespace ticari_otomasyon
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraCharts.Legend legend3 = new DevExpress.XtraCharts.Legend();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView3 = new DevExpress.XtraCharts.PieSeriesView();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            DevExpress.XtraCharts.Legend legend1 = new DevExpress.XtraCharts.Legend();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView3)).BeginInit();
+            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // chartControl1
-            // 
-            legend3.Name = "Legend 1";
-            this.chartControl1.Legends.AddRange(new DevExpress.XtraCharts.Legend[] {
-            legend3});
-            this.chartControl1.Location = new System.Drawing.Point(548, -1);
-            this.chartControl1.Name = "chartControl1";
-            series3.LegendName = "Legend 1";
-            series3.Name = "Series 1";
-            series3.View = pieSeriesView3;
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3};
-            this.chartControl1.Size = new System.Drawing.Size(1358, 1042);
-            this.chartControl1.TabIndex = 2;
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(-1, -1);
+            this.gridControl1.Location = new System.Drawing.Point(-1, 12);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(543, 1042);
+            this.gridControl1.Size = new System.Drawing.Size(543, 848);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -76,6 +61,22 @@ namespace ticari_otomasyon
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
+            // chartControl1
+            // 
+            this.chartControl1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            legend1.Name = "Legend 1";
+            this.chartControl1.Legends.AddRange(new DevExpress.XtraCharts.Legend[] {
+            legend1});
+            this.chartControl1.Location = new System.Drawing.Point(553, 12);
+            this.chartControl1.Name = "chartControl1";
+            series1.LegendName = "Legend 1";
+            series1.Name = "Series 1";
+            series1.View = pieSeriesView1;
+            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1};
+            this.chartControl1.Size = new System.Drawing.Size(1358, 848);
+            this.chartControl1.TabIndex = 2;
+            // 
             // FrmStoklar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -86,18 +87,18 @@ namespace ticari_otomasyon
             this.Name = "FrmStoklar";
             this.Text = "STOKLAR";
             this.Load += new System.EventHandler(this.FrmStoklar_Load);
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private DevExpress.XtraCharts.ChartControl chartControl1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraCharts.ChartControl chartControl1;
     }
 }

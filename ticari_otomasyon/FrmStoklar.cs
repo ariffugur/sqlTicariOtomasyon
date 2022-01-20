@@ -22,16 +22,26 @@ namespace ticari_otomasyon
         
         private void FrmStoklar_Load(object sender, EventArgs e)
         {
-            chartControl1.Series["Series 1"].Points.AddPoint("İstanbul", 4);
-            chartControl1.Series["Series 1"].Points.AddPoint("ankara", 5);
-            chartControl1.Series["Series 1"].Points.AddPoint("izmir", 8);
-            chartControl1.Series["Series 1"].Points.AddPoint("çorum", 10);
-
+            //chartControl1.Series["Series 1"].Points.AddPoint("İstanbul", 4);
+            //chartControl1.Series["Series 1"].Points.AddPoint("ankara", 5);
+            //chartControl1.Series["Series 1"].Points.AddPoint("izmir", 8);
+            //chartControl1.Series["Series 1"].Points.AddPoint("çorum", 10);
+            
             SqlDataAdapter da = new SqlDataAdapter("Select UrunAd,Sum(Adet) As 'Miktar' from TBL_URUNLER group by UrunAd",
                 bgl.baglanti());
             DataTable dt = new DataTable();
             da.Fill(dt);
             gridControl1.DataSource = dt;
+
+            //Charta stok miktarı listeleme
+            SqlCommand komut = new SqlCommand("Select UrunAd,Sum(Adet) As 'Miktar' from TBL_URUNLER group by UrunAd",
+                bgl.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                chartControl1.Series["Series 1"].Points.AddPoint(Convert.ToString(dr[0]), int.Parse(dr[1].ToString()));
+                bgl.baglanti().Close();
+            }
         }
     }
 }
