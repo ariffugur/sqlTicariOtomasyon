@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAyarlar));
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.Btnİslem = new System.Windows.Forms.Button();
+            this.BtnIslem = new System.Windows.Forms.Button();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,17 +62,17 @@
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // Btnİslem
+            // BtnIslem
             // 
-            this.Btnİslem.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Btnİslem.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btnİslem.Location = new System.Drawing.Point(145, 342);
-            this.Btnİslem.Name = "Btnİslem";
-            this.Btnİslem.Size = new System.Drawing.Size(110, 32);
-            this.Btnİslem.TabIndex = 18;
-            this.Btnİslem.Text = "KAYDET";
-            this.Btnİslem.UseVisualStyleBackColor = false;
-            this.Btnİslem.Click += new System.EventHandler(this.Btnİslem_Click);
+            this.BtnIslem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BtnIslem.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnIslem.Location = new System.Drawing.Point(145, 342);
+            this.BtnIslem.Name = "BtnIslem";
+            this.BtnIslem.Size = new System.Drawing.Size(110, 32);
+            this.BtnIslem.TabIndex = 18;
+            this.BtnIslem.Text = "KAYDET";
+            this.BtnIslem.UseVisualStyleBackColor = false;
+            this.BtnIslem.Click += new System.EventHandler(this.BtnIslem_Click);
             // 
             // simpleButton3
             // 
@@ -138,7 +138,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(414, 402);
-            this.Controls.Add(this.Btnİslem);
+            this.Controls.Add(this.BtnIslem);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.label3);
@@ -161,7 +161,7 @@
 
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.GridControl gridControl1;
-        private System.Windows.Forms.Button Btnİslem;
+        private System.Windows.Forms.Button BtnIslem;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private System.Windows.Forms.Label label3;

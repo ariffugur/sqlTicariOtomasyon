@@ -33,15 +33,31 @@ namespace ticari_otomasyon
             TxtPass.Text = "";
         }
 
-        private void Btnİslem_Click(object sender, EventArgs e)
+        private void BtnIslem_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("insert into TBL_ADMIN values (@p1,@p2)", bgl.baglanti());
-            komut.Parameters.AddWithValue("@p1", TxtKulAd.Text);
-            komut.Parameters.AddWithValue("@p2", TxtPass.Text);
-            komut.ExecuteNonQuery();
-            bgl.baglanti().Close();
-            MessageBox.Show("Yeni Admin Sisteme Kaydedildi", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            listele();
+            if (BtnIslem.Text == "Kaydet")
+            {
+                SqlCommand komut = new SqlCommand("insert into TBL_ADMIN values (@p1,@p2)", bgl.baglanti());
+                komut.Parameters.AddWithValue("@p1", TxtKulAd.Text);
+                komut.Parameters.AddWithValue("@p2", TxtPass.Text);
+                komut.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Yeni Admin Sisteme Kaydedildi", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                listele();
+            }
+            if (BtnIslem.Text=="Güncelle")
+            {
+                SqlCommand komut1 = new SqlCommand("update TBL_ADMIN set sifre=@p2 where kullaniciad=@p1", bgl.baglanti());
+                komut1.Parameters.AddWithValue("@p1",TxtKulAd.Text);
+                komut1.Parameters.AddWithValue("@p2",TxtPass.Text);
+                komut1.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Şifre Güncellendi", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                listele();
+            }
+
+
+            
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -58,11 +74,11 @@ namespace ticari_otomasyon
         {
             if (TxtKulAd.Text != "")
             {
-                Btnİslem.Text = "Güncelle";
+                BtnIslem.Text = "Güncelle";
             }
             else
             {
-                Btnİslem.Text = "Kaydet";
+                BtnIslem.Text = "Kaydet";
             }
         }
     }
