@@ -52,5 +52,10 @@ namespace ticari_otomasyon
         {
 
         }
+
+        private void txtKullaniciAdi_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

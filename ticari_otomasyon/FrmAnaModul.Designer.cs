@@ -116,6 +116,7 @@ namespace ticari_otomasyon
             this.Stok.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11F);
             this.Stok.ItemAppearance.Normal.Options.UseFont = true;
             this.Stok.Name = "Stok";
+            this.Stok.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Stok_ItemClick);
             // 
             // barButtonItem3
             // 

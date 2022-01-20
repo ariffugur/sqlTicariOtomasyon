@@ -59,6 +59,7 @@ namespace ticari_otomasyon
             this.txtKullaniciAdi.Properties.Appearance.Options.UseFont = true;
             this.txtKullaniciAdi.Size = new System.Drawing.Size(100, 28);
             this.txtKullaniciAdi.TabIndex = 2;
+            this.txtKullaniciAdi.EditValueChanged += new System.EventHandler(this.txtKullaniciAdi_EditValueChanged);
             // 
             // txtSifre
             // 

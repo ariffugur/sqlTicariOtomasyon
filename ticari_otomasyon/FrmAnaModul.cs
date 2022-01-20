@@ -146,5 +146,18 @@ namespace ticari_otomasyon
                 fr11.Show();
             }
         }
+
+        FrmStoklar fr12;
+
+        private void Stok_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (fr12==null)
+            {
+                fr12 = new FrmStoklar();
+                fr12.MdiParent = this;
+                fr12.Show();
+            }
+
+        }
     }
 }
