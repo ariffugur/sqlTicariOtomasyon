@@ -159,5 +159,15 @@ namespace ticari_otomasyon
             }
 
         }
+
+        FrmAyarlar fr13;
+        private void barButtonItem12_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (fr13 == null)
+            {
+                fr13 = new FrmAyarlar();
+                fr13.Show();
+            }
+        }
     }
 }

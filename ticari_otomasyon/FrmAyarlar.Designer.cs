@@ -53,7 +53,7 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(-2, 15);
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(804, 225);
@@ -144,7 +144,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmAyarlar";
-            this.Text = "FrmAyarlar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ayarlar";
             this.Load += new System.EventHandler(this.FrmAyarlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
