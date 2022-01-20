@@ -29,6 +29,8 @@ namespace ticari_otomasyon
         private void FrmAyarlar_Load(object sender, EventArgs e)
         {
             listele();
+            TxtKulAd.Text = "";
+            TxtPass.Text = "";
         }
 
         private void Btnİslem_Click(object sender, EventArgs e)
@@ -40,6 +42,28 @@ namespace ticari_otomasyon
             bgl.baglanti().Close();
             MessageBox.Show("Yeni Admin Sisteme Kaydedildi", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             listele();
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                TxtKulAd.Text = dr["KullaniciAd"].ToString();
+                TxtPass.Text = dr["Sifre"].ToString();            }
+        }
+
+        private void TxtKulAd_TextChanged(object sender, EventArgs e)
+        {
+            if (TxtKulAd.Text != "")
+            {
+                Btnİslem.Text = "Güncelle";
+            }
+            else
+            {
+                Btnİslem.Text = "Kaydet";
+            }
         }
     }
 }
