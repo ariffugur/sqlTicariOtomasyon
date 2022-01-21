@@ -17,6 +17,6 @@ namespace ticari_otomasyon
             InitializeComponent();
         }
 
-      
+       
     }
 }
