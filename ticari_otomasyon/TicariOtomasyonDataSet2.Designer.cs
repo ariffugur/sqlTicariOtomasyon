@@ -20,9 +20,9 @@ namespace ticari_otomasyon {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("TicariOtomasyonSonDataSet2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("TicariOtomasyonDataSet2")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class TicariOtomasyonSonDataSet2 : global::System.Data.DataSet {
+    public partial class TicariOtomasyonDataSet2 : global::System.Data.DataSet {
         
         private TBL_GIDERLERDataTable tableTBL_GIDERLER;
         
@@ -30,7 +30,7 @@ namespace ticari_otomasyon {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public TicariOtomasyonSonDataSet2() {
+        public TicariOtomasyonDataSet2() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ticari_otomasyon {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected TicariOtomasyonSonDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected TicariOtomasyonDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace ticari_otomasyon {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            TicariOtomasyonSonDataSet2 cln = ((TicariOtomasyonSonDataSet2)(base.Clone()));
+            TicariOtomasyonDataSet2 cln = ((TicariOtomasyonDataSet2)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace ticari_otomasyon {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "TicariOtomasyonSonDataSet2";
+            this.DataSetName = "TicariOtomasyonDataSet2";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/TicariOtomasyonSonDataSet2.xsd";
+            this.Namespace = "http://tempuri.org/TicariOtomasyonDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableTBL_GIDERLER = new TBL_GIDERLERDataTable();
@@ -225,7 +225,7 @@ namespace ticari_otomasyon {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            TicariOtomasyonSonDataSet2 ds = new TicariOtomasyonSonDataSet2();
+            TicariOtomasyonDataSet2 ds = new TicariOtomasyonDataSet2();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -594,7 +594,7 @@ namespace ticari_otomasyon {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TicariOtomasyonSonDataSet2 ds = new TicariOtomasyonSonDataSet2();
+                TicariOtomasyonDataSet2 ds = new TicariOtomasyonDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -966,7 +966,7 @@ namespace ticari_otomasyon {
         }
     }
 }
-namespace ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters {
+namespace ticari_otomasyon.TicariOtomasyonDataSet2TableAdapters {
     
     
     /// <summary>
@@ -1122,7 +1122,7 @@ namespace ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::ticari_otomasyon.Properties.Settings.Default.TicariOtomasyonSonConnectionString;
+            this._connection.ConnectionString = global::ticari_otomasyon.Properties.Settings.Default.TicariOtomasyonConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1140,7 +1140,7 @@ namespace ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TicariOtomasyonSonDataSet2.TBL_GIDERLERDataTable dataTable) {
+        public virtual int Fill(TicariOtomasyonDataSet2.TBL_GIDERLERDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1153,9 +1153,9 @@ namespace ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TicariOtomasyonSonDataSet2.TBL_GIDERLERDataTable GetData() {
+        public virtual TicariOtomasyonDataSet2.TBL_GIDERLERDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TicariOtomasyonSonDataSet2.TBL_GIDERLERDataTable dataTable = new TicariOtomasyonSonDataSet2.TBL_GIDERLERDataTable();
+            TicariOtomasyonDataSet2.TBL_GIDERLERDataTable dataTable = new TicariOtomasyonDataSet2.TBL_GIDERLERDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1163,14 +1163,14 @@ namespace ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TicariOtomasyonSonDataSet2.TBL_GIDERLERDataTable dataTable) {
+        public virtual int Update(TicariOtomasyonDataSet2.TBL_GIDERLERDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TicariOtomasyonSonDataSet2 dataSet) {
+        public virtual int Update(TicariOtomasyonDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "TBL_GIDERLER");
         }
         
@@ -1356,7 +1356,7 @@ namespace ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(TicariOtomasyonSonDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(TicariOtomasyonDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tBL_GIDERLERTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.TBL_GIDERLER.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1375,7 +1375,7 @@ namespace ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(TicariOtomasyonSonDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(TicariOtomasyonDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tBL_GIDERLERTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.TBL_GIDERLER.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1393,7 +1393,7 @@ namespace ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(TicariOtomasyonSonDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(TicariOtomasyonDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tBL_GIDERLERTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.TBL_GIDERLER.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1435,7 +1435,7 @@ namespace ticari_otomasyon.TicariOtomasyonSonDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(TicariOtomasyonSonDataSet2 dataSet) {
+        public virtual int UpdateAll(TicariOtomasyonDataSet2 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

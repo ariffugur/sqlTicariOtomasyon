@@ -32,6 +32,10 @@ namespace ticari_otomasyon
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaSayfa));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.gridControlStoklar = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlAjanda = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -43,16 +47,16 @@ namespace ticari_otomasyon
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridControlStoklar = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlStoklar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAjanda)).BeginInit();
@@ -70,10 +74,6 @@ namespace ticari_otomasyon
             this.xtraTabPage1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlStoklar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -86,6 +86,44 @@ namespace ticari_otomasyon
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Azalan Stoklar";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            // 
+            // gridControlStoklar
+            // 
+            this.gridControlStoklar.Location = new System.Drawing.Point(5, 27);
+            this.gridControlStoklar.MainView = this.gridView1;
+            this.gridControlStoklar.Name = "gridControlStoklar";
+            this.gridControlStoklar.Size = new System.Drawing.Size(559, 347);
+            this.gridControlStoklar.TabIndex = 4;
+            this.gridControlStoklar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
+            this.gridView1.GridControl = this.gridControlStoklar;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(455, 434);
+            this.gridControl1.MainView = this.gridView5;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(442, 278);
+            this.gridControl1.TabIndex = 3;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView5});
+            // 
+            // gridView5
+            // 
+            this.gridView5.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridView5.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridView5.Appearance.Row.Options.UseBackColor = true;
+            this.gridView5.GridControl = this.gridControl1;
+            this.gridView5.Name = "gridView5";
+            this.gridView5.OptionsView.ShowGroupPanel = false;
             // 
             // groupControl2
             // 
@@ -193,6 +231,15 @@ namespace ticari_otomasyon
             this.xtraTabPage1.Size = new System.Drawing.Size(705, 754);
             this.xtraTabPage1.Text = "DÖVİZ KURLARI";
             // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(705, 754);
+            this.webBrowser1.TabIndex = 0;
+            // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.pictureBox1);
@@ -202,14 +249,15 @@ namespace ticari_otomasyon
             this.xtraTabPage2.Size = new System.Drawing.Size(705, 754);
             this.xtraTabPage2.Text = "HABERLER";
             // 
-            // webBrowser1
+            // pictureBox1
             // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(705, 754);
-            this.webBrowser1.TabIndex = 0;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(275, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // listBox1
             // 
@@ -223,54 +271,6 @@ namespace ticari_otomasyon
             this.listBox1.Size = new System.Drawing.Size(699, 660);
             this.listBox1.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(455, 434);
-            this.gridControl1.MainView = this.gridView5;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(442, 278);
-            this.gridControl1.TabIndex = 3;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView5});
-            // 
-            // gridView5
-            // 
-            this.gridView5.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridView5.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.gridView5.Appearance.Row.Options.UseBackColor = true;
-            this.gridView5.GridControl = this.gridControl1;
-            this.gridView5.Name = "gridView5";
-            this.gridView5.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridControlStoklar
-            // 
-            this.gridControlStoklar.Location = new System.Drawing.Point(5, 27);
-            this.gridControlStoklar.MainView = this.gridView1;
-            this.gridControlStoklar.Name = "gridControlStoklar";
-            this.gridControlStoklar.Size = new System.Drawing.Size(559, 347);
-            this.gridControlStoklar.TabIndex = 4;
-            this.gridControlStoklar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.gridView1.Appearance.Row.Options.UseBackColor = true;
-            this.gridView1.GridControl = this.gridControlStoklar;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            // 
             // FrmAnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,10 +282,14 @@ namespace ticari_otomasyon
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmAnaSayfa";
-            this.Text = "FrmAnaSayfa";
+            this.Text = "Ana Sayfa";
             this.Load += new System.EventHandler(this.FrmAnaSayfa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlStoklar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAjanda)).EndInit();
@@ -303,10 +307,6 @@ namespace ticari_otomasyon
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlStoklar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

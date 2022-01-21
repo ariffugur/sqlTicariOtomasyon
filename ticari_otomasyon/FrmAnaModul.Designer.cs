@@ -101,8 +101,8 @@ namespace ticari_otomasyon
             // 
             this.BtnAnaSayfa.Caption = "Ana Sayfa";
             this.BtnAnaSayfa.Id = 2;
-            this.BtnAnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.BtnAnaSayfa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.BtnAnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAnaSayfa.ImageOptions.Image")));
+            this.BtnAnaSayfa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnAnaSayfa.ImageOptions.LargeImage")));
             this.BtnAnaSayfa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11F);
             this.BtnAnaSayfa.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnAnaSayfa.Name = "BtnAnaSayfa";
@@ -289,7 +289,7 @@ namespace ticari_otomasyon
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "FrmAnaModul";
-            this.Text = "Tahoma; 11pt";
+            this.Text = "Ticari Otomasyon Sistemi";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmAnaModul_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();

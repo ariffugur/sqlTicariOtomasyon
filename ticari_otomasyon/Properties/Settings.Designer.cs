@@ -33,5 +33,16 @@ namespace ticari_otomasyon.Properties {
                 return ((string)(this["TicariOtomasyonSonConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-6S2AJ9C\\SQLEXPRESS;Initial Catalog=TicariOtomasyon;Integrated" +
+            " Security=True")]
+        public string TicariOtomasyonConnectionString {
+            get {
+                return ((string)(this["TicariOtomasyonConnectionString"]));
+            }
+        }
     }
 }

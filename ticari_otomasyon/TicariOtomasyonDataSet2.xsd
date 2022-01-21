@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="TicariOtomasyonSonDataSet2" targetNamespace="http://tempuri.org/TicariOtomasyonSonDataSet2.xsd" xmlns:mstns="http://tempuri.org/TicariOtomasyonSonDataSet2.xsd" xmlns="http://tempuri.org/TicariOtomasyonSonDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="TicariOtomasyonDataSet2" targetNamespace="http://tempuri.org/TicariOtomasyonDataSet2.xsd" xmlns:mstns="http://tempuri.org/TicariOtomasyonDataSet2.xsd" xmlns="http://tempuri.org/TicariOtomasyonDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TicariOtomasyonSonConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TicariOtomasyonSonConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ticari_otomasyon.Properties.Settings.GlobalReference.Default.TicariOtomasyonSonConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TicariOtomasyonConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TicariOtomasyonConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ticari_otomasyon.Properties.Settings.GlobalReference.Default.TicariOtomasyonConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TBL_GIDERLERTableAdapter" GeneratorDataComponentClassName="TBL_GIDERLERTableAdapter" Name="TBL_GIDERLER" UserDataComponentName="TBL_GIDERLERTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="TicariOtomasyonSonConnectionString (Settings)" DbObjectName="TicariOtomasyonSon.dbo.TBL_GIDERLER" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="TicariOtomasyonConnectionString (Settings)" DbObjectName="TicariOtomasyon.dbo.TBL_GIDERLER" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>INSERT INTO [dbo].[TBL_GIDERLER] ([AY], [YIL], [ELEKTRIK], [SU], [DOGALGAZ], [INTERNET], [MAASLAR], [EKSTRA], [NOTLAR]) VALUES (@AY, @YIL, @ELEKTRIK, @SU, @DOGALGAZ, @INTERNET, @MAASLAR, @EKSTRA, @NOTLAR)</CommandText>
@@ -53,7 +53,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="TicariOtomasyonSonDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TicariOtomasyonSonDataSet2" msprop:Generator_UserDSName="TicariOtomasyonSonDataSet2">
+  <xs:element name="TicariOtomasyonDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TicariOtomasyonDataSet2" msprop:Generator_UserDSName="TicariOtomasyonDataSet2">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="TBL_GIDERLER" msprop:Generator_TableClassName="TBL_GIDERLERDataTable" msprop:Generator_TableVarName="tableTBL_GIDERLER" msprop:Generator_TablePropName="TBL_GIDERLER" msprop:Generator_RowDeletingName="TBL_GIDERLERRowDeleting" msprop:Generator_RowChangingName="TBL_GIDERLERRowChanging" msprop:Generator_RowEvHandlerName="TBL_GIDERLERRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_GIDERLERRowDeleted" msprop:Generator_UserTableName="TBL_GIDERLER" msprop:Generator_RowChangedName="TBL_GIDERLERRowChanged" msprop:Generator_RowEvArgName="TBL_GIDERLERRowChangeEvent" msprop:Generator_RowClassName="TBL_GIDERLERRow">

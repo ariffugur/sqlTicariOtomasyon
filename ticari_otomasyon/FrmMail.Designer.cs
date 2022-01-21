@@ -36,8 +36,8 @@
             this.TxtMesaj = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnGonder = new DevExpress.XtraEditors.SimpleButton();
             this.label4 = new System.Windows.Forms.Label();
+            this.BtnGonder = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMailAdresi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKonu.Properties)).BeginInit();
             this.panel1.SuspendLayout();
@@ -111,18 +111,6 @@
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // BtnGonder
-            // 
-            this.BtnGonder.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGonder.Appearance.Options.UseFont = true;
-            this.BtnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.BtnGonder.Location = new System.Drawing.Point(159, 369);
-            this.BtnGonder.Name = "BtnGonder";
-            this.BtnGonder.Size = new System.Drawing.Size(141, 33);
-            this.BtnGonder.TabIndex = 7;
-            this.BtnGonder.Text = "Gönder";
-            this.BtnGonder.Click += new System.EventHandler(this.BtnGonder_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -136,6 +124,18 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Mail Gönderme Paneli";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BtnGonder
+            // 
+            this.BtnGonder.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGonder.Appearance.Options.UseFont = true;
+            this.BtnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGonder.ImageOptions.Image")));
+            this.BtnGonder.Location = new System.Drawing.Point(159, 369);
+            this.BtnGonder.Name = "BtnGonder";
+            this.BtnGonder.Size = new System.Drawing.Size(141, 33);
+            this.BtnGonder.TabIndex = 7;
+            this.BtnGonder.Text = "Gönder";
+            this.BtnGonder.Click += new System.EventHandler(this.BtnGonder_Click);
             // 
             // FrmMail
             // 
@@ -155,7 +155,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmMail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMail";
+            this.Text = "Mail";
             this.Load += new System.EventHandler(this.FrmMail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtMailAdresi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKonu.Properties)).EndInit();
