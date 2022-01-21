@@ -169,5 +169,15 @@ namespace ticari_otomasyon
                 fr13.Show();
             }
         }
+        FrmKasa fr14;
+        private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (fr14 == null)
+            {
+                fr14 = new FrmKasa();
+                fr14.MdiParent = this;
+                fr14.Show();
+            }
+        }
     }
 }
