@@ -100,7 +100,12 @@ namespace ticari_otomasyon
         public string kullanici;
         private void FrmAnaModul_Load(object sender, EventArgs e)
         {
-
+            if (fr15 == null)
+            {
+                fr15 = new FrmAnaSayfa();
+                fr15.MdiParent = this;
+                fr15.Show();
+            }
         }
         FrmFaturalar fr8;
         private void BtnFaturalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -178,6 +183,18 @@ namespace ticari_otomasyon
                 fr14.ad = kullanici;
                 fr14.MdiParent = this;
                 fr14.Show();
+            }
+        }
+        FrmAnaSayfa fr15;
+
+
+        private void BtnAnaSayfa_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (fr15==null)
+            {
+                fr15 = new FrmAnaSayfa();
+                fr15.MdiParent = this;
+                fr15.Show();
             }
         }
     }
