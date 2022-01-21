@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using DevExpress.Charts;
 
 namespace ticari_otomasyon
 {
@@ -33,12 +34,20 @@ namespace ticari_otomasyon
             da2.Fill(dt2);
             gridControl3.DataSource = dt2;
         }
+        void cikisHareketler()
+        {
+            DataTable dt4 = new DataTable();
+            SqlDataAdapter da4 = new SqlDataAdapter("Select * from TBL_GIDERLER ", bgl.baglanti());
+            da4.Fill(dt4);
+            gridControl4.DataSource = dt4;
+        }
         public String ad;
         private void FrmKasa_Load(object sender, EventArgs e)
         {
             lblAktifKullanici.Text = ad;
             musteriHareket();
             firmaHareket();
+            cikisHareketler();
             SqlCommand komut1 = new SqlCommand("Select Sum(Tutar) From Tbl_FaturaDetay", bgl.baglanti());
             SqlDataReader dr1 = komut1.ExecuteReader();
             while (dr1.Read())
@@ -114,6 +123,35 @@ namespace ticari_otomasyon
                 lblStokSayisi.Text = dr9[0].ToString();
             }
             bgl.baglanti().Close();
+
+            SqlCommand komut10 = new SqlCommand("Select top 4 AY,ELEKTRIK from TBL_GIDERLER order by ID Desc", bgl.baglanti());
+            SqlDataReader dr10 = komut10.ExecuteReader();
+            while (dr10.Read())
+            {
+                chartControl1.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr10[0], dr10[1]));
+            }
+            bgl.baglanti().Close();
+
+            SqlCommand komut11 = new SqlCommand("Select top 4 AY,SU from TBL_GIDERLER order by ID Desc", bgl.baglanti());
+            SqlDataReader dr11 = komut11.ExecuteReader();
+            while (dr11.Read())
+            {
+                chartControl2.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr11[0], dr11[1]));
+            }
+            bgl.baglanti().Close();
+
+            SqlCommand komut12 = new SqlCommand("Select top 4 AY,DOGALGAZ from TBL_GIDERLER order by ID Desc", bgl.baglanti());
+            SqlDataReader dr12 = komut12.ExecuteReader();
+            while (dr12.Read())
+            {
+                chartControl3.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr12[0], dr12[1]));
+            }
+            bgl.baglanti().Close();
+
+
         }
+
+        
     }
-}
+    }
+
