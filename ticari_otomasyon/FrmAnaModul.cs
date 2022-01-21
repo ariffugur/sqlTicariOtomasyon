@@ -97,7 +97,7 @@ namespace ticari_otomasyon
                 fr7.Show();
             }
         }
-
+        public string kullanici;
         private void FrmAnaModul_Load(object sender, EventArgs e)
         {
 
@@ -175,6 +175,7 @@ namespace ticari_otomasyon
             if (fr14 == null)
             {
                 fr14 = new FrmKasa();
+                fr14.ad = kullanici;
                 fr14.MdiParent = this;
                 fr14.Show();
             }

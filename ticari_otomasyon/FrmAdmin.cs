@@ -38,6 +38,7 @@ namespace ticari_otomasyon
             if (dr.Read())
             {
                 FrmAnaModul fr = new FrmAnaModul();
+                fr.kullanici = txtKullaniciAdi.Text;
                 fr.Show();
                 this.Hide();
             }
