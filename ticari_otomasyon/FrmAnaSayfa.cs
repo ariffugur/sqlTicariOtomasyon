@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Xml;
+
 
 namespace ticari_otomasyon
 {
@@ -50,6 +52,18 @@ namespace ticari_otomasyon
             gridControlFihrist.DataSource = dt;
         }
 
+        void haberler()
+        {
+            XmlTextReader xmloku = new XmlTextReader("https://www.hurriyet.com.tr/rss/anasayfa");
+            while (xmloku.Read())
+            {
+                if (xmloku.Name == "title")
+                {
+                    listBox1.Items.Add(xmloku.ReadString());
+                }
+            }
+        }
+
         private void groupControl1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -61,6 +75,8 @@ namespace ticari_otomasyon
             ajanda();
             FirmaHareketleri();
             fihrist();
+            webBrowser1.Navigate("https://www.tcmb.gov.tr/kurlar/today.xml");
+            haberler();
         }
     }
 }

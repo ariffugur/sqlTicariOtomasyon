@@ -31,6 +31,7 @@ namespace ticari_otomasyon
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMusteriler));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.comboBoxIlce = new DevExpress.XtraEditors.ComboBoxEdit();
             this.comboBoxIl = new DevExpress.XtraEditors.ComboBoxEdit();
             this.maskedTc = new System.Windows.Forms.MaskedTextBox();
@@ -58,7 +59,6 @@ namespace ticari_otomasyon
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxIlce.Properties)).BeginInit();
@@ -104,6 +104,18 @@ namespace ticari_otomasyon
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(244, 1042);
             this.groupControl1.TabIndex = 3;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(89, 565);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(112, 38);
+            this.simpleButton1.TabIndex = 13;
+            this.simpleButton1.Text = "Temizle";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // comboBoxIlce
             // 
@@ -364,18 +376,6 @@ namespace ticari_otomasyon
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(89, 565);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(112, 38);
-            this.simpleButton1.TabIndex = 13;
-            this.simpleButton1.Text = "Temizle";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // FrmMusteriler
             // 
