@@ -31,33 +31,36 @@ namespace ticari_otomasyon
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKasa));
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.DoughnutSeriesView doughnutSeriesView1 = new DevExpress.XtraCharts.DoughnutSeriesView();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.DoughnutSeriesView doughnutSeriesView2 = new DevExpress.XtraCharts.DoughnutSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView2 = new DevExpress.XtraCharts.LineSeriesView();
             this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
+            this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
+            this.lblFirmaSayisi = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblAktifKullanici = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblStokSayisi = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblSehirSayisi = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblPersonelSayisi = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblOdemeler = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblMusteriSayisi = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblPersonelMaaslari = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.lblKasaToplam = new System.Windows.Forms.Label();
@@ -65,14 +68,18 @@ namespace ticari_otomasyon
             this.gridControl3 = new DevExpress.XtraGrid.GridControl();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
-            this.virtualServerModeSource1 = new DevExpress.Data.VirtualServerModeSource(this.components);
-            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridControl4 = new DevExpress.XtraGrid.GridControl();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
+            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.gridControl4 = new DevExpress.XtraGrid.GridControl();
+            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.virtualServerModeSource1 = new DevExpress.Data.VirtualServerModeSource(this.components);
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
             this.xtraTabControl3.SuspendLayout();
             this.xtraTabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
+            this.groupControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
             this.groupControl8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
@@ -92,16 +99,18 @@ namespace ticari_otomasyon
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.virtualServerModeSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(doughnutSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(doughnutSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.virtualServerModeSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // xtraTabControl3
@@ -118,6 +127,8 @@ namespace ticari_otomasyon
             // 
             // xtraTabPage7
             // 
+            this.xtraTabPage7.Controls.Add(this.gridControl1);
+            this.xtraTabPage7.Controls.Add(this.groupControl9);
             this.xtraTabPage7.Controls.Add(this.groupControl8);
             this.xtraTabPage7.Controls.Add(this.groupControl7);
             this.xtraTabPage7.Controls.Add(this.groupControl5);
@@ -132,26 +143,57 @@ namespace ticari_otomasyon
             this.xtraTabPage7.Size = new System.Drawing.Size(1902, 1013);
             this.xtraTabPage7.Text = "Kasa Giriş Hareketleri";
             // 
+            // groupControl9
+            // 
+            this.groupControl9.Controls.Add(this.lblFirmaSayisi);
+            this.groupControl9.Controls.Add(this.label4);
+            this.groupControl9.Location = new System.Drawing.Point(0, 132);
+            this.groupControl9.Name = "groupControl9";
+            this.groupControl9.ShowCaption = false;
+            this.groupControl9.Size = new System.Drawing.Size(328, 27);
+            this.groupControl9.TabIndex = 11;
+            this.groupControl9.Text = "groupControl9";
+            // 
+            // lblFirmaSayisi
+            // 
+            this.lblFirmaSayisi.AutoSize = true;
+            this.lblFirmaSayisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblFirmaSayisi.Location = new System.Drawing.Point(165, 2);
+            this.lblFirmaSayisi.Name = "lblFirmaSayisi";
+            this.lblFirmaSayisi.Size = new System.Drawing.Size(18, 19);
+            this.lblFirmaSayisi.TabIndex = 8;
+            this.lblFirmaSayisi.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(71, 2);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 19);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Firma Sayısı:";
+            // 
             // groupControl8
             // 
-            this.groupControl8.Controls.Add(this.label14);
+            this.groupControl8.Controls.Add(this.lblAktifKullanici);
             this.groupControl8.Controls.Add(this.label15);
-            this.groupControl8.Location = new System.Drawing.Point(0, 231);
+            this.groupControl8.Location = new System.Drawing.Point(0, 264);
             this.groupControl8.Name = "groupControl8";
             this.groupControl8.ShowCaption = false;
             this.groupControl8.Size = new System.Drawing.Size(328, 27);
             this.groupControl8.TabIndex = 11;
             this.groupControl8.Text = "groupControl8";
             // 
-            // label14
+            // lblAktifKullanici
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(165, 2);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(37, 19);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Null";
+            this.lblAktifKullanici.AutoSize = true;
+            this.lblAktifKullanici.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAktifKullanici.Location = new System.Drawing.Point(165, 2);
+            this.lblAktifKullanici.Name = "lblAktifKullanici";
+            this.lblAktifKullanici.Size = new System.Drawing.Size(37, 19);
+            this.lblAktifKullanici.TabIndex = 8;
+            this.lblAktifKullanici.Text = "Null";
             // 
             // label15
             // 
@@ -165,24 +207,24 @@ namespace ticari_otomasyon
             // 
             // groupControl7
             // 
-            this.groupControl7.Controls.Add(this.label12);
+            this.groupControl7.Controls.Add(this.lblStokSayisi);
             this.groupControl7.Controls.Add(this.label13);
-            this.groupControl7.Location = new System.Drawing.Point(0, 198);
+            this.groupControl7.Location = new System.Drawing.Point(0, 231);
             this.groupControl7.Name = "groupControl7";
             this.groupControl7.ShowCaption = false;
             this.groupControl7.Size = new System.Drawing.Size(328, 27);
             this.groupControl7.TabIndex = 10;
             this.groupControl7.Text = "groupControl7";
             // 
-            // label12
+            // lblStokSayisi
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(165, 2);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(18, 19);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "0";
+            this.lblStokSayisi.AutoSize = true;
+            this.lblStokSayisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblStokSayisi.Location = new System.Drawing.Point(165, 2);
+            this.lblStokSayisi.Name = "lblStokSayisi";
+            this.lblStokSayisi.Size = new System.Drawing.Size(18, 19);
+            this.lblStokSayisi.TabIndex = 8;
+            this.lblStokSayisi.Text = "0";
             // 
             // label13
             // 
@@ -196,24 +238,24 @@ namespace ticari_otomasyon
             // 
             // groupControl5
             // 
-            this.groupControl5.Controls.Add(this.label8);
+            this.groupControl5.Controls.Add(this.lblSehirSayisi);
             this.groupControl5.Controls.Add(this.label9);
-            this.groupControl5.Location = new System.Drawing.Point(0, 132);
+            this.groupControl5.Location = new System.Drawing.Point(0, 165);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.ShowCaption = false;
             this.groupControl5.Size = new System.Drawing.Size(328, 27);
             this.groupControl5.TabIndex = 10;
             this.groupControl5.Text = "groupControl5";
             // 
-            // label8
+            // lblSehirSayisi
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(165, 2);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(18, 19);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "0";
+            this.lblSehirSayisi.AutoSize = true;
+            this.lblSehirSayisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSehirSayisi.Location = new System.Drawing.Point(165, 2);
+            this.lblSehirSayisi.Name = "lblSehirSayisi";
+            this.lblSehirSayisi.Size = new System.Drawing.Size(18, 19);
+            this.lblSehirSayisi.TabIndex = 8;
+            this.lblSehirSayisi.Text = "0";
             // 
             // label9
             // 
@@ -227,24 +269,24 @@ namespace ticari_otomasyon
             // 
             // groupControl4
             // 
-            this.groupControl4.Controls.Add(this.label6);
+            this.groupControl4.Controls.Add(this.lblPersonelSayisi);
             this.groupControl4.Controls.Add(this.label7);
-            this.groupControl4.Location = new System.Drawing.Point(0, 165);
+            this.groupControl4.Location = new System.Drawing.Point(0, 198);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.ShowCaption = false;
             this.groupControl4.Size = new System.Drawing.Size(328, 27);
             this.groupControl4.TabIndex = 9;
             this.groupControl4.Text = "groupControl4";
             // 
-            // label6
+            // lblPersonelSayisi
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(165, 2);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 19);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "0";
+            this.lblPersonelSayisi.AutoSize = true;
+            this.lblPersonelSayisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPersonelSayisi.Location = new System.Drawing.Point(165, 2);
+            this.lblPersonelSayisi.Name = "lblPersonelSayisi";
+            this.lblPersonelSayisi.Size = new System.Drawing.Size(18, 19);
+            this.lblPersonelSayisi.TabIndex = 8;
+            this.lblPersonelSayisi.Text = "0";
             // 
             // label7
             // 
@@ -258,7 +300,7 @@ namespace ticari_otomasyon
             // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.label2);
+            this.groupControl2.Controls.Add(this.lblOdemeler);
             this.groupControl2.Controls.Add(this.label3);
             this.groupControl2.Location = new System.Drawing.Point(0, 33);
             this.groupControl2.Name = "groupControl2";
@@ -267,15 +309,15 @@ namespace ticari_otomasyon
             this.groupControl2.TabIndex = 9;
             this.groupControl2.Text = "groupControl2";
             // 
-            // label2
+            // lblOdemeler
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(165, 2);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 19);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "0TL";
+            this.lblOdemeler.AutoSize = true;
+            this.lblOdemeler.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOdemeler.Location = new System.Drawing.Point(165, 2);
+            this.lblOdemeler.Name = "lblOdemeler";
+            this.lblOdemeler.Size = new System.Drawing.Size(36, 19);
+            this.lblOdemeler.TabIndex = 8;
+            this.lblOdemeler.Text = "0TL";
             // 
             // label3
             // 
@@ -289,7 +331,7 @@ namespace ticari_otomasyon
             // 
             // groupControl3
             // 
-            this.groupControl3.Controls.Add(this.label4);
+            this.groupControl3.Controls.Add(this.lblMusteriSayisi);
             this.groupControl3.Controls.Add(this.label5);
             this.groupControl3.Location = new System.Drawing.Point(0, 99);
             this.groupControl3.Name = "groupControl3";
@@ -298,15 +340,15 @@ namespace ticari_otomasyon
             this.groupControl3.TabIndex = 9;
             this.groupControl3.Text = "groupControl3";
             // 
-            // label4
+            // lblMusteriSayisi
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(165, 2);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 19);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "0";
+            this.lblMusteriSayisi.AutoSize = true;
+            this.lblMusteriSayisi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMusteriSayisi.Location = new System.Drawing.Point(165, 2);
+            this.lblMusteriSayisi.Name = "lblMusteriSayisi";
+            this.lblMusteriSayisi.Size = new System.Drawing.Size(18, 19);
+            this.lblMusteriSayisi.TabIndex = 8;
+            this.lblMusteriSayisi.Text = "0";
             // 
             // label5
             // 
@@ -320,7 +362,7 @@ namespace ticari_otomasyon
             // 
             // groupControl6
             // 
-            this.groupControl6.Controls.Add(this.label10);
+            this.groupControl6.Controls.Add(this.lblPersonelMaaslari);
             this.groupControl6.Controls.Add(this.label11);
             this.groupControl6.Location = new System.Drawing.Point(0, 66);
             this.groupControl6.Name = "groupControl6";
@@ -329,15 +371,15 @@ namespace ticari_otomasyon
             this.groupControl6.TabIndex = 9;
             this.groupControl6.Text = "groupControl6";
             // 
-            // label10
+            // lblPersonelMaaslari
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(165, 2);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 19);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "0TL";
+            this.lblPersonelMaaslari.AutoSize = true;
+            this.lblPersonelMaaslari.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPersonelMaaslari.Location = new System.Drawing.Point(165, 2);
+            this.lblPersonelMaaslari.Name = "lblPersonelMaaslari";
+            this.lblPersonelMaaslari.Size = new System.Drawing.Size(36, 19);
+            this.lblPersonelMaaslari.TabIndex = 8;
+            this.lblPersonelMaaslari.Text = "0TL";
             // 
             // label11
             // 
@@ -385,7 +427,7 @@ namespace ticari_otomasyon
             this.gridControl3.Location = new System.Drawing.Point(334, 0);
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(1568, 1033);
+            this.gridControl3.Size = new System.Drawing.Size(1568, 400);
             this.gridControl3.TabIndex = 5;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -406,11 +448,30 @@ namespace ticari_otomasyon
             this.xtraTabPage8.Size = new System.Drawing.Size(1902, 1013);
             this.xtraTabPage8.Text = "Kasa Çıkış Hareketleri";
             // 
-            // gridView4
+            // chartControl2
             // 
-            this.gridView4.GridControl = this.gridControl4;
-            this.gridView4.Name = "gridView4";
-            this.gridView4.OptionsView.ShowGroupPanel = false;
+            this.chartControl2.Location = new System.Drawing.Point(2, 238);
+            this.chartControl2.Name = "chartControl2";
+            series3.Name = "Series 1";
+            series3.View = doughnutSeriesView2;
+            this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series3};
+            this.chartControl2.Size = new System.Drawing.Size(325, 232);
+            this.chartControl2.TabIndex = 8;
+            // 
+            // chartControl1
+            // 
+            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram2;
+            this.chartControl1.Location = new System.Drawing.Point(3, 0);
+            this.chartControl1.Name = "chartControl1";
+            series4.Name = "Series 1";
+            series4.View = lineSeriesView2;
+            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series4};
+            this.chartControl1.Size = new System.Drawing.Size(325, 232);
+            this.chartControl1.TabIndex = 7;
             // 
             // gridControl4
             // 
@@ -422,30 +483,27 @@ namespace ticari_otomasyon
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
             // 
-            // chartControl1
+            // gridView4
             // 
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
-            this.chartControl1.Location = new System.Drawing.Point(3, 0);
-            this.chartControl1.Name = "chartControl1";
-            series2.Name = "Series 1";
-            series2.View = lineSeriesView1;
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
-            this.chartControl1.Size = new System.Drawing.Size(325, 232);
-            this.chartControl1.TabIndex = 7;
+            this.gridView4.GridControl = this.gridControl4;
+            this.gridView4.Name = "gridView4";
+            this.gridView4.OptionsView.ShowGroupPanel = false;
             // 
-            // chartControl2
+            // gridControl1
             // 
-            this.chartControl2.Location = new System.Drawing.Point(2, 238);
-            this.chartControl2.Name = "chartControl2";
-            series1.Name = "Series 1";
-            series1.View = doughnutSeriesView1;
-            this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.chartControl2.Size = new System.Drawing.Size(325, 232);
-            this.chartControl2.TabIndex = 8;
+            this.gridControl1.Location = new System.Drawing.Point(335, 406);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1568, 400);
+            this.gridControl1.TabIndex = 12;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // FrmKasa
             // 
@@ -455,9 +513,13 @@ namespace ticari_otomasyon
             this.Controls.Add(this.xtraTabControl3);
             this.Name = "FrmKasa";
             this.Text = "Kasa";
+            this.Load += new System.EventHandler(this.FrmKasa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
             this.xtraTabControl3.ResumeLayout(false);
             this.xtraTabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).EndInit();
+            this.groupControl9.ResumeLayout(false);
+            this.groupControl9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
             this.groupControl8.ResumeLayout(false);
             this.groupControl8.PerformLayout();
@@ -485,16 +547,18 @@ namespace ticari_otomasyon
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.virtualServerModeSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(doughnutSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(doughnutSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.virtualServerModeSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -511,29 +575,34 @@ namespace ticari_otomasyon
         private System.Windows.Forms.Label label1;
         private DevExpress.Data.VirtualServerModeSource virtualServerModeSource1;
         private DevExpress.XtraEditors.GroupControl groupControl8;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblAktifKullanici;
         private System.Windows.Forms.Label label15;
         private DevExpress.XtraEditors.GroupControl groupControl7;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblStokSayisi;
         private System.Windows.Forms.Label label13;
         private DevExpress.XtraEditors.GroupControl groupControl5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblSehirSayisi;
         private System.Windows.Forms.Label label9;
         private DevExpress.XtraEditors.GroupControl groupControl4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblPersonelSayisi;
         private System.Windows.Forms.Label label7;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblOdemeler;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblMusteriSayisi;
         private System.Windows.Forms.Label label5;
         private DevExpress.XtraEditors.GroupControl groupControl6;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblPersonelMaaslari;
         private System.Windows.Forms.Label label11;
         private DevExpress.XtraCharts.ChartControl chartControl2;
         private DevExpress.XtraCharts.ChartControl chartControl1;
         private DevExpress.XtraGrid.GridControl gridControl4;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
+        private DevExpress.XtraEditors.GroupControl groupControl9;
+        private System.Windows.Forms.Label lblFirmaSayisi;
+        private System.Windows.Forms.Label label4;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }
