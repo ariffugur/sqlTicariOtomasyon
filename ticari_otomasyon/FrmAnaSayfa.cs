@@ -42,6 +42,13 @@ namespace ticari_otomasyon
             da.Fill(dt);
             gridControlSonHareketler.DataSource = dt;
         }
+        void fihrist()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select Ad,Telefon1 From Tbl_FIRMALAR", bgl.baglanti());
+            da.Fill(dt);
+            gridControlFihrist.DataSource = dt;
+        }
 
         private void groupControl1_Paint(object sender, PaintEventArgs e)
         {
@@ -53,6 +60,7 @@ namespace ticari_otomasyon
             stoklar();
             ajanda();
             FirmaHareketleri();
+            fihrist();
         }
     }
 }

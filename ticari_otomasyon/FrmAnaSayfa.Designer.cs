@@ -29,6 +29,7 @@ namespace ticari_otomasyon
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaSayfa));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlStoklar = new DevExpress.XtraGrid.GridControl();
@@ -39,8 +40,8 @@ namespace ticari_otomasyon
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlSonHareketler = new DevExpress.XtraGrid.GridControl();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.gridControl4 = new DevExpress.XtraGrid.GridControl();
+            this.groupControlFihrist = new DevExpress.XtraEditors.GroupControl();
+            this.gridControlFihrist = new DevExpress.XtraGrid.GridControl();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
@@ -57,9 +58,9 @@ namespace ticari_otomasyon
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlSonHareketler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
-            this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControlFihrist)).BeginInit();
+            this.groupControlFihrist.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlFihrist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
@@ -101,6 +102,9 @@ namespace ticari_otomasyon
             // 
             // gridControlAjanda
             // 
+            gridLevelNode1.RelationName = "Level1";
+            this.gridControlAjanda.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
             this.gridControlAjanda.Location = new System.Drawing.Point(5, 26);
             this.gridControlAjanda.MainView = this.gridView2;
             this.gridControlAjanda.Name = "gridControlAjanda";
@@ -140,28 +144,28 @@ namespace ticari_otomasyon
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ShowGroupPanel = false;
             // 
-            // groupControl4
+            // groupControlFihrist
             // 
-            this.groupControl4.Controls.Add(this.gridControl4);
-            this.groupControl4.Location = new System.Drawing.Point(615, 420);
-            this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(574, 379);
-            this.groupControl4.TabIndex = 3;
-            this.groupControl4.Text = "En Çok İş Yapılan 10 Firma";
+            this.groupControlFihrist.Controls.Add(this.gridControlFihrist);
+            this.groupControlFihrist.Location = new System.Drawing.Point(615, 420);
+            this.groupControlFihrist.Name = "groupControlFihrist";
+            this.groupControlFihrist.Size = new System.Drawing.Size(574, 379);
+            this.groupControlFihrist.TabIndex = 3;
+            this.groupControlFihrist.Text = "FİHRİST";
             // 
-            // gridControl4
+            // gridControlFihrist
             // 
-            this.gridControl4.Location = new System.Drawing.Point(5, 26);
-            this.gridControl4.MainView = this.gridView4;
-            this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(564, 348);
-            this.gridControl4.TabIndex = 1;
-            this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControlFihrist.Location = new System.Drawing.Point(5, 26);
+            this.gridControlFihrist.MainView = this.gridView4;
+            this.gridControlFihrist.Name = "gridControlFihrist";
+            this.gridControlFihrist.Size = new System.Drawing.Size(564, 348);
+            this.gridControlFihrist.TabIndex = 1;
+            this.gridControlFihrist.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
             // 
             // gridView4
             // 
-            this.gridView4.GridControl = this.gridControl4;
+            this.gridView4.GridControl = this.gridControlFihrist;
             this.gridView4.Name = "gridView4";
             this.gridView4.OptionsView.ShowGroupPanel = false;
             // 
@@ -196,7 +200,7 @@ namespace ticari_otomasyon
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.xtraTabControl1);
-            this.Controls.Add(this.groupControl4);
+            this.Controls.Add(this.groupControlFihrist);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
@@ -215,9 +219,9 @@ namespace ticari_otomasyon
             this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlSonHareketler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
-            this.groupControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControlFihrist)).EndInit();
+            this.groupControlFihrist.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlFihrist)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
@@ -236,8 +240,8 @@ namespace ticari_otomasyon
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraGrid.GridControl gridControlSonHareketler;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
-        private DevExpress.XtraEditors.GroupControl groupControl4;
-        private DevExpress.XtraGrid.GridControl gridControl4;
+        private DevExpress.XtraEditors.GroupControl groupControlFihrist;
+        private DevExpress.XtraGrid.GridControl gridControlFihrist;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
