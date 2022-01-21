@@ -31,7 +31,7 @@ namespace ticari_otomasyon
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaSayfa));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridControlStoklar = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
@@ -47,7 +47,7 @@ namespace ticari_otomasyon
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlStoklar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
@@ -67,7 +67,7 @@ namespace ticari_otomasyon
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.gridControl1);
+            this.groupControl1.Controls.Add(this.gridControlStoklar);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(574, 379);
@@ -75,19 +75,19 @@ namespace ticari_otomasyon
             this.groupControl1.Text = "Azalan Stoklar";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
-            // gridControl1
+            // gridControlStoklar
             // 
-            this.gridControl1.Location = new System.Drawing.Point(5, 26);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(414, 295);
-            this.gridControl1.TabIndex = 1;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControlStoklar.Location = new System.Drawing.Point(5, 26);
+            this.gridControlStoklar.MainView = this.gridView1;
+            this.gridControlStoklar.Name = "gridControlStoklar";
+            this.gridControlStoklar.Size = new System.Drawing.Size(414, 295);
+            this.gridControlStoklar.TabIndex = 1;
+            this.gridControlStoklar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
-            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GridControl = this.gridControlStoklar;
             this.gridView1.Name = "gridView1";
             // 
             // groupControl2
@@ -167,7 +167,7 @@ namespace ticari_otomasyon
             this.xtraTabControl1.Location = new System.Drawing.Point(1195, 12);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(707, 706);
+            this.xtraTabControl1.Size = new System.Drawing.Size(707, 782);
             this.xtraTabControl1.TabIndex = 4;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -177,7 +177,7 @@ namespace ticari_otomasyon
             // 
             this.xtraTabPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage1.ImageOptions.Image")));
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(705, 678);
+            this.xtraTabPage1.Size = new System.Drawing.Size(705, 754);
             this.xtraTabPage1.Text = "DÖVİZ KURLARI";
             // 
             // xtraTabPage2
@@ -202,7 +202,7 @@ namespace ticari_otomasyon
             this.Load += new System.EventHandler(this.FrmAnaSayfa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlStoklar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
@@ -225,7 +225,7 @@ namespace ticari_otomasyon
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl gridControlStoklar;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraGrid.GridControl gridControl2;
