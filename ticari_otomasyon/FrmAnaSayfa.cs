@@ -27,6 +27,22 @@ namespace ticari_otomasyon
             gridControlStoklar.DataSource = dt;
         }
 
+        void ajanda()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select top 8 TARIH,saat,baslık from TBL_NOTLAR order by ID desc", bgl.baglanti());
+            da.Fill(dt);
+            gridControlAjanda.DataSource = dt;
+        }
+
+        void FirmaHareketleri()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Exec FirmaHareket2", bgl.baglanti());
+            da.Fill(dt);
+            gridControlSonHareketler.DataSource = dt;
+        }
+
         private void groupControl1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -35,6 +51,8 @@ namespace ticari_otomasyon
         private void FrmAnaSayfa_Load(object sender, EventArgs e)
         {
             stoklar();
+            ajanda();
+            FirmaHareketleri();
         }
     }
 }
